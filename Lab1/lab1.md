@@ -1,312 +1,340 @@
-# Lab 1 — GitHub Setup & Configuration
+# Lab 1 — GitHub Configuration & Setup
 
-**Course:** IA 462 — Advanced Operating Systems Security & Administration  
-**Points:** 75 points  
-**Submission:** Upload your screen-recording video (.wmv) and any required files via Canvas
+**Course:** IA 462 — Advanced Operating Systems Security & Administration
+**Week:** 2 — GitHub Configuration & Setup
+**Points:** 75 points
+**Submission:** Upload your screen-recording video (`.wmv`) and required files via Canvas
 
-> **Objectives & Outcomes:** Refer to syllabus for course objectives and grading criteria.
+> **Objectives & Outcomes:** Refer to the [course syllabus](../README.md) for course objectives and grading criteria.
+>
+> This lab aligns to the Week 2 slide deck: *IA462 — Week 2 — GitHub Configuration & Setup*.
 
 ---
 
-## 📋 Prerequisites
+## Lab Overview
+
+Your GitHub environment is the foundation for every lab, midterm, and final in IA 462. Before you can submit any work — or run any of the CI/CD pipelines we build later in the course — you must have:
+
+1. A properly configured GitHub.com account (with 2FA and SSH keys).
+2. Access to both the **course reference repo** (public) and the **student upload org repo** (private, invite-only).
+3. A local Git installation that is verified across Git Bash, PowerShell, Command Prompt, and WSL Ubuntu.
+4. A working push/pull cycle so your commits are correctly attributed and end up in the right repo.
+
+**Key course repositories:**
+
+| Repo | Purpose | Link |
+|------|---------|------|
+| Course Reference (public) | Lab instructions, midterm, final, syllabus | https://github.com/acloudsecninja/emu-ia-462-course |
+| Student Upload (private) | Your assignment submissions via PR | https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 |
+
+---
+
+## Prerequisites
 
 Before starting this lab, ensure you have:
 
-- [ ] A working computer running Windows 10/11, Linux (Ubuntu), or macOS
-- [ ] VirtualBox installed (or a VM environment ready)
-- [ ] At least 8 GB RAM and 30 GB free disk space
-- [ ] Screen recording software installed (e.g., https://www.freescreenrecording.com/)
+- [ ] A working computer running Windows 10/11 (WSL Ubuntu enabled — see the Week 1 Technology Requirements slides)
+- [ ] Minimum 8 GB RAM and 30 GB free disk space (16 GB RAM recommended)
+- [ ] Screen recording software installed (e.g., https://www.freescreenrecording.com) with `.wmv` export
 - [ ] Your EMU email address accessible
+- [ ] You have received (and accepted) the GitHub organization invite from Professor Weber
+
+> Linux (Ubuntu) and macOS are supported but instructor support may be limited. See Week 1 slides.
 
 ---
 
-## 🛠️ Lab Environment Setup
+## Part 1 — Install & Verify Git
 
-### Step 1 — Install Git for Windows
+### 1A — Install Git for Windows
 
-#### 1A — Download Git for Windows
+1. Navigate to https://git-scm.com/download/win — the 64-bit installer downloads automatically.
+2. Run the installer. Recommended settings:
+   - **Adjusting PATH:** *Git from the command line and also from 3rd-party software*
+   - **SSH executable:** *Use bundled OpenSSH*
+   - **HTTPS transport:** *Use the OpenSSL library*
+   - **Line endings:** *Checkout Windows-style, commit Unix-style*
+   - **Default branch name:** *Override the default* → `main`
+   - Leave the remaining defaults (file system caching + Git Credential Manager enabled)
 
-1. Open your web browser and navigate to: https://git-scm.com/download/win
-2. The download should start automatically for the latest 64-bit version. If not, click the **"64-bit Git for Windows Setup"** link.
-3. Save the installer (e.g., `Git-2.x.x-64-bit.exe`) to your Downloads folder.
+### 1B — Validate Git in Three Windows Shells
 
-#### 1B — Run the Git for Windows Installer
-
-1. Double-click the downloaded `.exe` file to launch the installer.
-2. Walk through the installer with the following recommended settings:
-   - **Select Components:** Leave defaults checked (Windows Explorer integration, Git Bash Here, Git LFS)
-   - **Default Editor:** Select your preferred editor (Nano or Notepad++ recommended for beginners)
-   - **Adjusting PATH:** Select **"Git from the command line and also from 3rd-party software"** (recommended)
-   - **SSH executable:** Select **"Use bundled OpenSSH"**
-   - **HTTPS transport backend:** Select **"Use the OpenSSL library"**
-   - **Line ending conversions:** Select **"Checkout Windows-style, commit Unix-style line endings"**
-   - **Terminal emulator:** Select **"Use MinTTY"** (the default terminal of MSYS2)
-   - **Default branch name:** Select **"Override the default branch name"** and enter `main`
-   - **Extra options:** Leave defaults (Enable file system caching, Enable Git Credential Manager)
-3. Click **Install** and wait for the installation to complete.
-4. Click **Finish** (optionally check "Launch Git Bash").
-
-#### 1C — Validate Git Installation on Windows
-
-Open **Git Bash** (right-click desktop → "Git Bash Here", or search "Git Bash" in Start Menu):
+Open each of the following and run `git --version`:
 
 ```bash
-# Check that git is installed and display the version
+# Git Bash
 git --version
 ```
 
-Expected output (version may vary):
-```
-git version 2.45.0.windows.1
-```
-
-Also verify Git is accessible from **Windows PowerShell**:
 ```powershell
-# Open PowerShell (Win + X → Windows PowerShell) and run:
+# PowerShell (Win + X → Windows PowerShell)
 git --version
 ```
 
-And from **Windows Command Prompt (cmd.exe)**:
 ```cmd
-# Open CMD (Win + R → type cmd → Enter) and run:
+:: Command Prompt (Win + R → cmd)
 git --version
 ```
 
-> **✅ Validation Check:** If all three shells (Git Bash, PowerShell, CMD) return a version number, Git for Windows is installed correctly.
+**Validation Check:** All three shells should return a version number (e.g., `git version 2.45.0.windows.1`). If PowerShell or CMD does not recognize `git`, re-run the installer and select the correct PATH option.
 
-If `git` is not recognized in PowerShell or CMD, the PATH was not set correctly during installation. Reinstall Git and select **"Git from the command line and also from 3rd-party software"** at the PATH step.
+**Screenshot 1:** All three shells side-by-side showing `git --version` output.
 
-#### 1D — Validate Git Works with WSL (Windows Subsystem for Linux)
+### 1C — Install & Validate Git in WSL Ubuntu
 
-If you are using WSL (Windows Subsystem for Linux), Git must also be installed **inside** the WSL environment separately — the Windows Git installation does not carry over into WSL.
+The Windows Git install does **not** carry over into WSL — you must install Git separately inside WSL.
 
-**Step 1 — Open your WSL terminal:**
-```powershell
-# From PowerShell or CMD, launch your WSL distro:
+```bash
+# From PowerShell/CMD:
 wsl
-```
-Or search for **"Ubuntu"** (or your installed distro) in the Start Menu.
 
-**Step 2 — Install Git inside WSL:**
-```bash
-sudo apt update && sudo apt install git -y
-```
-
-**Step 3 — Verify Git version inside WSL:**
-```bash
-git --version
-```
-
-Expected output:
-```
-git version 2.43.0
-```
-
-**Step 4 — Configure Git identity inside WSL:**
-```bash
-git config --global user.name "Your Full Name"
-git config --global user.email "yourname@emich.edu"
-```
-
-**Step 5 — Validate the full Git workflow inside WSL:**
-```bash
-# Create a test directory
-mkdir ~/git-test && cd ~/git-test
-
-# Initialize a new Git repository
-git init
-
-# Create a test file
-echo "Hello from WSL" > test.txt
-
-# Stage the file
-git add test.txt
-
-# Commit the file
-git commit -m "Test commit from WSL"
-
-# View the commit log
-git log --oneline
-
-# Clean up the test directory
-cd ~ && rm -rf ~/git-test
-```
-
-> **✅ Validation Check:** If `git log --oneline` shows your test commit, Git is fully functional inside WSL.
-
-**Step 6 — (Optional) Configure WSL to use Windows Git Credential Manager:**
-
-This allows WSL to share credentials with Windows so you don't have to authenticate twice:
-```bash
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
-```
-
-> **⚠️ Note:** The path above assumes Git for Windows was installed to the default location (`C:\Program Files\Git`). Adjust if your installation path differs.
-
----
-
-### Step 1 (Alternative) — Install Git on Linux or macOS
-
-**Linux (Ubuntu — standalone, not WSL):**
-```bash
+# Inside your WSL Ubuntu terminal:
 sudo apt update && sudo apt install git -y
 git --version
 ```
 
-**macOS:**
+**Screenshot 2:** WSL Ubuntu terminal showing `git --version` output.
+
+### 1D — (Optional) Share Windows Credentials with WSL
+
 ```bash
+git config --global credential.helper \
+  "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+```
+
+> Path assumes Git for Windows default install location. Adjust if different.
+
+### 1E — Alternative: Linux (standalone) or macOS
+
+```bash
+# Ubuntu (standalone, not WSL)
+sudo apt update && sudo apt install git -y
+git --version
+
+# macOS
 xcode-select --install
 git --version
 ```
 
 ---
 
-## 📝 Lab Instructions
+## Part 2 — Create & Harden Your GitHub.com Account
 
-### Part 1 — Create a GitHub Account
+Follow the Week 2 slide guidance carefully — your GitHub account is part of your professional portfolio.
 
-1. Navigate to https://github.com
-2. Click **Sign Up** and register using your **EMU email address** (`@emich.edu`)
-3. Choose a professional username (e.g., `jsmith-emu` or similar)
-4. Verify your email address
-5. **Screenshot:** Take a screenshot of your GitHub profile page showing your username
+1. Sign up at https://github.com with your **EMU email** (`@emich.edu`).
+2. Choose a **professional username** — avoid random numbers or nicknames (this may appear on your resume).
+3. Verify your email address.
+4. **Enable Two-Factor Authentication (2FA)** immediately — required for organization membership.
+   - `Settings → Password and Authentication → Enable 2FA` (use an authenticator app such as Authy, 1Password, or Google Authenticator).
+5. Accept the org invite you received from Professor Weber (check both your EMU email and the email tied to your GitHub account).
 
-### Part 2 — Configure Git Locally
+**Screenshot 3:** Your GitHub profile page showing your professional username and verified email.
+**Screenshot 4:** `Settings → Password and Authentication` showing 2FA is **enabled**.
 
-Open a terminal (Git Bash on Windows, Terminal on Linux/macOS) and configure your identity:
+---
+
+## Part 3 — Configure Your Local Git Identity
+
+Open a terminal (Git Bash / WSL / Terminal) and configure your commit identity so pushes are correctly attributed:
 
 ```bash
 git config --global user.name "Your Full Name"
 git config --global user.email "yourname@emich.edu"
 git config --global core.editor "nano"
+git config --global init.defaultBranch main
 ```
 
 Verify your configuration:
+
 ```bash
 git config --list
 ```
 
-**Screenshot:** Take a screenshot of the `git config --list` output.
+**Screenshot 5:** Full `git config --list` output showing `user.name`, `user.email`, and `init.defaultBranch`.
 
-### Part 3 — Clone the Course Repository
+---
 
-1. Navigate to the course GitHub organization (link provided in Canvas)
-2. Find the course lab repository
-3. Click the green **Code** button and copy the HTTPS clone URL
-4. In your terminal, clone the repository:
-   ```bash
-   git clone <paste-repo-url-here>
-   ```
-5. Navigate into the cloned directory:
-   ```bash
-   cd <repo-name>
-   ls -la
-   ```
+## Part 4 — Set Up SSH Authentication
 
-**Screenshot:** Take a screenshot showing the successful clone and directory listing.
+Password authentication is deprecated on GitHub. Configure an SSH key.
 
-### Part 4 — Explore the Repository Structure
+### 4A — Generate an SSH key
 
-1. Review the repository structure — identify the Lab folders, README files, and any configuration files
-2. Open the `README.md` at the root of the repository and read through it
-3. In your terminal, view the Git log to understand the commit history:
-   ```bash
-   git log --oneline -10
-   ```
-
-**Screenshot:** Take a screenshot of the `git log` output.
-
-### Part 5 — Explore Repository Security Features
-
-Perform the following hands-on tasks in your GitHub repository:
-
-1. Navigate to the **Security** tab of your repository on GitHub.com — take a screenshot
-2. Click on **Dependabot alerts** (if available) — screenshot the page
-3. Go to **Settings → Code security and analysis** — screenshot the available options
-4. Create a file named `SECURITY.md` in your repository with placeholder text:
-   ```bash
-   echo "# Security Policy" > SECURITY.md
-   echo "## Reporting a Vulnerability" >> SECURITY.md
-   echo "Please report security issues to the course instructor." >> SECURITY.md
-   git add SECURITY.md
-   git commit -m "Add security policy"
-   git push origin main
-   ```
-5. Verify the `SECURITY.md` appears on your repository's **Security** tab on GitHub.com — screenshot
-
-### Part 6 — Push Screenshots to Your Repository
-
-All screenshots taken during this lab must be committed and pushed to your repository. This validates that your Git workflow (add, commit, push) is functioning correctly.
-
-**Step 1 — Create a screenshots folder in your repo:**
 ```bash
-mkdir -p Lab1/screenshots
+ssh-keygen -t ed25519 -C "yourname@emich.edu"
+# Accept default file location. Set a passphrase (recommended).
 ```
 
-**Step 2 — Move or copy your screenshots into the folder:**
+### 4B — Add the public key to GitHub
+
 ```bash
-# Copy all your lab screenshots into the folder
-# Adjust the source path to wherever you saved them
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copy the output → GitHub → `Settings → SSH and GPG keys → New SSH key` → paste, give it a descriptive title (e.g., `IA462-laptop`), save.
+
+### 4C — Test SSH connectivity
+
+```bash
+ssh -T git@github.com
+```
+
+Expected output:
+
+```
+Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+**Screenshot 6:** Terminal output of `ssh -T git@github.com` showing a successful authentication.
+
+---
+
+## Part 5 — Clone Both Course Repositories
+
+### 5A — Clone the public reference repo
+
+```bash
+git clone https://github.com/acloudsecninja/emu-ia-462-course.git
+cd emu-ia-462-course
+ls -la
+```
+
+### 5B — Clone the private student upload repo
+
+```bash
+cd ~
+git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git
+cd emu-ia-462-fall-2026
+git remote -v
+```
+
+Verify the remote is correct:
+
+```bash
+git remote -v
+```
+
+Expected output:
+
+```
+origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
+origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
+```
+
+**Screenshot 7:** Both cloned directories listed on disk plus the `git remote -v` output of the student upload repo.
+
+---
+
+## Part 6 — Explore & Validate GitHub Security Features
+
+Perform each step on the **student upload repo** you cloned:
+
+1. Navigate to the repo on GitHub.com → **Security** tab. **Screenshot 8**.
+2. Click **Dependabot alerts** (if available). **Screenshot 9**.
+3. Go to **Settings → Code security and analysis** — enable **Dependency graph**, **Dependabot alerts**, and **Secret scanning** if not already on. **Screenshot 10**.
+4. Create a `SECURITY.md` inside your Lab1 folder:
+
+   ```bash
+   mkdir -p Lab1
+   cat <<'EOF' > Lab1/SECURITY.md
+   # Security Policy
+
+   ## Reporting a Vulnerability
+   Report security issues to the course instructor via the Slack channel or EMU email.
+   EOF
+   ```
+
+5. Practice the full add/commit/push cycle:
+
+   ```bash
+   git checkout -b lab1-<your-username>
+   git add Lab1/SECURITY.md
+   git status
+   git commit -m "Lab 1: add SECURITY.md and initial submission"
+   git push origin lab1-<your-username>
+   ```
+
+6. Open a **pull request** from your branch back to `main` in the student upload repo. **Screenshot 11**.
+
+> Never push directly to `main`. Always work on a branch and open a PR — this is a course-graded workflow.
+
+---
+
+## Part 7 — Push Your Lab 1 Screenshots
+
+All screenshots must be committed and pushed to your `Lab1/` folder in the student upload repo. This validates that your Git workflow is fully functional.
+
+```bash
+mkdir -p Lab1/screenshots
+# Copy your captured screenshots into Lab1/screenshots/
 cp ~/Desktop/screenshot-*.png Lab1/screenshots/
 ```
 
-Name your files descriptively so they are easy to identify:
-- `01-github-profile.png`
-- `02-git-config-list.png`
-- `03-clone-directory-listing.png`
-- `04-git-log.png`
-- `05-security-tab.png`
-- `06-security-md-pushed.png`
+Name your files descriptively:
 
-**Step 3 — Stage, commit, and push the screenshots:**
+- `01-git-versions-three-shells.png`
+- `02-wsl-git-version.png`
+- `03-github-profile.png`
+- `04-2fa-enabled.png`
+- `05-git-config-list.png`
+- `06-ssh-auth-success.png`
+- `07-both-repos-cloned.png`
+- `08-security-tab.png`
+- `09-dependabot-alerts.png`
+- `10-code-security-settings.png`
+- `11-pull-request-opened.png`
+
+Stage, commit, and push:
+
 ```bash
 git add Lab1/screenshots/
 git status
-git commit -m "Add Lab1 screenshots"
-git push origin main
+git commit -m "Lab 1: add screenshots"
+git push origin lab1-<your-username>
 ```
 
-**Step 4 — Verify the push on GitHub:**
-1. Navigate to your repository on GitHub.com
-2. Confirm the `Lab1/screenshots/` folder is visible and contains all your images
-3. **Screenshot:** Take a final screenshot showing the screenshots folder on GitHub
-
-> **✅ Validation Check:** If you can see your screenshot files in the `Lab1/screenshots/` folder on GitHub.com, your Git push workflow is confirmed working.
+**Validation Check:** Navigate to your PR on GitHub — every screenshot should be visible in the `Lab1/screenshots/` folder.
 
 ---
 
-### Part 7 — Record Your Video Walkthrough
+## Part 8 — Record Your Video Walkthrough
 
-Using your screen recording software, record a video demonstrating:
+Using your screen recording software, record a single video demonstrating:
 
-1. Your GitHub profile page
-2. Your local Git configuration (`git config --list`)
-3. The cloned repository directory and file listing
-4. A walkthrough of the repository structure
-5. The Security tab and SECURITY.md file on GitHub
-6. The `Lab1/screenshots/` folder pushed to GitHub with all images visible
+1. `git --version` succeeding in Git Bash, PowerShell, CMD, and WSL Ubuntu.
+2. Your GitHub profile with 2FA enabled.
+3. `git config --list` showing your correct name and EMU email.
+4. `ssh -T git@github.com` returning a successful authentication.
+5. Both course repos cloned locally with `git remote -v` verified.
+6. The Security tab, `SECURITY.md`, and Dependabot alerts on GitHub.
+7. Your open pull request in the student upload repo with the `Lab1/screenshots/` folder visible.
+8. A short verbal walkthrough of what each step accomplished.
 
-> **⚠️ Critical:** Export your video in `.wmv` format before uploading to Canvas.
+> **Critical:** Export your video in `.wmv` format. Files in any other format cannot be graded.
 
 ---
 
-## 📤 Submission Requirements
+## Submission Requirements
 
 Submit the following to Canvas by the due date:
 
 | Item | Format | Required |
 |------|--------|----------|
-| Video walkthrough | `.wmv` | ✅ Yes |
-| Screenshots (all parts) | `.png` or `.jpg` | ✅ Yes |
+| Video walkthrough | `.wmv` | Yes |
+| Screenshots (in `Lab1/screenshots/`) | `.png` / `.jpg` | Yes |
+| Pull request link (student upload repo) | URL | Yes |
 
 ---
 
-## 💡 Tips & Resources
+## Tips & Resources
 
-- **Git Cheat Sheet:** https://education.github.com/git-cheat-sheet-education.pdf
+- **Course syllabus (source of truth for policies):** distributed via Canvas and Google Drive
+- **Course reference repo:** https://github.com/acloudsecninja/emu-ia-462-course
+- **Student upload repo:** https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026
+- **Git cheat sheet:** https://education.github.com/git-cheat-sheet-education.pdf
 - **GitHub Docs:** https://docs.github.com
-- If you get stuck, post in the course Slack channel.
+- Stuck? Post in the EMU IA Slack or email Professor Weber. Do not wait until class.
 
 ---
 
-> **📌 Reminder:** All work must be your own. Refer to syllabus for full course policies.
+> **Reminder:** All work must be your own. AI-generated work is prohibited per syllabus. Refer to the syllabus for full course policies.
