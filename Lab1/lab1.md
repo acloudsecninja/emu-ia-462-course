@@ -231,7 +231,7 @@ Perform each step on the **student upload repo** you cloned:
 
 1. Navigate to the repo on GitHub.com → **Security** tab. **Screenshot 8**.
 2. Click **Dependabot alerts** (if available). **Screenshot 9**.
-3. Go to **Settings → Code security and analysis** — enable **Dependency graph**, **Dependabot alerts** - **Screenshot 10**.
+3. Go to **Settings → Code security and analysis** — Make sure you can see it (as I'v enabled at the repo/org level **Dependency graph**, **Dependabot alerts** - **Screenshot 10**.
 4. Create a `SECURITY.md` inside your Lab1 folder:
 
    ```bash
