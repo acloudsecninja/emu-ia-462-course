@@ -2,7 +2,6 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration  
 **Topic:** Linux containers, WSL2, isolation, and hardening  
-**Submission:** Pull request containing the lab artifacts, screenshots, and a short `.wmv` walkthrough
 
 > This lab focuses only on Linux containers running through Docker Desktop and WSL2 on Windows. The Windows-container exercise is in [In-Class Lab 2](../InClassLab2/inclasslab2.md).
 

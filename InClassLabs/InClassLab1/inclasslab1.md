@@ -2,7 +2,6 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration  
 **Topic:** Software supply-chain security, Docker, and Dependabot  
-**Submission:** Pull request containing the lab artifacts, screenshots, and a short `.wmv` walkthrough
 
 > This in-class lab gives you a controlled way to create, observe, triage, and remediate dependency alerts. The vulnerable versions are used only for demonstration; do not deploy the intentionally vulnerable image to a public service.
 

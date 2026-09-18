@@ -2,7 +2,6 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration  
 **Topic:** Windows containers, Docker Desktop, and Windows administration  
-**Submission:** Pull request containing the lab artifacts, screenshots, and a short `.wmv` walkthrough
 
 > This lab focuses only on Windows containers. The Linux-container exercise is in [In-Class Lab 3](../InClassLab3/inclasslab3.md). Windows containers require a compatible Windows edition, Docker Desktop configuration, and host build.
 
