@@ -194,8 +194,8 @@ Hi <your-username>! You've successfully authenticated, but GitHub does not provi
 ### 5A — Clone the public reference repo
 
 ```bash
-git clone https://github.com/acloudsecninja/emu-ia-462-course.git
-cd emu-ia-462-course
+git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
+cd emu-ia-462-course-student-code-upload
 ls -la
 ```
 
@@ -203,8 +203,8 @@ ls -la
 
 ```bash
 cd ~
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git
-cd emu-ia-462-fall-2026
+git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
+cd emu-ia-462-course-student-code-upload
 git remote -v
 ```
 
@@ -217,8 +217,8 @@ git remote -v
 Expected output:
 
 ```
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
+origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (fetch)
+origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (push)
 ```
 
 **Screenshot 7:** Both cloned directories listed on disk plus the `git remote -v` output of the student upload repo.
@@ -231,8 +231,7 @@ Perform each step on the **student upload repo** you cloned:
 
 1. Navigate to the repo on GitHub.com → **Security** tab. **Screenshot 8**.
 2. Click **Dependabot alerts** (if available). **Screenshot 9**.
-3. Go to **Settings → Code security and analysis** — Make sure you can see it (as I'v enabled at the repo/org level **Dependency graph**, **Dependabot alerts** - **Screenshot 10**.
-4. Create a `SECURITY.md` inside your Lab1 folder:
+3. Create a `SECURITY.md` inside your Lab1 folder:
 
    ```bash
    mkdir -p Lab1
@@ -243,6 +242,8 @@ Perform each step on the **student upload repo** you cloned:
    Report security issues to the course instructor via the Slack channel or EMU email.
    EOF
    ```
+
+   - This section is more of a organization level or repo level process and not avaliable for students without paying for these services. At this point I wanted to make you all aware of it as this is a very common in most organziations.
 
 5. Practice the full add/commit/push cycle:
 
@@ -310,7 +311,7 @@ Using your screen recording software, record a single video demonstrating:
 7. Your open pull request in the student upload repo with the `Lab1/screenshots/` folder visible.
 8. A short verbal walkthrough of what each step accomplished.
 
-> **Critical:** Export your video in `.wmv` format. Files in any other format cannot be graded.
+> **Critical:** Export your video in `.wmv` or `mp3,mp4` formats. Files in any other format cannot be graded.
 
 ---
 
