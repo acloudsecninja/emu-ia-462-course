@@ -229,7 +229,7 @@ origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upl
 
 Perform each step on the **student upload repo** you cloned:
 
-1. Navigate to the repo on GitHub.com → **Security** tab. **Screenshot 8**.
+1. Navigate to the student upload repo on GitHub.com → **Security and quality** tab. **Screenshot 8**.
 2. Click **Dependabot alerts** (if available). **Screenshot 9**.
 3. Create a `SECURITY.md` inside your Lab1 folder:
 
