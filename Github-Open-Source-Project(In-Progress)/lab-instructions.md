@@ -52,10 +52,20 @@ Take notes on:
 ## Step 3: Clone the Repository
 Use Git to clone the selected project:
 
+**GitHub Desktop (Preferred):**
+1. Open GitHub Desktop
+2. Click **File → Clone Repository**
+3. Click **URL** tab
+4. Enter the repository URL
+5. Choose local path and click **Clone**
+
+**Command Line (Alternative):**
 ```bash
 git clone <repository-url>
 cd <project-folder>
 ```
+
+See [Git Workflow Guide](../../git-workflow-guide.md) for detailed instructions on both methods.
 
 Document the repository name, URL, and purpose in your notes or video.
 

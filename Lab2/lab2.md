@@ -381,10 +381,41 @@ Under the table, write 3–5 sentences summarizing **one hardening step per plat
 
 ---
 
+## Git Operations: Two Methods Available
+
+**Method 1: GitHub Desktop (Recommended for most students)**
+- Visual interface for all Git operations
+- Easier pull request management
+- Built-in conflict resolution
+- See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps
+
+**Method 2: Command Line (Alternative)**
+- Traditional terminal-based Git operations
+- Full control via commands
+- Useful for advanced users or when GUI unavailable
+- Command examples provided throughout this lab
+
+You can switch between methods anytime — both work with the same repositories.
+
+---
+
 ## Part 5 — Push Everything to Your Repo
 
 All screenshots, the Lynis report, the PowerShell transcript, the Dockerfile, and `comparison.md` must be committed and pushed to your student upload repo.
 
+**GitHub Desktop:**
+1. Open the student upload repo in GitHub Desktop
+2. Click **Current Branch** dropdown → **New Branch**
+3. Enter branch name: `lab2-<your-username>`
+4. Click **Create Branch**
+5. Create folders and copy files into `Lab2/`
+6. Go to **Changes** tab, check all files in `Lab2/`
+7. Enter commit message: "Lab 2: OS fundamentals - Linux, Windows, Docker"
+8. Click **Commit**
+9. Click **Push origin**
+10. Click **Branch → Create Pull Request**
+
+**Command Line:**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab2-<your-username>
@@ -447,7 +478,9 @@ Record a single `.wmv` video demonstrating:
 
 ## Tips & Resources
 
+- **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
 - **Linux Permissions Guide:** https://www.guru99.com/file-permissions.html
+- **GitHub Desktop Docs:** https://docs.github.com/en/desktop
 - **Lynis Documentation:** https://cisofy.com/lynis/
 - **CIS Ubuntu Benchmarks:** https://www.cisecurity.org/benchmark/ubuntu_linux
 - **Microsoft Security Baselines (Compliance Toolkit):** https://www.microsoft.com/en-us/download/details.aspx?id=55319

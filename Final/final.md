@@ -42,6 +42,8 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 - Every third-party GitHub Action, container base image, and application dependency must be pinned.
 - Final submission = **Repo URL + `.wmv` walkthrough + single-slide summary PDF** to Canvas by the due date.
 
+**Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both methods can create signed commits.
+
 ---
 
 ## Section 1 — Repository Setup, Signed Commits, Branch Protection (20 pts)
@@ -254,9 +256,13 @@ Record a **single** `.wmv` video (target 20–30 minutes) demonstrating everythi
 
 ## Section 11 — Reproducibility (15 pts)
 
-A grader must be able to `git clone` your repo and, from a clean Ubuntu host with Docker installed, run:
+A grader must be able to clone your repo and, from a clean Ubuntu host with Docker installed, run:
 
+**GitHub Desktop:** Clone via File → Clone Repository → URL  
+**Command Line:**
 ```bash
+git clone https://github.com/<your-username>/ia462-final-<your-username>.git
+cd ia462-final-<your-username>
 ./bootstrap.sh    # any setup you require
 docker build -t ia462-final:reproduce -f final/section4/Dockerfile final/
 ./final/section4/run-hardened.sh
@@ -315,6 +321,7 @@ Partial credit is awarded per rubric criteria — see individual section deliver
 
 ## Tips
 
+- **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
 - Begin the final repo **immediately** in Week 14 (End-to-End Review). The Section 1 controls unblock every downstream piece.
 - Reuse artifacts from Labs 1–4 and the Midterm — the final is intentionally cumulative.
 - Do not commit generated venv / `__pycache__` / `.env` / secrets. Push protection should block anything sensitive.

@@ -39,6 +39,8 @@ You will build, harden, scan, and defend a single Python + Docker application in
 - Every third-party GitHub Action, container base image, and Python dependency must be pinned (Week 8).
 - Submit the repo URL + `.wmv` walkthrough to Canvas by the due date shown in Canvas.
 
+**Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both methods can create signed commits.
+
 ---
 
 ## Section 1 — Repository Setup, SSH & Signed Commits (25 pts)
@@ -248,6 +250,7 @@ Grading is done against the **pushed contents of your repo** at the due-date tim
 
 ## Tips
 
+- **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
 - Start Section 1 immediately in Week 8; it unblocks all other sections.
 - Section 7's pipeline gates Sections 4, 5, and 6. Get the pipeline green early.
 - Do not upload compiled Python `__pycache__` or virtualenv folders — add them to `.gitignore`.

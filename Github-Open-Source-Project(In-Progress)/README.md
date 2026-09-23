@@ -31,6 +31,7 @@ This project must follow the same expectations as the other IA 462 assignments:
 ## Student Instructions
 See:
 - `lab-instructions.md`
+- [Git Workflow Guide](../../git-workflow-guide.md) — For GitHub Desktop and command line git operations
 
 ## Submission Notes
 Students must submit:

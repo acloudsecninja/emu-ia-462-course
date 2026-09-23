@@ -386,8 +386,39 @@ Create `~/lab3/lab3-threat-hunt.md` with:
 
 ---
 
+## Git Operations: Two Methods Available
+
+**Method 1: GitHub Desktop (Recommended for most students)**
+- Visual interface for all Git operations
+- Easier pull request management
+- Built-in conflict resolution
+- See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps
+
+**Method 2: Command Line (Alternative)**
+- Traditional terminal-based Git operations
+- Full control via commands
+- Useful for advanced users or when GUI unavailable
+- Command examples provided throughout this lab
+
+You can switch between methods anytime — both work with the same repositories.
+
+---
+
 ## Part 4 — Push Everything to Your Repo
 
+**GitHub Desktop:**
+1. Open the student upload repo in GitHub Desktop
+2. Click **Current Branch** dropdown → **New Branch**
+3. Enter branch name: `lab3-<your-username>`
+4. Click **Create Branch**
+5. Create folders and copy files into `Lab3/`
+6. Go to **Changes** tab, check all files in `Lab3/`
+7. Enter commit message: "Lab 3: Security Analysis & Threat Intelligence"
+8. Click **Commit**
+9. Click **Push origin**
+10. Click **Branch → Create Pull Request**
+
+**Command Line:**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab3-<your-username>
@@ -461,6 +492,7 @@ Record a single `.wmv` video demonstrating:
 
 ## Tips & Resources
 
+- **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
 - **Trivy Docs:** https://aquasecurity.github.io/trivy/
 - **Syft / Grype:** https://github.com/anchore/syft , https://github.com/anchore/grype
 - **NVD (CVE lookup):** https://nvd.nist.gov

@@ -34,12 +34,39 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 
 ---
 
+## Git Operations: Two Methods Available
+
+**Method 1: GitHub Desktop (Recommended for most students)**
+- Visual interface for all Git operations
+- Easier pull request management
+- Built-in conflict resolution
+- See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps
+
+**Method 2: Command Line (Alternative)**
+- Traditional terminal-based Git operations
+- Full control via commands
+- Useful for advanced users or when GUI unavailable
+- Command examples provided throughout this lab
+
+**Important Note for Lab 4:** SSH commit signing (Part 2D) requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+
+---
+
 ## Part 1 — Create a Pinned, Reproducible Repo
 
 ### 1A — Create the repo on GitHub
 
 Create a **public** repo named `ia462-lab4-supply-chain` on your GitHub account. Clone it locally:
 
+**GitHub Desktop:**
+1. Go to GitHub.com and create the public repo `ia462-lab4-supply-chain`
+2. Open GitHub Desktop
+3. Click **File → Clone Repository**
+4. Click **URL** tab
+5. Enter: `git@github.com:<your-username>/ia462-lab4-supply-chain.git`
+6. Choose local path and click **Clone**
+
+**Command Line:**
 ```bash
 git clone git@github.com:<your-username>/ia462-lab4-supply-chain.git
 cd ia462-lab4-supply-chain
@@ -187,6 +214,9 @@ updates:
 
 ### 2D — Configure SSH commit signing (Week 8 slide: *Commit Signing & Verified History*)
 
+**Important:** SSH commit signing setup requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+
+#### Configuration (Command Line Required)
 ```bash
 # Use your existing SSH key from Lab 1 to sign commits
 git config --global gpg.format ssh
@@ -197,8 +227,16 @@ git config --global tag.gpgsign true
 
 Add the same SSH key as a **signing key** on GitHub → `Settings → SSH and GPG keys → New SSH key → Key type: Signing`.
 
-Verify:
+#### Creating Signed Commits
 
+**GitHub Desktop (after command-line setup):**
+1. Make changes to files
+2. Go to **Changes** tab
+3. Enter commit message and click **Commit** (automatically signed due to configuration)
+4. Click **Push origin**
+5. View on GitHub — commit will show "Verified" badge
+
+**Command Line:**
 ```bash
 git commit --allow-empty -m "chore: verify signed commits"
 git push
@@ -340,7 +378,23 @@ jobs:
           comment-summary-in-pr: always
 ```
 
-Commit + push. Watch the pipeline run under the **Actions** tab.
+Commit + push:
+
+**GitHub Desktop:**
+- Go to **Changes** tab
+- Check all new/modified files
+- Enter commit message: "Lab 4: add supply chain security pipeline"
+- Click **Commit**
+- Click **Push origin**
+
+**Command Line:**
+```bash
+git add .
+git commit -m "Lab 4: add supply chain security pipeline"
+git push
+```
+
+Watch the pipeline run under the **Actions** tab.
 
 **Screenshot 5:** Full pipeline (`build`, `vulnerability-scan`, `sbom`, `dependency-audit`) all green on `main`.
 **Screenshot 6:** The uploaded SBOM artifact (`sbom.spdx.json`) opened — top of file showing the SPDX header.
@@ -354,6 +408,12 @@ Reference: Week 8 slide *Dependency Confusion & Supply Chain Attacks* + *Depende
 
 ### 4A — Open a PR that downgrades to a vulnerable version
 
+**GitHub Desktop:**
+1. Click **Current Branch** dropdown → **New Branch**
+2. Enter branch name: `test/introduce-vulnerable-dep`
+3. Click **Create Branch**
+
+**Command Line:**
 ```bash
 git checkout -b test/introduce-vulnerable-dep
 ```
@@ -372,13 +432,30 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip pip-tools
 pip-compile --generate-hashes --output-file=requirements.lock requirements.txt || true
 deactivate
+```
 
+Commit and push:
+
+**GitHub Desktop:**
+- Go to **Changes** tab
+- Check `requirements.txt` and `requirements.lock`
+- Enter commit message: "test: introduce vulnerable Flask 2.0.0 to prove gate blocks it"
+- Click **Commit**
+- Click **Push origin**
+
+**Command Line:**
+```bash
 git add requirements.txt requirements.lock
 git commit -m "test: introduce vulnerable Flask 2.0.0 to prove gate blocks it"
 git push origin test/introduce-vulnerable-dep
 ```
 
-Open a pull request against `main`. Your `dependency-review` action **must** fail. Your `pip-audit` job **should** fail. Your Trivy scan may also flag additional CVEs.
+Open a pull request against `main`:
+
+**GitHub Desktop:** Click **Branch → Create Pull Request** (opens browser)  
+**Command Line:** Go to GitHub.com in browser, navigate to repo, click "Compare & pull request"
+
+Your `dependency-review` action **must** fail. Your `pip-audit` job **should** fail. Your Trivy scan may also flag additional CVEs.
 
 **Screenshot 8:** The PR page showing `dependency-review` failing with the vulnerable Flask 2.0.0 listed.
 **Screenshot 9:** The PR page showing `pip-audit` output flagging the vulnerable version.
@@ -410,6 +487,18 @@ jq '.packages | length' sbom-local.spdx.json
 
 Commit `sbom-local.*` into a new `sboms/` folder on `main` (via PR):
 
+**GitHub Desktop:**
+1. Click **Current Branch** dropdown → **New Branch**
+2. Enter branch name: `sbom-snapshot`
+3. Click **Create Branch**
+4. Create `sboms/` folder and move files
+5. Go to **Changes** tab, check all files in `sboms/`
+6. Enter commit message: "sboms: initial SBOM snapshot (SPDX + CycloneDX + table)"
+7. Click **Commit**
+8. Click **Push origin**
+9. Click **Branch → Create Pull Request**
+
+**Command Line:**
 ```bash
 git checkout -b sbom-snapshot
 mkdir -p sboms
@@ -448,6 +537,19 @@ Create/update `README.md` on `main` (via a signed-commit PR) with:
 
 ## Part 7 — Push Lab 4 Deliverables to the Student Upload Repo
 
+**GitHub Desktop:**
+1. Open the student upload repo in GitHub Desktop
+2. Click **Current Branch** dropdown → **New Branch**
+3. Enter branch name: `lab4-<your-username>`
+4. Click **Create Branch**
+5. Create folders and copy files
+6. Go to **Changes** tab, check all files in `Lab4/`
+7. Enter commit message: "Lab 4: Dependency Management & Version Control"
+8. Click **Commit**
+9. Click **Push origin**
+10. Click **Branch → Create Pull Request**
+
+**Command Line:**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab4-<your-username>
@@ -503,8 +605,10 @@ Record a single `.wmv` video demonstrating:
 
 ## Tips & Resources
 
+- **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
 - **pip-tools:** https://pip-tools.readthedocs.io
 - **Dependabot config reference:** https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+- **GitHub Desktop Docs:** https://docs.github.com/en/desktop
 - **Dependency Review Action:** https://github.com/actions/dependency-review-action
 - **Trivy Action:** https://github.com/aquasecurity/trivy-action
 - **Syft (SBOM generation):** https://github.com/anchore/syft
