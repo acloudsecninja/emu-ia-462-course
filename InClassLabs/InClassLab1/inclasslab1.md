@@ -19,7 +19,6 @@ By the end of this lab, you will be able to:
 
 ## Prerequisites
 
-- [ ] Labs 1–4 completed
 - [ ] A public GitHub repository, or a repository where your instructor has enabled the required security features
 - [ ] Git and Docker Desktop installed and working
 - [ ] A GitHub account with permission to create branches and pull requests
