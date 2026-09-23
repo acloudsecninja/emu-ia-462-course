@@ -25,7 +25,7 @@ Your GitHub environment is the foundation for every lab, midterm, and final in I
 | Repo | Purpose | Link |
 |------|---------|------|
 | Course Reference (public) | Lab instructions, midterm, final, syllabus | https://github.com/acloudsecninja/emu-ia-462-course |
-| Student Upload (private) | Your assignment submissions via PR | https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 |
+| Student Upload (private) | Your assignment submissions via PR | https://github.com/acloudsecninja-emu-org/emu-ia-462-course-student-code-upload |
 
 ---
 
