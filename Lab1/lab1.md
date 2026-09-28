@@ -73,6 +73,8 @@ You can switch between methods anytime — both work with the same repositories.
 5. Git for Windows is installed automatically with GitHub Desktop
 
 #### Command Line (Alternative)
+**Note:** SSH authentication is optional — you should use HTTPS authentication with GitHub instead, which is simpler to set up. SSH is only required if you prefer SSH authentication or need it for signed commits (Lab 4, Midterm, Final).
+
 1. Navigate to https://git-scm.com/download/win — the 64-bit installer downloads automatically.
 2. Run the installer. Recommended settings:
    - **Adjusting PATH:** *Git from the command line and also from 3rd-party software*
@@ -201,6 +203,8 @@ git config --list
 
 ## Part 4 — Set Up SSH Authentication
 
+**Note:** SSH authentication is optional — you can use HTTPS authentication with GitHub instead, which is simpler to set up. SSH is only required if you prefer SSH authentication or need it for signed commits (Lab 4, Midterm, Final).
+
 Password authentication is deprecated on GitHub. Configure an SSH key.
 
 ### 4A — Generate an SSH key
@@ -258,10 +262,10 @@ Hi <your-username>! You've successfully authenticated, but GitHub does not provi
 5. Choose local path (e.g., `C:\Users\you\github-repos\`)
 6. Click **Clone**
 
-#### Command Line
+#### Command Line (Optional)
 ```bash
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
-cd emu-ia-462-course-student-code-upload
+git clone https://github.com/acloudsecninja/emu-ia-462-course.git
+cd emu-ia-462-course
 ls -la
 ```
 
@@ -270,15 +274,15 @@ ls -la
 #### GitHub Desktop
 1. Click **File → Clone Repository**
 2. Click **URL** tab
-3. Enter: `git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
+3. Enter: `https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
 4. Choose local path
 5. Click **Clone**
 
-#### Command Line
+#### Command Line (Optional)
 ```bash
 cd ~
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
-cd emu-ia-462-course-student-code-upload
+git clone https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git
+cd emu-ia-462-fall-2026
 git remote -v
 ```
 
@@ -293,8 +297,8 @@ git remote -v
 Expected output:
 
 ```
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (fetch)
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (push)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
 ```
 
 **Screenshot 7:** Both cloned directories listed on disk plus the remote information (GitHub Desktop Repository Settings or `git remote -v` output).
@@ -332,7 +336,7 @@ Perform each step on the **student upload repo** you cloned:
    - Click **Commit**
    - Click **Push origin** button
 
-   **Command Line:**
+   **Command Line (Optional):**
    ```bash
    git checkout -b lab1-<your-username>
    git add Lab1/SECURITY.md
@@ -340,6 +344,7 @@ Perform each step on the **student upload repo** you cloned:
    git commit -m "Lab 1: add SECURITY.md and initial submission"
    git push origin lab1-<your-username>
    ```
+   *(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 6. Open a **pull request** from your branch back to `main` in the student upload repo.
 
@@ -385,13 +390,14 @@ Stage, commit, and push:
 - Click **Commit**
 - Click **Push origin** button
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git add Lab1/screenshots/
 git status
 git commit -m "Lab 1: add screenshots"
 git push origin lab1-<your-username>
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 **Validation Check:** Navigate to your PR on GitHub — every screenshot should be visible in the `Lab1/screenshots/` folder.
 

@@ -34,21 +34,33 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 
 ---
 
-## Git Operations: Two Methods Available
+## Git Operations: GitHub Desktop (Recommended)
 
-**Method 1: GitHub Desktop (Recommended for most students)**
+**GitHub Desktop** is the recommended method for this course:
 - Visual interface for all Git operations
 - Easier pull request management
 - Built-in conflict resolution
-- See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps
+- Works with HTTPS authentication (no SSH setup required for most operations)
+- Download from https://desktop.github.com/
 
-**Method 2: Command Line (Alternative)**
-- Traditional terminal-based Git operations
-- Full control via commands
+**Command Line (Optional):**
+- Traditional terminal-based Git operations are available as an alternative
 - Useful for advanced users or when GUI unavailable
-- Command examples provided throughout this lab
+- See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps on both methods
 
 **Important Note for Lab 4:** SSH commit signing (Part 2D) requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+
+### GitHub Desktop Basics
+
+If you're new to GitHub Desktop, here are the essential operations:
+
+- **Clone Repository:** File → Clone Repository → Enter URL
+- **Create Branch:** Current Branch dropdown → New Branch → Enter name
+- **Stage Changes:** Go to Changes tab → Check files you want to include
+- **Commit:** Enter commit message → Click Commit button
+- **Push:** Click Push origin button
+- **Create Pull Request:** Branch → Create Pull Request (opens browser)
+- **Resolve Conflicts:** Changes tab shows conflicted files → Click to resolve → Mark as resolved
 
 ---
 
@@ -66,7 +78,7 @@ Create a **public** repo named `ia462-lab4-supply-chain` on your GitHub account.
 5. Enter: `git@github.com:<your-username>/ia462-lab4-supply-chain.git`
 6. Choose local path and click **Clone**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git clone git@github.com:<your-username>/ia462-lab4-supply-chain.git
 cd ia462-lab4-supply-chain
@@ -214,9 +226,9 @@ updates:
 
 ### 2D — Configure SSH commit signing (Week 8 slide: *Commit Signing & Verified History*)
 
-**Important:** SSH commit signing setup requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+**Important:** SSH commit signing can be configured via command line (optional) or you can skip signed commits if not required for your specific needs. Once configured, both GitHub Desktop and command line can create signed commits.
 
-#### Configuration (Command Line Required)
+#### Configuration (Command Line - Optional)
 ```bash
 # Use your existing SSH key from Lab 1 to sign commits
 git config --global gpg.format ssh
@@ -227,6 +239,9 @@ git config --global tag.gpgsign true
 
 Add the same SSH key as a **signing key** on GitHub → `Settings → SSH and GPG keys → New SSH key → Key type: Signing`.
 
+#### Alternative: Skip Signed Commits
+If you prefer not to configure SSH signing, you can skip this step and use regular (unsigned) commits. Signed commits are only required if specifically needed for your assignment or security requirements.
+
 #### Creating Signed Commits
 
 **GitHub Desktop (after command-line setup):**
@@ -236,11 +251,12 @@ Add the same SSH key as a **signing key** on GitHub → `Settings → SSH and GP
 4. Click **Push origin**
 5. View on GitHub — commit will show "Verified" badge
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git commit --allow-empty -m "chore: verify signed commits"
 git push
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 **Screenshot 4:** GitHub PR/commit view showing your commit with a green **Verified** badge.
 
@@ -387,12 +403,13 @@ Commit + push:
 - Click **Commit**
 - Click **Push origin**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git add .
 git commit -m "Lab 4: add supply chain security pipeline"
 git push
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Watch the pipeline run under the **Actions** tab.
 
@@ -413,7 +430,7 @@ Reference: Week 8 slide *Dependency Confusion & Supply Chain Attacks* + *Depende
 2. Enter branch name: `test/introduce-vulnerable-dep`
 3. Click **Create Branch**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git checkout -b test/introduce-vulnerable-dep
 ```
@@ -443,17 +460,18 @@ Commit and push:
 - Click **Commit**
 - Click **Push origin**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git add requirements.txt requirements.lock
 git commit -m "test: introduce vulnerable Flask 2.0.0 to prove gate blocks it"
 git push origin test/introduce-vulnerable-dep
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Open a pull request against `main`:
 
 **GitHub Desktop:** Click **Branch → Create Pull Request** (opens browser)  
-**Command Line:** Go to GitHub.com in browser, navigate to repo, click "Compare & pull request"
+**Command Line (Optional):** Go to GitHub.com in browser, navigate to repo, click "Compare & pull request"
 
 Your `dependency-review` action **must** fail. Your `pip-audit` job **should** fail. Your Trivy scan may also flag additional CVEs.
 
@@ -498,7 +516,7 @@ Commit `sbom-local.*` into a new `sboms/` folder on `main` (via PR):
 8. Click **Push origin**
 9. Click **Branch → Create Pull Request**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 git checkout -b sbom-snapshot
 mkdir -p sboms
@@ -507,6 +525,7 @@ git add sboms/
 git commit -m "sboms: initial SBOM snapshot (SPDX + CycloneDX + table)"
 git push origin sbom-snapshot
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Open the PR, ensure the whole pipeline stays green, and merge it.
 
@@ -549,7 +568,7 @@ Create/update `README.md` on `main` (via a signed-commit PR) with:
 9. Click **Push origin**
 10. Click **Branch → Create Pull Request**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab4-<your-username>
@@ -570,6 +589,7 @@ git add Lab4/
 git commit -m "Lab 4: Dependency Management & Version Control"
 git push origin lab4-<your-username>
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Open a PR in the student upload repo and screenshot it (`14-lab4-pull-request.png`).
 

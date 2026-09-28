@@ -418,7 +418,7 @@ You can switch between methods anytime — both work with the same repositories.
 9. Click **Push origin**
 10. Click **Branch → Create Pull Request**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab3-<your-username>
@@ -453,6 +453,7 @@ git add Lab3/
 git commit -m "Lab 3: Security Analysis & Threat Intelligence"
 git push origin lab3-<your-username>
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Open a pull request in the student upload repo and screenshot it (`14-lab3-pull-request.png`).
 

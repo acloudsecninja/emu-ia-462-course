@@ -163,7 +163,7 @@ ls -la
 #### Clone Private Student Upload Repo
 ```bash
 cd ~
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git
+git clone https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git
 cd emu-ia-462-fall-2026
 git remote -v
 ```
@@ -175,8 +175,8 @@ git remote -v
 
 Expected output:
 ```
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
 ```
 
 ---
@@ -295,11 +295,13 @@ git diff Lab1/SECURITY.md
 ```bash
 git push origin lab1-your-username
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 #### Push Current Branch
 ```bash
 git push
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 #### Force Push (Use with Caution)
 ```bash
@@ -328,6 +330,7 @@ git push --force origin lab1-your-username
 ```bash
 git pull origin main
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)*
 
 #### Fetch Without Merging
 ```bash
@@ -338,6 +341,7 @@ git fetch origin
 ```bash
 git pull --rebase origin main
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)*
 
 ---
 
@@ -400,6 +404,7 @@ gh pr create --title "Lab 1: Add SECURITY.md" --body "Adding SECURITY.md for Lab
 ```bash
 # 1. Pull to detect conflicts
 git pull origin main
+# (Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)
 
 # 2. See conflicted files
 git status
@@ -417,6 +422,7 @@ git rebase --continue  # for rebase
 
 # 6. Push resolved changes
 git push origin lab1-your-username
+# (Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)
 ```
 
 ---

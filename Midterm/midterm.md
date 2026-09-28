@@ -39,7 +39,19 @@ You will build, harden, scan, and defend a single Python + Docker application in
 - Every third-party GitHub Action, container base image, and Python dependency must be pinned (Week 8).
 - Submit the repo URL + `.wmv` walkthrough to Canvas by the due date shown in Canvas.
 
-**Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both methods can create signed commits.
+**Git Operations:** GitHub Desktop is recommended for this course — it provides a visual interface for all Git operations, easier pull request management, and built-in conflict resolution. Download from https://desktop.github.com/. Command line operations are available as an optional alternative. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+
+### GitHub Desktop Basics
+
+If you're new to GitHub Desktop, here are the essential operations:
+
+- **Clone Repository:** File → Clone Repository → Enter URL
+- **Create Branch:** Current Branch dropdown → New Branch → Enter name
+- **Stage Changes:** Go to Changes tab → Check files you want to include
+- **Commit:** Enter commit message → Click Commit button
+- **Push:** Click Push origin button
+- **Create Pull Request:** Branch → Create Pull Request (opens browser)
+- **Resolve Conflicts:** Changes tab shows conflicted files → Click to resolve → Mark as resolved
 
 ---
 
@@ -55,7 +67,7 @@ Reference: Week 1 Technology Requirements, Week 2 GitHub Configuration & Setup s
    - Require signed commits
    - Require conversation resolution
    - No bypass
-4. Configure SSH commit signing locally (Lab 4 style) and produce at least one commit on `main` that shows **Verified** on GitHub.
+4. Configure SSH commit signing locally (Lab 4 style) and produce at least one commit on `main` that shows **Verified** on GitHub. (SSH signing configuration requires command line; this is optional if you prefer unsigned commits.)
 
 **Deliverables in `midterm/section1/`:**
 

@@ -141,12 +141,23 @@ jobs:
 
 Commit and push on a branch:
 
+**GitHub Desktop (Recommended):**
+1. Click **Current Branch** dropdown → **New Branch**
+2. Enter branch name: `inclasslab1-dependabot`
+3. Go to **Changes** tab, check all files
+4. Enter commit message: "In-Class Lab 1: add Dependabot Docker baseline"
+5. Click **Commit**
+6. Click **Push origin**
+7. Click **Branch → Create Pull Request**
+
+**Command Line (Optional):**
 ```bash
 git checkout -b inclasslab1-dependabot
- git add .
+git add .
 git commit -m "In-Class Lab 1: add Dependabot Docker baseline"
 git push -u origin inclasslab1-dependabot
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 In GitHub, open **Settings → Code security and analysis** and enable, where available:
 
@@ -191,6 +202,18 @@ Create `dependabot-triage.md` using this table:
 
 Create a remediation branch and update the dependency to the patched version shown by GitHub. Also replace floating references with a current supported Python slim tag, then record the exact resulting image digest:
 
+**GitHub Desktop (Recommended):**
+1. Click **Current Branch** dropdown → **New Branch**
+2. Enter branch name: `inclasslab1-remediate`
+3. Edit requirements.txt and Dockerfile using the versions recommended by Dependabot
+4. Run the Docker commands below in terminal
+5. Go to **Changes** tab, check all modified files
+6. Enter commit message: "In-Class Lab 1: remediate dependencies and pin Docker image"
+7. Click **Commit**
+8. Click **Push origin**
+9. Click **Branch → Create Pull Request**
+
+**Command Line (Optional):**
 ```bash
 git checkout -b inclasslab1-remediate
 # Edit requirements.txt and Dockerfile using the versions recommended by Dependabot.
@@ -200,7 +223,12 @@ docker build --tag ia462-inclasslab1:remediated .
 docker run --rm -d --name ia462-inclasslab1 -p 5000:5000 ia462-inclasslab1:remediated
 curl http://localhost:5000
 docker stop ia462-inclasslab1
+
+git add .
+git commit -m "In-Class Lab 1: remediate dependencies and pin Docker image"
+git push -u origin inclasslab1-remediate
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Run one local vulnerability check if available:
 
@@ -208,7 +236,7 @@ Run one local vulnerability check if available:
 trivy image --severity HIGH,CRITICAL ia462-inclasslab1:remediated
 ```
 
-Commit the fix and open a pull request. Review the Dependabot-generated diff or your manual remediation diff. Do not merge until the build passes.
+Review the Dependabot-generated diff or your manual remediation diff. Do not merge until the build passes.
 
 **Screenshot 4:** Passing build check and the remediation pull request.  
 **Screenshot 5:** The remediated image scan and working application response.  
