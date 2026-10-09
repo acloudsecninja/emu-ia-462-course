@@ -260,11 +260,13 @@ git diff Lab1/SECURITY.md
 ```bash
 git push origin lab1-your-username
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 #### Push Current Branch
 ```bash
 git push
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 #### Force Push (Use with Caution)
 ```bash
@@ -293,6 +295,7 @@ git push --force origin lab1-your-username
 ```bash
 git pull origin main
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)*
 
 #### Fetch Without Merging
 ```bash
@@ -303,6 +306,7 @@ git fetch origin
 ```bash
 git pull --rebase origin main
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)*
 
 ---
 
@@ -365,6 +369,7 @@ gh pr create --title "Lab 1: Add SECURITY.md" --body "Adding SECURITY.md for Lab
 ```bash
 # 1. Pull to detect conflicts
 git pull origin main
+# (Note: With HTTPS authentication, GitHub will prompt for your credentials when pulling)
 
 # 2. See conflicted files
 git status
@@ -382,6 +387,7 @@ git rebase --continue  # for rebase
 
 # 6. Push resolved changes
 git push origin lab1-your-username
+# (Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)
 ```
 
 ---

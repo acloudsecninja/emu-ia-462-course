@@ -390,7 +390,7 @@ All screenshots, the Lynis report, the PowerShell transcript, the Dockerfile, an
 9. Click **Push origin**
 10. Click **Branch → Create Pull Request**
 
-**Command Line:**
+**Command Line (Optional):**
 ```bash
 cd ~/emu-ia-462-fall-2026
 git checkout -b lab2-<your-username>
@@ -409,6 +409,7 @@ git status
 git commit -m "Lab 2: OS fundamentals - Linux, Windows, Docker"
 git push origin lab2-<your-username>
 ```
+*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
 
 Open a pull request into `main` on the student upload repo and screenshot the open PR (call it `17-lab2-pull-request.png`).
 

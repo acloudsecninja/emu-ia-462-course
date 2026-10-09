@@ -38,6 +38,7 @@ You will build, harden, scan, and defend a single Python + Docker application in
 - Every third-party GitHub Action, container base image, and Python dependency must be pinned (Week 8).
 - Submit the repo URL + `.wmv` walkthrough to Canvas by the due date shown in Canvas.
 
+<<<<<<< HEAD
 > **CRITICAL SECURITY WARNING:** The midterm repository will be **public**. Never commit personal information, API keys, passwords, credentials, or any sensitive data to this repository. All content in public repos is visible to anyone on the internet. Use environment variables, GitHub Secrets, or secure configuration management for sensitive data. GitHub's Secret scanning and push protection features will help block accidental commits of secrets, but you must remain vigilant.
 
 **Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods.
@@ -47,6 +48,48 @@ You will build, harden, scan, and defend a single Python + Docker application in
 ---
 
 ## Section 1 — Linux Host Hardening + Lynis (30 pts)
+=======
+**Git Operations:** GitHub Desktop is recommended for this course — it provides a visual interface for all Git operations, easier pull request management, and built-in conflict resolution. Download from https://desktop.github.com/. Command line operations are available as an optional alternative. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
+
+### GitHub Desktop Basics
+
+If you're new to GitHub Desktop, here are the essential operations:
+
+- **Clone Repository:** File → Clone Repository → Enter URL
+- **Create Branch:** Current Branch dropdown → New Branch → Enter name
+- **Stage Changes:** Go to Changes tab → Check files you want to include
+- **Commit:** Enter commit message → Click Commit button
+- **Push:** Click Push origin button
+- **Create Pull Request:** Branch → Create Pull Request (opens browser)
+- **Resolve Conflicts:** Changes tab shows conflicted files → Click to resolve → Mark as resolved
+
+---
+
+## Section 1 — Repository Setup, SSH & Signed Commits (25 pts)
+
+Reference: Week 1 Technology Requirements, Week 2 GitHub Configuration & Setup slides.
+
+1. Create a public GitHub repo named `ia462-midterm-<your-username>`.
+2. Enable **Dependabot alerts + security updates**, **Dependency graph**, and **Secret scanning + push protection** under *Settings → Code security and analysis*.
+3. Configure a branch-protection rule on `main`:
+   - Require PR + 1 review
+   - Require passing status checks (the CI/CD jobs from Section 5/7)
+   - Require signed commits
+   - Require conversation resolution
+   - No bypass
+4. Configure SSH commit signing locally (Lab 4 style) and produce at least one commit on `main` that shows **Verified** on GitHub. (SSH signing configuration requires command line; this is optional if you prefer unsigned commits.)
+
+**Deliverables in `midterm/section1/`:**
+
+- `screenshots/01-code-security-settings.png`
+- `screenshots/02-branch-protection.png`
+- `screenshots/03-verified-commit.png`
+- `notes.md` — 3–5 sentences explaining why each control matters (cite slide titles).
+
+---
+
+## Section 2 — Linux Host Hardening + Lynis (25 pts)
+>>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 
 Reference: Week 3 OS Fundamentals (Linux hardening essentials), Week 4 System Administration & Policy (Linux PAM, sudoers, SELinux/AppArmor).
 
