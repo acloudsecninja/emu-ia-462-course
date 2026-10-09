@@ -31,6 +31,8 @@ Everything you produce (reports, rules, screenshots) is pushed to `Lab3/` in the
 - [ ] `sudo` inside your Linux environment
 - [ ] Screen recording software ready with `.wmv` export
 
+> **IMPORTANT:** Never commit personal information, API keys, passwords, or any sensitive data to any GitHub repository. Always review your changes before committing to ensure no sensitive information is included.
+
 ---
 
 ## Part 1 — Docker: Static Image Analysis & Threat Intelligence

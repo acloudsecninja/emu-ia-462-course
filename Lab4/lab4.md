@@ -2,7 +2,7 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration
 **Week:** 8 — Dependency Management & Version Control for GitHub
-**Points:** 75 points
+**Points:** 70 points
 **Submission:** Upload your screen-recording video (`.wmv`), GitHub repo/PR link, and required files via Canvas
 
 > **Objectives & Outcomes:** Refer to the course syllabus for course objectives and grading criteria.
@@ -17,7 +17,7 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 
 1. Stand up a GitHub repo with a Python + Docker application.
 2. **Pin** all dependencies (application libraries, base image digest, and GitHub Actions SHAs).
-3. Turn on GitHub's supply-chain defenses (Dependency Graph, Dependabot alerts + security updates, secret scanning, branch protection with signed commits).
+3. Turn on GitHub's supply-chain defenses (Dependency Graph, Dependabot alerts + security updates, secret scanning, branch protection).
 4. Build a CI/CD pipeline that generates an **SBOM**, runs `pip-audit` + **Trivy**, and enforces **Dependency Review** on every PR.
 5. Deliberately introduce a known-vulnerable dependency version and prove the pipeline blocks it.
 6. Sign your commits and produce a `README.md` write-up that maps each control back to the slides.
@@ -27,10 +27,12 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 ## Prerequisites
 
 - [ ] Labs 1, 2, 3 completed
-- [ ] Git configured with SSH auth (Lab 1)
+- [ ] Git configured (Lab 1)
 - [ ] Docker installed and working (Lab 2 / Lab 3)
 - [ ] Ability to enable Dependabot / Advanced Security on a GitHub repo (public repos have most of this free)
 - [ ] Screen recording software ready with `.wmv` export
+
+> **IMPORTANT:** This lab requires creating a **public** GitHub repository. Never commit personal information, API keys, passwords, or any sensitive data to public repositories. All work in public repos is visible to anyone on the internet. Use environment variables or GitHub Secrets for sensitive configuration. GitHub's Secret scanning and push protection features will help block accidental commits of secrets.
 
 ---
 
@@ -48,8 +50,6 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 - Useful for advanced users or when GUI unavailable
 - Command examples provided throughout this lab
 
-**Important Note for Lab 4:** SSH commit signing (Part 2D) requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
-
 ---
 
 ## Part 1 — Create a Pinned, Reproducible Repo
@@ -63,12 +63,12 @@ Create a **public** repo named `ia462-lab4-supply-chain` on your GitHub account.
 2. Open GitHub Desktop
 3. Click **File → Clone Repository**
 4. Click **URL** tab
-5. Enter: `git@github.com:<your-username>/ia462-lab4-supply-chain.git`
+5. Enter: `https://github.com/<your-username>/ia462-lab4-supply-chain.git`
 6. Choose local path and click **Clone**
 
 **Command Line:**
 ```bash
-git clone git@github.com:<your-username>/ia462-lab4-supply-chain.git
+git clone https://github.com/<your-username>/ia462-lab4-supply-chain.git
 cd ia462-lab4-supply-chain
 ```
 
@@ -200,49 +200,16 @@ updates:
       interval: "weekly"
 ```
 
-### 2C — Branch protection + required signed commits
+### 2C — Branch protection
 
 **Settings → Branches → Add rule** on `main`:
 
 - Require a pull request before merging (`Require approvals: 1`)
 - Require status checks to pass — add every job we build in Part 3
-- Require signed commits
 - Require conversation resolution
 - Do not allow bypassing the above
 
 **Screenshot 3:** The branch protection rule for `main` fully configured.
-
-### 2D — Configure SSH commit signing (Week 8 slide: *Commit Signing & Verified History*)
-
-**Important:** SSH commit signing setup requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
-
-#### Configuration (Command Line Required)
-```bash
-# Use your existing SSH key from Lab 1 to sign commits
-git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-```
-
-Add the same SSH key as a **signing key** on GitHub → `Settings → SSH and GPG keys → New SSH key → Key type: Signing`.
-
-#### Creating Signed Commits
-
-**GitHub Desktop (after command-line setup):**
-1. Make changes to files
-2. Go to **Changes** tab
-3. Enter commit message and click **Commit** (automatically signed due to configuration)
-4. Click **Push origin**
-5. View on GitHub — commit will show "Verified" badge
-
-**Command Line:**
-```bash
-git commit --allow-empty -m "chore: verify signed commits"
-git push
-```
-
-**Screenshot 4:** GitHub PR/commit view showing your commit with a green **Verified** badge.
 
 ---
 
@@ -396,9 +363,9 @@ git push
 
 Watch the pipeline run under the **Actions** tab.
 
-**Screenshot 5:** Full pipeline (`build`, `vulnerability-scan`, `sbom`, `dependency-audit`) all green on `main`.
-**Screenshot 6:** The uploaded SBOM artifact (`sbom.spdx.json`) opened — top of file showing the SPDX header.
-**Screenshot 7:** The uploaded Trivy `trivy-results.txt` artifact contents.
+**Screenshot 4:** Full pipeline (`build`, `vulnerability-scan`, `sbom`, `dependency-audit`) all green on `main`.
+**Screenshot 5:** The uploaded SBOM artifact (`sbom.spdx.json`) opened — top of file showing the SPDX header.
+**Screenshot 6:** The uploaded Trivy `trivy-results.txt` artifact contents.
 
 ---
 
@@ -457,14 +424,14 @@ Open a pull request against `main`:
 
 Your `dependency-review` action **must** fail. Your `pip-audit` job **should** fail. Your Trivy scan may also flag additional CVEs.
 
-**Screenshot 8:** The PR page showing `dependency-review` failing with the vulnerable Flask 2.0.0 listed.
-**Screenshot 9:** The PR page showing `pip-audit` output flagging the vulnerable version.
+**Screenshot 7:** The PR page showing `dependency-review` failing with the vulnerable Flask 2.0.0 listed.
+**Screenshot 8:** The PR page showing `pip-audit` output flagging the vulnerable version.
 
 ### 4B — Close the PR without merging
 
 Under the PR, click **Close pull request** (do **not** merge). Verify `main` stays green.
 
-**Screenshot 10:** The closed PR summary — "This pull request was closed without being merged."
+**Screenshot 9:** The closed PR summary — "This pull request was closed without being merged."
 
 ---
 
@@ -510,14 +477,14 @@ git push origin sbom-snapshot
 
 Open the PR, ensure the whole pipeline stays green, and merge it.
 
-**Screenshot 11:** The merged PR showing the pipeline green.
-**Screenshot 12:** GitHub UI → Insights → Dependency graph → *Export SBOM* — the SPDX snapshot from GitHub itself.
+**Screenshot 10:** The merged PR showing the pipeline green.
+**Screenshot 11:** GitHub UI → Insights → Dependency graph → *Export SBOM* — the SPDX snapshot from GitHub itself.
 
 ---
 
 ## Part 6 — Write a Short Supply-Chain Rationale
 
-Create/update `README.md` on `main` (via a signed-commit PR) with:
+Create/update `README.md` on `main` (via a PR) with:
 
 - What the repo is
 - **Every** supply-chain control you enabled, mapped back to Week 8 slide titles:
@@ -525,13 +492,12 @@ Create/update `README.md` on `main` (via a signed-commit PR) with:
   - GitHub Dependency Security Tools
   - Dependency Confusion & Supply Chain Attacks
   - Securing Dependencies in GitHub Actions
-  - Commit Signing & Verified History
   - Software Bill of Materials (SBOM)
   - Integrating Dependency Scanning into CI/CD
   - GitHub's Dependency Review Action
 - A short "How to reproduce the vulnerable-PR demo" section
 
-**Screenshot 13:** The rendered `README.md` on GitHub.
+**Screenshot 12:** The rendered `README.md` on GitHub.
 
 ---
 
@@ -571,7 +537,7 @@ git commit -m "Lab 4: Dependency Management & Version Control"
 git push origin lab4-<your-username>
 ```
 
-Open a PR in the student upload repo and screenshot it (`14-lab4-pull-request.png`).
+Open a PR in the student upload repo and screenshot it (`13-lab4-pull-request.png`).
 
 ---
 
@@ -581,7 +547,7 @@ Record a single `.wmv` video demonstrating:
 
 1. Your repo layout + pinned `requirements.txt` + `requirements.lock` + digest-pinned `Dockerfile`
 2. GitHub `Code security and analysis` page with every setting on
-3. Your `dependabot.yml`, branch protection rule, and a signed commit's green **Verified** badge
+3. Your `dependabot.yml`, branch protection rule
 4. A successful full pipeline run on `main` (build, Trivy, SBOM, pip-audit)
 5. The vulnerable-PR demo — `dependency-review` red, `pip-audit` red, PR closed unmerged
 6. Your `sboms/` folder + a walkthrough of your `README.md` rationale mapped to the slides
@@ -613,7 +579,6 @@ Record a single `.wmv` video demonstrating:
 - **Trivy Action:** https://github.com/aquasecurity/trivy-action
 - **Syft (SBOM generation):** https://github.com/anchore/syft
 - **SPDX Spec:** https://spdx.dev
-- **SSH Commit Signing:** https://docs.github.com/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification
 - **Pinning GitHub Actions by SHA:** https://docs.github.com/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions#using-third-party-actions
 
 ---

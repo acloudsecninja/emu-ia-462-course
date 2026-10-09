@@ -18,18 +18,17 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 
 | Section | Points | Coverage | Slide Deck Reference |
 |---|---|---|---|
-| 1. Repository Setup, Signed Commits, Branch Protection | 20 | Weeks 1, 2, 8 | Technology Requirements · GitHub Setup · Dependency Mgmt |
-| 2. Linux Hardening + Auditd + osquery | 25 | Weeks 3, 4, 5 | OS Fundamentals · System Admin · Security Analysis |
-| 3. Windows Hardening + Sysmon + Sigma Detections | 25 | Weeks 3, 4, 5, 12 | OS Fundamentals · System Admin · Security Analysis · Advanced Security |
-| 4. Docker Hardened App (Multi-stage, Non-root, Cosign-signed) | 35 | Weeks 3, 4, 6, 12 | OS Fundamentals · System Admin · Docker Containers · Advanced Security |
-| 5. Enterprise Policy — Docker daemon.json, CIS, WDAC/AppLocker, SELinux/AppArmor | 25 | Weeks 4, 7, 12 | System Admin · Enterprise Policy · Advanced Security |
-| 6. CI/CD Supply-Chain Pipeline (SBOM, Trivy, pip-audit, Cosign, SLSA) | 35 | Weeks 8, 10, 13 | Dependency Mgmt · Automation & Pipeline · Third-Party Tools |
-| 7. Continuous Security Operations (SIEM ingest, IR playbook, MITRE mapping) | 30 | Weeks 5, 11 | Security Analysis · Continuous Sec Ops |
-| 8. GitHub Docker / Open-Source Project Integration | 25 | Weeks 7 → 15 | Enterprise Policy · Automation · Continuous Sec Ops |
-| 9. `FINAL.md` — Course-Wide Threat Model + ATT&CK Coverage Matrix | 25 | Weeks 1–16 | All weeks |
-| 10. `.wmv` Video Walkthrough (20–30 min) | 30 | — | — |
-| 11. Reproducibility (someone else can `docker build`/`docker run` cleanly) | 15 | Weeks 6, 8 | Docker Containers · Dependency Mgmt |
-| 12. Presentation Slide (single-slide summary) | 10 | — | — |
+| 1. Linux Hardening + Auditd + osquery | 30 | Weeks 3, 4, 5 | OS Fundamentals · System Admin · Security Analysis |
+| 2. Windows Hardening + Sysmon + Sigma Detections | 30 | Weeks 3, 4, 5, 12 | OS Fundamentals · System Admin · Security Analysis · Advanced Security |
+| 3. Docker Hardened App (Multi-stage, Non-root, Cosign-signed) | 40 | Weeks 3, 4, 6, 12 | OS Fundamentals · System Admin · Docker Containers · Advanced Security |
+| 4. Enterprise Policy — Docker daemon.json, CIS, WDAC/AppLocker, SELinux/AppArmor | 30 | Weeks 4, 7, 12 | System Admin · Enterprise Policy · Advanced Security |
+| 5. CI/CD Supply-Chain Pipeline (SBOM, Trivy, pip-audit, Cosign, SLSA) | 40 | Weeks 8, 10, 13 | Dependency Mgmt · Automation & Pipeline · Third-Party Tools |
+| 6. Continuous Security Operations (SIEM ingest, IR playbook, MITRE mapping) | 35 | Weeks 5, 11 | Security Analysis · Continuous Sec Ops |
+| 7. GitHub Docker / Open-Source Project Integration | 30 | Weeks 7 → 15 | Enterprise Policy · Automation · Continuous Sec Ops |
+| 8. `FINAL.md` — Course-Wide Threat Model + ATT&CK Coverage Matrix | 30 | Weeks 1–16 | All weeks |
+| 9. `.wmv` Video Walkthrough (20–30 min) | 35 | — | — |
+| 10. Reproducibility (someone else can `docker build`/`docker run` cleanly) | 20 | Weeks 6, 8 | Docker Containers · Dependency Mgmt |
+| 11. Presentation Slide (single-slide summary) | 10 | — | — |
 | **Total** | **300** | | |
 
 ---
@@ -38,34 +37,19 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 
 - Individual work only. AI-generated work is **prohibited** per syllabus.
 - Everything must live in a single public GitHub repo: `ia462-final-<your-username>`.
-- Branch protection with signed commits and required status checks is mandatory (repeats Lab 4 / Midterm behavior).
+- Branch protection with required status checks is mandatory (repeats Lab 4 / Midterm behavior).
 - Every third-party GitHub Action, container base image, and application dependency must be pinned.
 - Final submission = **Repo URL + `.wmv` walkthrough + single-slide summary PDF** to Canvas by the due date.
 
-**Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both methods can create signed commits.
+> **CRITICAL SECURITY WARNING:** The final repository will be **public**. Never commit personal information, API keys, passwords, credentials, or any sensitive data to this repository. All content in public repos is visible to anyone on the internet. Use environment variables, GitHub Secrets, or secure configuration management for sensitive data. GitHub's Secret scanning and push protection features will help block accidental commits of secrets, but you must remain vigilant. This is a professional portfolio piece that demonstrates your security skills — do not compromise it by leaking sensitive information.
+
+**Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods.
+
+**Repository Setup:** Before starting Section 1, create a public GitHub repo named `ia462-final-<your-username>` and enable **Dependabot alerts + security updates**, **Dependency graph**, and **Secret scanning + push protection** under *Settings → Code security and analysis*. Configure branch protection on `main` to require PR + 1 review, required status checks (every CI job below), conversation resolution, and no bypass.
 
 ---
 
-## Section 1 — Repository Setup, Signed Commits, Branch Protection (20 pts)
-
-Reference: Week 1 Technology Requirements · Week 2 GitHub Configuration & Setup · Week 8 Dependency Management (signed commits).
-
-Repository `ia462-final-<your-username>` must have:
-
-- Dependency graph, Dependabot alerts, Dependabot security updates, and Secret scanning + push protection **all enabled**
-- Branch protection on `main`:
-  - PR + 1 review required
-  - Signed commits required
-  - Required status checks (every CI job below)
-  - Conversation resolution required
-  - No bypass permitted
-- SSH signing key configured; the most recent commit on `main` visibly **Verified** on GitHub
-
-**Deliverables in `final/section1/screenshots/`:** `01-code-security.png`, `02-branch-protection.png`, `03-verified-commit.png`.
-
----
-
-## Section 2 — Linux Hardening + Auditd + osquery (25 pts)
+## Section 1 — Linux Hardening + Auditd + osquery (30 pts)
 
 Reference: Week 3 OS Fundamentals · Week 4 System Administration & Policy (PAM, sudoers, SELinux/AppArmor, sudo hardening) · Week 5 Security Analysis (auditd rules, osquery, MITRE mapping).
 
@@ -78,18 +62,20 @@ Required:
 3. Trigger the rules with benign test activity and capture the resulting audit events.
 4. **osquery** queries dumped to file for: `users`, `authorized_keys`, `suid_bin`, `listening_ports`, `logged_in_users`.
 5. **Lynis** audit report saved.
+6. Configure and enable `ufw` (Uncomplicated Firewall) with a default deny policy and allow only SSH from your specific IP. Verify with `ufw status verbose`.
 
-**Deliverables in `final/section2/`:**
+**Deliverables in `final/section1/`:**
 
 - `sshd_config.hardened`, `common-auth.hardened`, `audit-rules.conf`
 - `ausearch-suid.txt`, `ausearch-sshkeys.txt`, `ausearch-identity.txt`, `ausearch-modules.txt`
 - `osquery-*.txt` (per query)
 - `lynis-report.txt`
-- `screenshots/04-ssh-hardened.png` through `08-lynis-summary.png`
+- `ufw-rules.txt` — output of `ufw status verbose`
+- `screenshots/01-ssh-hardened.png` through `06-lynis-summary.png`
 
 ---
 
-## Section 3 — Windows Hardening + Sysmon + Sigma Detections (25 pts)
+## Section 2 — Windows Hardening + Sysmon + Sigma Detections (30 pts)
 
 Reference: Week 3 OS Fundamentals · Week 4 System Administration & Policy (GPO, LAPS, AppLocker/WDAC, audit policy, DISA STIG) · Week 5 Security Analysis (Event IDs, Sigma) · Week 12 Advanced Security Techniques for Windows.
 
@@ -101,17 +87,19 @@ Elevated PowerShell on your Windows host. Required:
 4. Generate synthetic attacker activity (Lab 3 style — encoded PS, user creation, failed logons).
 5. Export the last 200 Security-log entries + 100 Sysmon events to JSON.
 6. Write **two Sigma rules** covering two distinct MITRE ATT&CK techniques (e.g., T1059.001, T1136.001, T1053.005) with ATT&CK tags.
+7. Configure Windows Defender exclusions for your application directory and verify with `Get-MpPreference`.
 
-**Deliverables in `final/section3/`:**
+**Deliverables in `final/section2/`:**
 
 - `windows-transcript.txt`, `sysmonconfig.xml`
 - `security-events.json`, `sysmon-events.json`
 - `<rule-1>.sigma.yml`, `<rule-2>.sigma.yml`
-- `screenshots/09-defender.png` through `13-sysmon-events.png`
+- `defender-exclusions.txt` — output of `Get-MpPreference` showing configured exclusions
+- `screenshots/07-defender.png` through `12-sysmon-events.png`
 
 ---
 
-## Section 4 — Docker Hardened App (35 pts)
+## Section 3 — Docker Hardened App (40 pts)
 
 Reference: Week 3 OS Fundamentals (Docker isolation) · Week 4 System Admin & Policy (daemon.json, seccomp/AppArmor/SELinux) · Week 6 Docker Containers & Virtualization (multi-stage, secrets, image scanning, image signing) · Week 12 Advanced Security Techniques (rootless Docker, capability drop).
 
@@ -128,18 +116,20 @@ Required:
    - `--security-opt no-new-privileges:true`
    - `--security-opt seccomp=./seccomp.json` (a custom profile or Docker's default with justification)
    - `--pids-limit 100`, `--memory 256m`, `--cpus 0.5`
-5. **Cosign-sign** the image and store the signature material in `final/section4/signatures/`.
+5. **Cosign-sign** the image and store the signature material in `final/section3/signatures/`.
 6. Image scanned with Trivy — CRITICAL/HIGH count must be **0** (or clearly documented residuals).
+7. Implement a rootless Docker configuration document (`rootless-setup.md`) describing how the container would run without root privileges on the host.
 
-**Deliverables in `final/section4/`:**
+**Deliverables in `final/section3/`:**
 
 - `Dockerfile`, `run-hardened.sh`, `seccomp.json`, `cosign.pub`
 - `signatures/` folder containing `.sig` output from `cosign sign`
-- `screenshots/14-multistage-build.png`, `15-nonroot-inside-container.png`, `16-cosign-verify.png`
+- `rootless-setup.md` — rootless Docker configuration documentation
+- `screenshots/13-multistage-build.png`, `14-nonroot-inside-container.png`, `15-cosign-verify.png`
 
 ---
 
-## Section 5 — Enterprise Policy Management (25 pts)
+## Section 4 — Enterprise Policy Management (30 pts)
 
 Reference: Week 4 System Administration & Policy (CIS Docker Benchmark, DISA STIG) · Week 7 Enterprise Policy Management (Docker daemon.json, GPO, WDAC/AppLocker, OPA/Gatekeeper) · Week 12 Advanced Security Techniques.
 
@@ -150,19 +140,21 @@ Required:
 3. **CIS Benchmark evidence** — a `cis-mapping.md` that lists at least 10 CIS Docker Benchmark controls you enforced with references to which file/setting proves each.
 4. Windows policy artifact: an **AppLocker XML** (or WDAC XML) that allow-lists your application's binary and denies everything else.
 5. Linux policy artifact: an **AppArmor** profile (or SELinux `.te` policy) that constrains your container's binary; loaded and attached to the running container via `--security-opt apparmor=<profile>`.
+6. Document a Docker network segmentation strategy (`network-segmentation.md`) describing how your container is isolated from other workloads (bridge network, custom network, or overlay network).
 
-**Deliverables in `final/section5/`:**
+**Deliverables in `final/section4/`:**
 
 - `daemon.json.sample`
 - `docker-bench-report.txt`
 - `cis-mapping.md`
 - `applocker-policy.xml` (or `wdac-policy.xml`)
 - `apparmor-ia462-final` (or `.te` SELinux policy)
-- `screenshots/17-docker-bench.png`, `18-applocker.png`, `19-apparmor-attached.png`
+- `network-segmentation.md` — Docker network isolation strategy
+- `screenshots/16-docker-bench.png`, `17-applocker.png`, `18-apparmor-attached.png`
 
 ---
 
-## Section 6 — CI/CD Supply-Chain Pipeline (35 pts)
+## Section 5 — CI/CD Supply-Chain Pipeline (40 pts)
 
 Reference: Week 8 Dependency Management · Week 10 Automation & Pipeline Security & Supply Chain Security (SLSA, artifact signing) · Week 13 Third-Party Tool Integration & CI/CD Pipeline Security.
 
@@ -175,86 +167,92 @@ Required (`.github/workflows/`):
 5. **Every** third-party action pinned by full commit SHA — no `@v4` or `@main` allowed.
 6. `.github/dependabot.yml` covering `pip`, `docker`, and `github-actions` ecosystems.
 7. A demonstration PR that introduces a known-vulnerable dependency (`flask==2.0.0`) and shows the pipeline blocks it. PR must be **closed unmerged**.
+8. Implement a policy-as-code check using Open Policy Agent (OPA) or Kyverno that validates Dockerfile best practices.
 
-**Deliverables in `final/section6/`:**
+**Deliverables in `final/section5/`:**
 
 - Copies of every workflow file
 - `dependabot.yml`
-- `screenshots/20-pipeline-green.png`, `21-blocked-pr.png`, `22-cosign-verify.png`, `23-slsa-attestation.png`
+- `opa-policy.rego` (or `kyverno-policy.yaml`) — policy-as-code validation
+- `screenshots/19-pipeline-green.png`, `20-blocked-pr.png`, `21-cosign-verify.png`, `22-slsa-attestation.png`, `23-opa-policy-check.png`
 - `attestations/*.intoto.jsonl` — SLSA provenance attestations produced by the pipeline
 
 ---
 
-## Section 7 — Continuous Security Operations (30 pts)
+## Section 6 — Continuous Security Operations (35 pts)
 
 Reference: Week 5 Security Analysis · Week 11 Continuous Security Operations (SIEM, SOAR, IR lifecycle, threat intel).
 
 Required:
 
-1. **Log-shipping design** (`section7/logging.md`) — a diagram + short narrative describing how logs from your Linux host, Windows host, and Docker container would flow into a SIEM. You do **not** have to run a real SIEM. You **do** have to specify: which logging drivers, which fields, which retention, which severity thresholds trigger alerts.
-2. **IR playbook** (`section7/incident-response.md`) — a playbook for **one** scenario (e.g., "encoded PowerShell + LSASS access", "container escape via docker.sock", "vulnerable dep merged to main"). Must include the five NIST IR phases with concrete commands you would run.
-3. **MITRE ATT&CK coverage matrix** (`section7/attack-matrix.md`) — a table listing at least 12 techniques your controls cover, showing: technique ID + name, where it fires (Linux/Windows/Docker/pipeline), which of your artifacts detect/prevent it, and the residual risk.
-4. **Sample alerts** — at least three Sigma or KQL/SPL-style queries that would trip on activity from Sections 2–3.
+1. **Log-shipping design** (`section6/logging.md`) — a diagram + short narrative describing how logs from your Linux host, Windows host, and Docker container would flow into a SIEM. You do **not** have to run a real SIEM. You **do** have to specify: which logging drivers, which fields, which retention, which severity thresholds trigger alerts.
+2. **IR playbook** (`section6/incident-response.md`) — a playbook for **one** scenario (e.g., "encoded PowerShell + LSASS access", "container escape via docker.sock", "vulnerable dep merged to main"). Must include the five NIST IR phases with concrete commands you would run.
+3. **MITRE ATT&CK coverage matrix** (`section6/attack-matrix.md`) — a table listing at least 12 techniques your controls cover, showing: technique ID + name, where it fires (Linux/Windows/Docker/pipeline), which of your artifacts detect/prevent it, and the residual risk.
+4. **Sample alerts** — at least three Sigma or KQL/SPL-style queries that would trip on activity from Sections 1–2.
+5. **Threat hunting queries** — document two proactive threat hunting techniques you would use to detect advanced persistent threats in your environment.
 
-**Deliverables in `final/section7/`:**
+**Deliverables in `final/section6/`:**
 
 - `logging.md`, `incident-response.md`, `attack-matrix.md`
 - `queries/*.sigma.yml` (or `.kql`)
+- `threat-hunting.md` — documented threat hunting techniques
 - `screenshots/24-attack-matrix.png`
 
 ---
 
-## Section 8 — GitHub Docker / Open-Source Project Integration (25 pts)
+## Section 7 — GitHub Docker / Open-Source Project Integration (30 pts)
 
 Reference: Syllabus (200-pt GitHub Docker / Open-Source Project) · Weeks 7–15 slide guidance to develop the project across the second half of the term.
 
-Move your semester-long **GitHub Docker / Open-Source Project** into `final/opensource-project/`. Required:
+Move your semester-long **GitHub Docker / Open-Source Project** into `final/section7/opensource-project/`. Required:
 
 - A working, publicly-forkable subproject that demonstrates at least **one** open-source security tool you integrated (e.g., Falco, Wazuh, OpenSCAP, Suricata, Trivy Operator, OPA/Gatekeeper).
-- A `README.md` describing the tool, why you chose it, how to run it, and how it plugs into the pipeline in Section 6.
+- A `README.md` describing the tool, why you chose it, how to run it, and how it plugs into the pipeline in Section 5.
 - Evidence that it runs — logs / screenshots / video segment.
+- Document integration challenges and how you overcame them (`integration-challenges.md`).
 
-**Deliverables in `final/opensource-project/`:**
+**Deliverables in `final/section7/`:**
 
 - `README.md`
 - Whatever config/manifests are needed to run the tool
+- `integration-challenges.md` — documented integration challenges and solutions
 - `screenshots/25-opensource-project.png` (or several)
 
 > The syllabus lists the GitHub Docker / Open-Source Project as a separate 200-point deliverable (submitted per Canvas). This section is the *reference/integration copy* included with the Final so the graders can see the whole story end-to-end in one place.
 
 ---
 
-## Section 9 — `FINAL.md` (25 pts)
+## Section 8 — `FINAL.md` (30 pts)
 
 Write `final/FINAL.md` at the repo root with:
 
 1. **Executive summary** (½ page).
 2. **Course-wide threat model** — the top 10 threats a mid-size org faces against a repo like this. For each: attacker technique, ATT&CK ID, control(s) in your repo that stop it.
 3. **Cross-platform hardening matrix** — Linux vs. Windows vs. Docker across kernel model, DAC/MAC, auditing, hardening standard, privileged-process risk, supply-chain risk.
-4. **Learning-objective crosswalk** — every objective listed in the syllabus, mapped to the section(s) of this final that prove it.
+4. **Learning-objective crosswalk** — every objective listed in the syllabus, mapped to the section(s) of this final that prove it (Sections 1–7).
 5. **What you would build next** — 3–5 concrete improvements if this were going into a real production environment.
 
 ---
 
-## Section 10 — `.wmv` Video Walkthrough (30 pts)
+## Section 9 — `.wmv` Video Walkthrough (35 pts)
 
 Record a **single** `.wmv` video (target 20–30 minutes) demonstrating everything above. At minimum, cover:
 
-- Repo layout + signed-commit + branch-protection + Dependabot on
-- Linux hardening evidence + auditd + osquery + Lynis summary
-- Windows Defender/firewall/SMB1 + Sysmon + your Sigma rules + sample events
-- Multi-stage Dockerfile + digest-pinned base + `whoami/id` in the container + `docker run` hardened + cosign verify
-- Docker Bench + your CIS mapping + your AppLocker/WDAC + AppArmor/SELinux
-- Full green pipeline + blocked vulnerable PR + SLSA attestation artifact
-- Read-through of `logging.md`, `incident-response.md`, `attack-matrix.md`
-- Your open-source project subfolder running
+- Repo layout + branch-protection + Dependabot on
+- Linux hardening evidence + auditd + osquery + Lynis summary + UFW firewall
+- Windows Defender/firewall/SMB1 + Sysmon + your Sigma rules + sample events + Defender exclusions
+- Multi-stage Dockerfile + digest-pinned base + `whoami/id` in the container + `docker run` hardened + cosign verify + rootless setup
+- Docker Bench + your CIS mapping + your AppLocker/WDAC + AppArmor/SELinux + network segmentation
+- Full green pipeline + blocked vulnerable PR + SLSA attestation artifact + OPA/Kyverno policy check
+- Read-through of `logging.md`, `incident-response.md`, `attack-matrix.md`, `threat-hunting.md`
+- Your open-source project subfolder running + integration challenges
 - A short read-through of `FINAL.md` (skim the crosswalk)
 
 > **Critical:** Export as `.wmv`. Any other format cannot be graded.
 
 ---
 
-## Section 11 — Reproducibility (15 pts)
+## Section 10 — Reproducibility (20 pts)
 
 A grader must be able to clone your repo and, from a clean Ubuntu host with Docker installed, run:
 
@@ -272,7 +270,7 @@ docker build -t ia462-final:reproduce -f final/section4/Dockerfile final/
 
 ---
 
-## Section 12 — Single-Slide Summary (10 pts)
+## Section 11 — Single-Slide Summary (10 pts)
 
 A single-slide (`final/summary.pdf`) executive summary that could be shown in a meeting. Must include:
 
@@ -302,18 +300,17 @@ Grading is done against the pushed contents of your repo at the Canvas due-date 
 
 | Section | Points | Excellent |
 |---|---|---|
-| 1. Repo setup & signed commits | 20 | Every control enabled, at least one Verified commit |
-| 2. Linux hardening + auditd + osquery | 25 | Full evidence, all rules trigger, Lynis clean |
-| 3. Windows hardening + Sysmon + Sigma | 25 | 2 Sigma rules, events exported, Sysmon service running |
-| 4. Docker hardened app | 35 | Multi-stage + pinned + non-root + hardened run + cosign |
-| 5. Enterprise policy | 25 | daemon.json + docker-bench + CIS mapping + AppLocker + AppArmor |
-| 6. CI/CD supply chain | 35 | Full pipeline green + blocked PR + cosign + SLSA |
-| 7. Continuous sec ops | 30 | Logging design + IR playbook + ATT&CK matrix + queries |
-| 8. Open-source project | 25 | Working tool integrated + README + evidence |
-| 9. `FINAL.md` | 25 | Threat model + crosswalk + comparison + next-steps |
-| 10. Video | 30 | Comprehensive 20–30 min `.wmv` |
-| 11. Reproducibility | 15 | Clean `docker build` + `run` on a fresh host |
-| 12. Summary slide | 10 | Well-designed 1-slide PDF |
+| 1. Linux hardening + auditd + osquery | 30 | Full evidence, all rules trigger, Lynis clean, UFW configured |
+| 2. Windows hardening + Sysmon + Sigma | 30 | 2 Sigma rules, events exported, Sysmon service running, Defender exclusions |
+| 3. Docker hardened app | 40 | Multi-stage + pinned + non-root + hardened run + cosign + rootless setup |
+| 4. Enterprise policy | 30 | daemon.json + docker-bench + CIS mapping + AppLocker + AppArmor + network segmentation |
+| 5. CI/CD supply chain | 40 | Full pipeline green + blocked PR + cosign + SLSA + OPA/Kyverno policy |
+| 6. Continuous sec ops | 35 | Logging design + IR playbook + ATT&CK matrix + queries + threat hunting |
+| 7. Open-source project | 30 | Working tool integrated + README + evidence + integration challenges |
+| 8. `FINAL.md` | 30 | Threat model + crosswalk + comparison + next-steps |
+| 9. Video | 35 | Comprehensive 20–30 min `.wmv` |
+| 10. Reproducibility | 20 | Clean `docker build` + `run` on a fresh host |
+| 11. Summary slide | 10 | Well-designed 1-slide PDF |
 
 Partial credit is awarded per rubric criteria — see individual section deliverables.
 
@@ -322,7 +319,7 @@ Partial credit is awarded per rubric criteria — see individual section deliver
 ## Tips
 
 - **Git Workflow Guide:** [git-workflow-guide.md](../git-workflow-guide.md) — Comprehensive guide for both GitHub Desktop and command line methods
-- Begin the final repo **immediately** in Week 14 (End-to-End Review). The Section 1 controls unblock every downstream piece.
+- Begin the final repo **immediately** in Week 14 (End-to-End Review). The repository setup controls unblock every downstream piece.
 - Reuse artifacts from Labs 1–4 and the Midterm — the final is intentionally cumulative.
 - Do not commit generated venv / `__pycache__` / `.env` / secrets. Push protection should block anything sensitive.
 - Every artifact you list here must actually be present in the repo. Grading looks at the pushed files.

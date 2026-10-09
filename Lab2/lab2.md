@@ -2,7 +2,7 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration
 **Week:** 3 — Operating Systems Fundamentals, Docker, Windows and Linux
-**Points:** 75 points
+**Points:** 70 points
 **Submission:** Upload your screen-recording video (`.wmv`) and required files via Canvas
 
 > **Objectives & Outcomes:** Refer to the course syllabus for course objectives and grading criteria.
@@ -26,11 +26,13 @@ You will submit screenshots, artifact files, and a `.wmv` walkthrough video.
 
 ## Prerequisites
 
-- [ ] Lab 1 completed (GitHub configured, both repos cloned, SSH auth working)
+- [ ] Lab 1 completed (GitHub configured, both repos cloned)
 - [ ] Windows 11/10 host with WSL Ubuntu enabled — or Ubuntu VM / macOS + Ubuntu VM
 - [ ] Sudo access inside your Linux environment
 - [ ] Docker Desktop (Windows/macOS) *or* Docker Engine (Linux/WSL) installed
 - [ ] Screen recording software ready with `.wmv` export
+
+> **IMPORTANT:** Never commit personal information, API keys, passwords, or any sensitive data to any GitHub repository. Always review your changes before committing to ensure no sensitive information is included.
 
 Install Docker inside WSL Ubuntu (if not already installed):
 
@@ -144,41 +146,14 @@ sudo systemctl status <service>
 
 **Screenshot 5:** Running services + `inactive (dead)` status of the service you disabled.
 
-### 1E — SSH Hardening
-
-Review and (safely) harden `/etc/ssh/sshd_config`:
-
-```bash
-sudo grep -E "^(PermitRootLogin|Protocol|PasswordAuthentication|MaxAuthTries|LoginGraceTime|PermitEmptyPasswords)" /etc/ssh/sshd_config
-```
-
-Apply the recommended settings (edit with `sudo nano /etc/ssh/sshd_config`):
-
-```
-PermitRootLogin no
-MaxAuthTries 3
-LoginGraceTime 30
-PermitEmptyPasswords no
-# PasswordAuthentication no  <-- only enable AFTER you have SSH keys configured!
-```
-
-Reload:
-
-```bash
-sudo systemctl restart sshd
-sudo systemctl status sshd
-```
-
-**Screenshot 6:** The relevant `sshd_config` lines + `sshd` service status.
-
-### 1F — Basic Security Audit with Lynis
+### 1E — Basic Security Audit with Lynis
 
 ```bash
 sudo apt install lynis -y
 sudo lynis audit system 2>&1 | tee ~/lab2/lab2-lynis-report.txt
 ```
 
-**Screenshot 7:** The Lynis summary showing the Hardening Index score plus at least three suggestions.
+**Screenshot 6:** The Lynis summary showing the Hardening Index score plus at least three suggestions.
 
 ---
 
@@ -196,7 +171,7 @@ Get-Host | Select-Object Version
 whoami /priv
 ```
 
-**Screenshot 8:** Output of the above commands.
+**Screenshot 7:** Output of the above commands.
 
 ### 2B — Windows Defender Status
 
@@ -205,7 +180,7 @@ Get-MpComputerStatus | Select-Object AMServiceEnabled, AntivirusEnabled, RealTim
 Get-MpPreference | Select-Object DisableRealtimeMonitoring, DisableIOAVProtection, DisableScriptScanning
 ```
 
-**Screenshot 9:** Defender status output.
+**Screenshot 8:** Defender status output.
 
 ### 2C — Windows Firewall Profiles
 
@@ -213,7 +188,7 @@ Get-MpPreference | Select-Object DisableRealtimeMonitoring, DisableIOAVProtectio
 Get-NetFirewallProfile | Select-Object Name, Enabled, DefaultInboundAction, DefaultOutboundAction, LogAllowed, LogBlocked
 ```
 
-**Screenshot 10:** All three profiles (Domain, Private, Public) showing `Enabled: True`.
+**Screenshot 9:** All three profiles (Domain, Private, Public) showing `Enabled: True`.
 
 ### 2D — SMBv1, LSASS & Audit Policy Review
 
@@ -228,7 +203,7 @@ Get-Process lsass | Select-Object Id, Name, StartTime, Path
 auditpol /get /category:*
 ```
 
-**Screenshot 11:** SMB1 disabled + LSASS process visible + top of audit policy list.
+**Screenshot 10:** SMB1 disabled + LSASS process visible + top of audit policy list.
 
 ### 2E — Recent Security Events
 
@@ -238,7 +213,7 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4624,4625} -MaxEvents 20 
   Select-Object TimeCreated, Id, Message | Format-List
 ```
 
-**Screenshot 12:** Sample of recent 4624/4625 events.
+**Screenshot 11:** Sample of recent 4624/4625 events.
 
 Save your PowerShell transcript to a file so we can include it in your submission:
 
@@ -281,7 +256,7 @@ ls -la /proc/self/ns/
 exit
 ```
 
-**Screenshot 13:** The `id`, `ps -ef`, and `/proc/self/ns/` output showing container isolation.
+**Screenshot 12:** The `id`, `ps -ef`, and `/proc/self/ns/` output showing container isolation.
 
 ### 3C — Build a Non-Root Hardened Container
 
@@ -340,8 +315,8 @@ Fetch the page over HTTP:
 curl -s http://localhost:8080/
 ```
 
-**Screenshot 14:** `docker build` output.
-**Screenshot 15:** `docker exec ... whoami / id` showing `appuser` (non-root) + `curl` output.
+**Screenshot 13:** `docker build` output.
+**Screenshot 14:** `docker exec ... whoami / id` showing `appuser` (non-root) + `curl` output.
 
 ### 3D — Attempted-Root Contrast (Optional but Recommended)
 
@@ -351,7 +326,7 @@ Show the difference by running an intentionally *root* container and diffing the
 docker run --rm -it --name lab2-root ubuntu:22.04 bash -c "whoami; id"
 ```
 
-**Screenshot 16:** Output showing root inside a plain container (contrast to your hardened container).
+**Screenshot 15:** Output showing root inside a plain container (contrast to your hardened container).
 
 ### 3E — Cleanup
 
@@ -377,7 +352,7 @@ Create `~/lab2/comparison.md` with a short (½ page) table + narrative that comp
 
 Under the table, write 3–5 sentences summarizing **one hardening step per platform** you would prioritize for a brand-new host, and cite the Week 3 slide topic that informed each choice.
 
-**Screenshot 17:** The rendered comparison file.
+**Screenshot 16:** The rendered comparison file.
 
 ---
 
@@ -435,11 +410,11 @@ git commit -m "Lab 2: OS fundamentals - Linux, Windows, Docker"
 git push origin lab2-<your-username>
 ```
 
-Open a pull request into `main` on the student upload repo and screenshot the open PR (call it `18-lab2-pull-request.png`).
+Open a pull request into `main` on the student upload repo and screenshot the open PR (call it `17-lab2-pull-request.png`).
 
 **Validation Check:** Navigating to your PR, you should see:
 
-- `Lab2/screenshots/` with all screenshots (01–18)
+- `Lab2/screenshots/` with all screenshots (01–17)
 - `Lab2/artifacts/lab2-lynis-report.txt`
 - `Lab2/artifacts/lab2-windows-transcript.txt`
 - `Lab2/docker/Dockerfile` + `Lab2/docker/index.html`

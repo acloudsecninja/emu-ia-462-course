@@ -12,6 +12,8 @@ This course supports two methods for Git operations:
 
 Both methods are fully supported and produce identical results. Choose whichever works best for you — you can switch between methods anytime since both work with the same repositories.
 
+> **CRITICAL SECURITY WARNING:** Never commit personal information, API keys, passwords, credentials, or any sensitive data to any GitHub repository. All work in public repositories is visible to anyone on the internet. Always review your changes before committing. Use environment variables, GitHub Secrets, or secure configuration management for sensitive data. GitHub's Secret scanning and push protection features will help block accidental commits of secrets, but you must remain vigilant.
+
 ---
 
 ## Quick Reference: Common Operations
@@ -45,7 +47,6 @@ Both methods are fully supported and produce identical results. Choose whichever
 # Download from https://git-scm.com/download/win
 # Run installer with recommended settings:
 # - Git from the command line and also from 3rd-party software
-# - Use bundled OpenSSH
 # - Use the OpenSSL library
 # - Checkout Windows-style, commit Unix-style
 # - Default branch name: main
@@ -96,43 +97,7 @@ git config --list
 
 ---
 
-## Part 3 — SSH Authentication Setup
-
-### GitHub Desktop
-1. Open GitHub Desktop
-2. Go to **Preferences → Git** or **Options → Git**
-3. Click **Create SSH Key** (or import existing key)
-4. Follow the prompts to generate a new SSH key
-5. Copy the public key shown
-6. Go to GitHub.com → **Settings → SSH and GPG keys → New SSH key**
-7. Paste the key, give it a descriptive title (e.g., `IA462-laptop`), save
-8. Test in GitHub Desktop: **Repository → Clone** and try cloning a test repo
-
-### Command Line
-```bash
-# Generate SSH key
-ssh-keygen -t ed25519 -C "yourname@emich.edu"
-# Accept default file location. Set a passphrase (recommended).
-
-# Copy public key
-cat ~/.ssh/id_ed25519.pub
-
-# Add to GitHub
-# 1. Copy the output → GitHub → Settings → SSH and GPG keys → New SSH key
-# 2. Paste, give it a descriptive title (e.g., IA462-laptop), save
-
-# Test connectivity
-ssh -T git@github.com
-```
-
-Expected output:
-```
-Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
-```
-
----
-
-## Part 4 — Cloning Course Repositories
+## Part 3 — Cloning Course Repositories
 
 ### GitHub Desktop
 
@@ -147,7 +112,7 @@ Hi <your-username>! You've successfully authenticated, but GitHub does not provi
 #### Clone Private Student Upload Repo
 1. Click **File → Clone Repository**
 2. Click **URL** tab
-3. Enter: `git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
+3. Enter: `https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
 4. Choose local path
 5. Click **Clone**
 
@@ -163,7 +128,7 @@ ls -la
 #### Clone Private Student Upload Repo
 ```bash
 cd ~
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git
+git clone https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git
 cd emu-ia-462-fall-2026
 git remote -v
 ```
@@ -175,13 +140,13 @@ git remote -v
 
 Expected output:
 ```
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
 ```
 
 ---
 
-## Part 5 — Branching Workflow
+## Part 4 — Branching Workflow
 
 ### GitHub Desktop
 
@@ -224,7 +189,7 @@ git log --graph --all --decorate
 
 ---
 
-## Part 6 — Making Changes & Committing
+## Part 5 — Making Changes & Committing
 
 ### GitHub Desktop
 
@@ -274,7 +239,7 @@ git diff Lab1/SECURITY.md
 
 ---
 
-## Part 7 — Pushing Changes
+## Part 6 — Pushing Changes
 
 ### GitHub Desktop
 
@@ -308,7 +273,7 @@ git push --force origin lab1-your-username
 
 ---
 
-## Part 8 — Pulling Changes & Syncing
+## Part 7 — Pulling Changes & Syncing
 
 ### GitHub Desktop
 
@@ -341,7 +306,7 @@ git pull --rebase origin main
 
 ---
 
-## Part 9 — Creating Pull Requests
+## Part 8 — Creating Pull Requests
 
 ### GitHub Desktop
 
@@ -377,7 +342,7 @@ gh pr create --title "Lab 1: Add SECURITY.md" --body "Adding SECURITY.md for Lab
 
 ---
 
-## Part 10 — Conflict Resolution
+## Part 9 — Conflict Resolution
 
 ### GitHub Desktop
 
@@ -421,43 +386,7 @@ git push origin lab1-your-username
 
 ---
 
-## Part 11 — Signed Commits (SSH)
-
-### Important Note
-SSH commit signing is required for this course (Lab 4, Midterm, Final). The setup is primarily command-line based, but once configured, both methods can create signed commits.
-
-### Configuration (Command Line Required)
-```bash
-# Configure SSH signing
-git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-```
-
-Add the same SSH key as a **signing key** on GitHub:
-- GitHub → Settings → SSH and GPG keys → New SSH key → Key type: Signing
-
-### GitHub Desktop with Signed Commits
-1. After command-line setup, GitHub Desktop automatically uses SSH signing
-2. Commit as normal in GitHub Desktop
-3. Push and view on GitHub — commits will show "Verified" badge
-
-### Command Line with Signed Commits
-```bash
-# Standard commit (automatically signed due to config)
-git commit -m "chore: verify signed commits"
-
-# Explicitly sign a commit
-git commit -S -m "chore: explicitly signed commit"
-
-# Verify signing
-git log --show-signature
-```
-
----
-
-## Part 12 — Checking Repository Status
+## Part 10 — Checking Repository Status
 
 ### GitHub Desktop
 
@@ -483,7 +412,7 @@ git log --oneline --graph --all
 
 ---
 
-## Part 13 — Advanced Operations
+## Part 11 — Advanced Operations
 
 ### GitHub Desktop
 
@@ -530,7 +459,7 @@ git push origin v1.0.0
 
 ---
 
-## Part 14 — Troubleshooting
+## Part 12 — Troubleshooting
 
 ### Common Issues & Solutions
 
@@ -553,14 +482,6 @@ git push origin v1.0.0
 
 #### Command Line Issues
 
-**Issue: Permission denied (publickey)**
-```bash
-# Verify SSH key is loaded
-ssh-add -l
-# Add key if needed
-ssh-add ~/.ssh/id_ed25519
-```
-
 **Issue: Merge conflicts**
 ```bash
 # Abort merge and start over
@@ -571,12 +492,12 @@ git merge --abort
 **Issue: Wrong remote URL**
 ```bash
 # Change remote URL
-git remote set-url origin git@github.com:username/repo.git
+git remote set-url origin https://github.com/username/repo.git
 ```
 
 ---
 
-## Part 15 — Best Practices
+## Part 13 — Best Practices
 
 ### Course-Specific Workflow
 
@@ -604,7 +525,7 @@ git remote set-url origin git@github.com:username/repo.git
 
 ---
 
-## Part 16 — Course-Specific Examples
+## Part 14 — Course-Specific Examples
 
 ### Lab 1 Workflow Example
 
@@ -625,28 +546,6 @@ git add Lab1/SECURITY.md
 git commit -m "Lab 1: add SECURITY.md"
 git push origin lab1-your-username
 # Create PR via browser
-```
-
-### Lab 4 Signed Commit Example
-
-#### Setup (Command Line - Required)
-```bash
-git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-git config --global commit.gpgsign true
-```
-
-#### GitHub Desktop
-1. Make changes to files
-2. Commit as normal (automatically signed)
-3. Push → View on GitHub → Check for "Verified" badge
-
-#### Command Line
-```bash
-git add .
-git commit -m "Lab 4: add supply chain controls"
-git push origin lab4-your-username
-# Check on GitHub for "Verified" badge
 ```
 
 ---

@@ -2,7 +2,7 @@
 
 **Course:** IA 462 — Advanced Operating Systems Security & Administration
 **Week:** 2 — GitHub Configuration & Setup
-**Points:** 75 points
+**Points:** 70 points
 **Submission:** Upload your screen-recording video (`.wmv`) and required files via Canvas
 
 > **Objectives & Outcomes:** Refer to the [course syllabus](../README.md) for course objectives and grading criteria.
@@ -15,7 +15,7 @@
 
 Your GitHub environment is the foundation for every lab, midterm, and final in IA 462. Before you can submit any work — or run any of the CI/CD pipelines we build later in the course — you must have:
 
-1. A properly configured GitHub.com account (with 2FA and SSH keys).
+1. A properly configured GitHub.com account (with 2FA).
 2. Access to both the **course reference repo** (public) and the **student upload org repo** (private, invite-only).
 3. A local Git installation that is verified across Git Bash, PowerShell, Command Prompt, and WSL Ubuntu.
 4. A working push/pull cycle so your commits are correctly attributed and end up in the right repo.
@@ -38,6 +38,8 @@ Before starting this lab, ensure you have:
 - [ ] Screen recording software installed (e.g., https://www.freescreenrecording.com) with `.wmv` export
 - [ ] Your EMU email address accessible
 - [ ] You have received (and accepted) the GitHub organization invite from Professor Weber
+
+> **IMPORTANT:** Never commit personal information, API keys, passwords, or any sensitive data to any GitHub repository. All work submitted to public repositories is visible to anyone on the internet. Use environment variables or GitHub Secrets for sensitive configuration.
 
 > Linux (Ubuntu) and macOS are supported but instructor support may be limited. See Week 1 slides.
 
@@ -76,7 +78,6 @@ You can switch between methods anytime — both work with the same repositories.
 1. Navigate to https://git-scm.com/download/win — the 64-bit installer downloads automatically.
 2. Run the installer. Recommended settings:
    - **Adjusting PATH:** *Git from the command line and also from 3rd-party software*
-   - **SSH executable:** *Use bundled OpenSSH*
    - **HTTPS transport:** *Use the OpenSSL library*
    - **Line endings:** *Checkout Windows-style, commit Unix-style*
    - **Default branch name:** *Override the default* → `main`
@@ -199,56 +200,9 @@ git config --list
 
 ---
 
-## Part 4 — Set Up SSH Authentication
+## Part 4 — Clone Both Course Repositories
 
-Password authentication is deprecated on GitHub. Configure an SSH key.
-
-### 4A — Generate an SSH key
-
-#### GitHub Desktop
-1. Open GitHub Desktop
-2. Go to **Preferences → Git** or **Options → Git**
-3. Click **Create SSH Key** (or import existing key)
-4. Follow the prompts to generate a new SSH key
-5. Copy the public key shown
-
-#### Command Line
-```bash
-ssh-keygen -t ed25519 -C "yourname@emich.edu"
-# Accept default file location. Set a passphrase (recommended).
-```
-
-### 4B — Add the public key to GitHub
-
-**Both Methods:**
-1. Copy the public key (from GitHub Desktop or `cat ~/.ssh/id_ed25519.pub`)
-2. Go to GitHub.com → `Settings → SSH and GPG keys → New SSH key`
-3. Paste the key, give it a descriptive title (e.g., `IA462-laptop`), save
-
-### 4C — Test SSH connectivity
-
-#### GitHub Desktop
-1. After adding the key, try cloning a test repository
-2. Or go to **Repository → Clone** and verify it connects successfully
-
-#### Command Line
-```bash
-ssh -T git@github.com
-```
-
-Expected output:
-
-```
-Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
-```
-
-**Screenshot 6:** Terminal output of `ssh -T git@github.com` showing a successful authentication (or GitHub Desktop successful clone test).
-
----
-
-## Part 5 — Clone Both Course Repositories
-
-### 5A — Clone the public reference repo
+### 4A — Clone the public reference repo
 
 #### GitHub Desktop
 1. Open GitHub Desktop
@@ -260,25 +214,25 @@ Hi <your-username>! You've successfully authenticated, but GitHub does not provi
 
 #### Command Line
 ```bash
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
-cd emu-ia-462-course-student-code-upload
+git clone https://github.com/acloudsecninja/emu-ia-462-course.git
+cd emu-ia-462-course
 ls -la
 ```
 
-### 5B — Clone the private student upload repo
+### 4B — Clone the private student upload repo
 
 #### GitHub Desktop
 1. Click **File → Clone Repository**
 2. Click **URL** tab
-3. Enter: `git@github.com:acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
+3. Enter: `https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git`
 4. Choose local path
 5. Click **Clone**
 
 #### Command Line
 ```bash
 cd ~
-git clone git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload.git
-cd emu-ia-462-course-student-code-upload
+git clone https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git
+cd emu-ia-462-fall-2026
 git remote -v
 ```
 
@@ -293,20 +247,20 @@ git remote -v
 Expected output:
 
 ```
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (fetch)
-origin  git@github.com:acloudsecninja-emu-org/emu-ia-462-course-student-code-upload (push)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 (fetch)
+origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 (push)
 ```
 
-**Screenshot 7:** Both cloned directories listed on disk plus the remote information (GitHub Desktop Repository Settings or `git remote -v` output).
+**Screenshot 6:** Both cloned directories listed on disk plus the remote information (GitHub Desktop Repository Settings or `git remote -v` output).
 
 ---
 
-## Part 6 — Explore & Validate GitHub Security Features
+## Part 5 — Explore & Validate GitHub Security Features
 
 Perform each step on the **student upload repo** you cloned:
 
-1. Navigate to the student upload repo on GitHub.com → **Security and quality** tab. **Screenshot 8**.
-2. Click **Dependabot alerts** (if available). **Screenshot 9**.
+1. Navigate to the student upload repo on GitHub.com → **Security and quality** tab. **Screenshot 7**.
+2. Click **Dependabot alerts** (if available). **Screenshot 8**.
 3. Create a `SECURITY.md` inside your Lab1 folder:
 
    ```bash
@@ -346,13 +300,13 @@ Perform each step on the **student upload repo** you cloned:
    **GitHub Desktop:** Click **Branch → Create Pull Request** (opens browser to PR creation page)  
    **Command Line:** Go to GitHub.com in browser, navigate to repo, click "Compare & pull request"
 
-   **Screenshot 11:** The open pull request page in GitHub.
+   **Screenshot 10:** The open pull request page in GitHub.
 
 > Never push directly to `main`. Always work on a branch and open a PR — this is a course-graded workflow.
 
 ---
 
-## Part 7 — Push Your Lab 1 Screenshots
+## Part 6 — Push Your Lab 1 Screenshots
 
 All screenshots must be committed and pushed to your `Lab1/` folder in the student upload repo. This validates that your Git workflow is fully functional.
 
@@ -369,12 +323,11 @@ Name your files descriptively:
 - `03-github-profile.png`
 - `04-2fa-enabled.png`
 - `05-git-config-list.png`
-- `06-ssh-auth-success.png`
-- `07-both-repos-cloned.png`
-- `08-security-tab.png`
-- `09-dependabot-alerts.png`
-- `10-code-security-settings.png`
-- `11-pull-request-opened.png`
+- `06-both-repos-cloned.png`
+- `07-security-tab.png`
+- `08-dependabot-alerts.png`
+- `09-code-security-settings.png`
+- `10-pull-request-opened.png`
 
 Stage, commit, and push:
 
@@ -397,18 +350,17 @@ git push origin lab1-<your-username>
 
 ---
 
-## Part 8 — Record Your Video Walkthrough
+## Part 7 — Record Your Video Walkthrough
 
 Using your screen recording software, record a single video demonstrating:
 
 1. `git --version` succeeding in Git Bash, PowerShell, CMD, and WSL Ubuntu.
 2. Your GitHub profile with 2FA enabled.
 3. `git config --list` showing your correct name and EMU email.
-4. `ssh -T git@github.com` returning a successful authentication.
-5. Both course repos cloned locally with `git remote -v` verified.
-6. The Security tab, `SECURITY.md`, and Dependabot alerts on GitHub.
-7. Your open pull request in the student upload repo with the `Lab1/screenshots/` folder visible.
-8. A short verbal walkthrough of what each step accomplished.
+4. Both course repos cloned locally with `git remote -v` verified.
+5. The Security tab, `SECURITY.md`, and Dependabot alerts on GitHub.
+6. Your open pull request in the student upload repo with the `Lab1/screenshots/` folder visible.
+7. A short verbal walkthrough of what each step accomplished.
 
 > **Critical:** Export your video in `.wmv` or `mp3,mp4` formats. Files in any other format cannot be graded.
 
