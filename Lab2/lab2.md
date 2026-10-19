@@ -344,11 +344,17 @@ Create `~/lab2/comparison.md` with a short (½ page) table + narrative that comp
 
 | Control Area | Linux | Windows | Docker |
 |--------------|-------|---------|--------|
-| Kernel Model | | | |
+| Kernel Model | Linux kernel with full user-space isolation | Windows NT kernel with kernel/user space separation | Shares host OS kernel (Linux or Windows); containers share kernel but have isolated user-space via namespaces/cgroups |
 | Access Control | | | |
 | Auditing / Logging | | | |
 | Hardening Standard | | | |
 | Common Attack Surface | | | |
+
+**For each cell, include:**
+- 1-2 sentences describing the mechanism
+- 1 key difference from the other platforms
+
+**Note for Docker:** Always describe it in relation to its host OS (e.g., "Shares Linux kernel on Linux hosts; Windows containers on Windows hosts"). The "Kernel Model" example above shows the expected format.
 
 Under the table, write 3–5 sentences summarizing **one hardening step per platform** you would prioritize for a brand-new host, and cite the Week 3 slide topic that informed each choice.
 
