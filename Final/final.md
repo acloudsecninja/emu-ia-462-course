@@ -37,7 +37,6 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 
 - Individual work only. AI-generated work is **prohibited** per syllabus.
 - Everything must live in a single public GitHub repo: `ia462-final-<your-username>`.
-<<<<<<< HEAD
 - Branch protection with required status checks is mandatory (repeats Lab 4 / Midterm behavior).
 - Every third-party GitHub Action, container base image, and application dependency must be pinned.
 - Final submission = **Repo URL + `.wmv` walkthrough + single-slide summary PDF** to Canvas by the due date.
@@ -47,25 +46,6 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 **Git Operations:** You may use either GitHub Desktop (preferred) or command line for all git operations. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods.
 
 **Repository Setup:** Before starting Section 1, create a public GitHub repo named `ia462-final-<your-username>` and enable **Dependabot alerts + security updates**, **Dependency graph**, and **Secret scanning + push protection** under *Settings → Code security and analysis*. Configure branch protection on `main` to require PR + 1 review, required status checks (every CI job below), conversation resolution, and no bypass.
-=======
-- Branch protection with signed commits and required status checks is mandatory (repeats Lab 4 / Midterm behavior). Signed commits require command-line configuration for setup, but once configured, both GitHub Desktop and command line can create signed commits.
-- Every third-party GitHub Action, container base image, and application dependency must be pinned.
-- Final submission = **Repo URL + `.wmv` walkthrough + single-slide summary PDF** to Canvas by the due date.
-
-**Git Operations:** GitHub Desktop is recommended for this course — it provides a visual interface for all Git operations, easier pull request management, and built-in conflict resolution. Download from https://desktop.github.com/. Command line operations are available as an optional alternative. See [Git Workflow Guide](../git-workflow-guide.md) for detailed instructions on both methods. SSH commit signing requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
-
-### GitHub Desktop Basics
-
-If you're new to GitHub Desktop, here are the essential operations:
-
-- **Clone Repository:** File → Clone Repository → Enter URL
-- **Create Branch:** Current Branch dropdown → New Branch → Enter name
-- **Stage Changes:** Go to Changes tab → Check files you want to include
-- **Commit:** Enter commit message → Click Commit button
-- **Push:** Click Push origin button
-- **Create Pull Request:** Branch → Create Pull Request (opens browser)
-- **Resolve Conflicts:** Changes tab shows conflicted files → Click to resolve → Mark as resolved
->>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 
 ---
 
@@ -282,8 +262,8 @@ A grader must be able to clone your repo and, from a clean Ubuntu host with Dock
 git clone https://github.com/<your-username>/ia462-final-<your-username>.git
 cd ia462-final-<your-username>
 ./bootstrap.sh    # any setup you require
-docker build -t ia462-final:reproduce -f final/section4/Dockerfile final/
-./final/section4/run-hardened.sh
+docker build -t ia462-final:reproduce -f final/section3/Dockerfile final/
+./final/section3/run-hardened.sh
 ```
 
 …and successfully reach the running container. Provide `final/bootstrap.sh` and a `Reproduce` section at the top of `FINAL.md` with the exact steps.

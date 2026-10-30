@@ -20,7 +20,7 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 3. Turn on GitHub's supply-chain defenses (Dependency Graph, Dependabot alerts + security updates, secret scanning, branch protection).
 4. Build a CI/CD pipeline that generates an **SBOM**, runs `pip-audit` + **Trivy**, and enforces **Dependency Review** on every PR.
 5. Deliberately introduce a known-vulnerable dependency version and prove the pipeline blocks it.
-6. Sign your commits and produce a `README.md` write-up that maps each control back to the slides.
+6. Produce a `README.md` write-up that maps each control back to the slides.
 
 ---
 
@@ -50,23 +50,6 @@ Every prior lab has been about the platform (GitHub, Linux, Windows, Docker). Th
 - Useful for advanced users or when GUI unavailable
 - See [Git Workflow Guide](../git-workflow-guide.md) for detailed steps on both methods
 
-<<<<<<< HEAD
-=======
-**Important Note for Lab 4:** SSH commit signing (Part 2D) requires command-line configuration, but once configured, both GitHub Desktop and command line can create signed commits.
-
-### GitHub Desktop Basics
-
-If you're new to GitHub Desktop, here are the essential operations:
-
-- **Clone Repository:** File → Clone Repository → Enter URL
-- **Create Branch:** Current Branch dropdown → New Branch → Enter name
-- **Stage Changes:** Go to Changes tab → Check files you want to include
-- **Commit:** Enter commit message → Click Commit button
-- **Push:** Click Push origin button
-- **Create Pull Request:** Branch → Create Pull Request (opens browser)
-- **Resolve Conflicts:** Changes tab shows conflicted files → Click to resolve → Mark as resolved
-
->>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 ---
 
 ## Part 1 — Create a Pinned, Reproducible Repo
@@ -228,45 +211,6 @@ updates:
 
 **Screenshot 3:** The branch protection rule for `main` fully configured.
 
-<<<<<<< HEAD
-=======
-### 2D — Configure SSH commit signing (Week 8 slide: *Commit Signing & Verified History*)
-
-**Important:** SSH commit signing can be configured via command line (optional) or you can skip signed commits if not required for your specific needs. Once configured, both GitHub Desktop and command line can create signed commits.
-
-#### Configuration (Command Line - Optional)
-```bash
-# Use your existing SSH key from Lab 1 to sign commits
-git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-```
-
-Add the same SSH key as a **signing key** on GitHub → `Settings → SSH and GPG keys → New SSH key → Key type: Signing`.
-
-#### Alternative: Skip Signed Commits
-If you prefer not to configure SSH signing, you can skip this step and use regular (unsigned) commits. Signed commits are only required if specifically needed for your assignment or security requirements.
-
-#### Creating Signed Commits
-
-**GitHub Desktop (after command-line setup):**
-1. Make changes to files
-2. Go to **Changes** tab
-3. Enter commit message and click **Commit** (automatically signed due to configuration)
-4. Click **Push origin**
-5. View on GitHub — commit will show "Verified" badge
-
-**Command Line (Optional):**
-```bash
-git commit --allow-empty -m "chore: verify signed commits"
-git push
-```
-*(Note: With HTTPS authentication, GitHub will prompt for your credentials when pushing)*
-
-**Screenshot 4:** GitHub PR/commit view showing your commit with a green **Verified** badge.
-
->>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 ---
 
 ## Part 3 — Automated Supply-Chain CI/CD Pipeline

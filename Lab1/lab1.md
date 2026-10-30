@@ -75,8 +75,6 @@ You can switch between methods anytime — both work with the same repositories.
 5. Git for Windows is installed automatically with GitHub Desktop
 
 #### Command Line (Alternative)
-**Note:** SSH authentication is optional — you should use HTTPS authentication with GitHub instead, which is simpler to set up. SSH is only required if you prefer SSH authentication or need it for signed commits (Lab 4, Midterm, Final).
-
 1. Navigate to https://git-scm.com/download/win — the 64-bit installer downloads automatically.
 2. Run the installer. Recommended settings:
    - **Adjusting PATH:** *Git from the command line and also from 3rd-party software*
@@ -204,60 +202,7 @@ git config --list
 
 ## Part 4 — Clone Both Course Repositories
 
-<<<<<<< HEAD
 ### 4A — Clone the public reference repo
-=======
-**Note:** SSH authentication is optional — you can use HTTPS authentication with GitHub instead, which is simpler to set up. SSH is only required if you prefer SSH authentication or need it for signed commits (Lab 4, Midterm, Final).
-
-Password authentication is deprecated on GitHub. Configure an SSH key.
-
-### 4A — Generate an SSH key
-
-#### GitHub Desktop
-1. Open GitHub Desktop
-2. Go to **Preferences → Git** or **Options → Git**
-3. Click **Create SSH Key** (or import existing key)
-4. Follow the prompts to generate a new SSH key
-5. Copy the public key shown
-
-#### Command Line
-```bash
-ssh-keygen -t ed25519 -C "yourname@emich.edu"
-# Accept default file location. Set a passphrase (recommended).
-```
-
-### 4B — Add the public key to GitHub
-
-**Both Methods:**
-1. Copy the public key (from GitHub Desktop or `cat ~/.ssh/id_ed25519.pub`)
-2. Go to GitHub.com → `Settings → SSH and GPG keys → New SSH key`
-3. Paste the key, give it a descriptive title (e.g., `IA462-laptop`), save
-
-### 4C — Test SSH connectivity
-
-#### GitHub Desktop
-1. After adding the key, try cloning a test repository
-2. Or go to **Repository → Clone** and verify it connects successfully
-
-#### Command Line
-```bash
-ssh -T git@github.com
-```
-
-Expected output:
-
-```
-Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
-```
-
-**Screenshot 6:** Terminal output of `ssh -T git@github.com` showing a successful authentication (or GitHub Desktop successful clone test).
-
----
-
-## Part 5 — Clone Both Course Repositories
-
-### 5A — Clone the public reference repo
->>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 
 #### GitHub Desktop
 1. Open GitHub Desktop
@@ -302,13 +247,8 @@ git remote -v
 Expected output:
 
 ```
-<<<<<<< HEAD
-origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 (fetch)
-origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026 (push)
-=======
 origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (fetch)
 origin  https://github.com/acloudsecninja-emu-org/emu-ia-462-fall-2026.git (push)
->>>>>>> 709d31817deacecd610c75c1d420339daf1a765c
 ```
 
 **Screenshot 6:** Both cloned directories listed on disk plus the remote information (GitHub Desktop Repository Settings or `git remote -v` output).
