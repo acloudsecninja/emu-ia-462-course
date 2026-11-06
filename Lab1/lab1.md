@@ -10,7 +10,6 @@
 > This lab aligns to the Week 2 slide deck: *IA462 — Week 2 — GitHub Configuration & Setup*.
 
 ---
-asdassad
 ## Lab Overview
 
 Your GitHub environment is the foundation for every lab, midterm, and final in IA 462. Before you can submit any work — or run any of the CI/CD pipelines we build later in the course — you must have:
