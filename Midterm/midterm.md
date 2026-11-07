@@ -59,7 +59,6 @@ Perform on WSL Ubuntu or an Ubuntu VM. Capture output as text files (not just sc
 5. Harden `/etc/ssh/sshd_config` (PermitRootLogin no, MaxAuthTries 3, PermitEmptyPasswords no). Restart sshd.
 6. Configure `pam_faillock` in `/etc/pam.d/common-auth` to lock accounts after 5 failed attempts.
 7. Run `sudo lynis audit system` and save the report.
-8. Configure and enable `ufw` (Uncomplicated Firewall) with a default deny policy and allow only SSH from your specific IP. Verify with `ufw status verbose`.
 
 **Deliverables in `midterm/section1/`:**
 
@@ -68,8 +67,7 @@ Perform on WSL Ubuntu or an Ubuntu VM. Capture output as text files (not just sc
 - `sshd_config.hardened` (the modified file)
 - `pam-common-auth.hardened` (the modified file)
 - `lynis-report.txt`
-- `ufw-rules.txt` — output of `ufw status verbose`
-- `screenshots/01-service-disabled.png`, `02-sshd-status.png`, `03-lynis-summary.png`, `04-ufw-status.png`
+- `screenshots/01-service-disabled.png`, `02-sshd-status.png`, `03-lynis-summary.png`
 
 ---
 

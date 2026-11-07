@@ -18,7 +18,7 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 
 | Section | Points | Coverage | Slide Deck Reference |
 |---|---|---|---|
-| 1. Linux Hardening + Auditd + osquery | 30 | Weeks 3, 4, 5 | OS Fundamentals · System Admin · Security Analysis |
+| 1. Linux Hardening + osquery | 30 | Weeks 3, 4, 5 | OS Fundamentals · System Admin · Security Analysis |
 | 2. Windows Hardening + Sysmon + Sigma Detections | 30 | Weeks 3, 4, 5, 12 | OS Fundamentals · System Admin · Security Analysis · Advanced Security |
 | 3. Docker Hardened App (Multi-stage, Non-root, Cosign-signed) | 40 | Weeks 3, 4, 6, 12 | OS Fundamentals · System Admin · Docker Containers · Advanced Security |
 | 4. Enterprise Policy — Docker daemon.json, CIS, WDAC/AppLocker, SELinux/AppArmor | 30 | Weeks 4, 7, 12 | System Admin · Enterprise Policy · Advanced Security |
@@ -49,28 +49,26 @@ You will build **one** capstone GitHub repository — `ia462-final-<your-usernam
 
 ---
 
-## Section 1 — Linux Hardening + Auditd + osquery (30 pts)
+## Section 1 — Linux Hardening + osquery (30 pts)
 
-Reference: Week 3 OS Fundamentals · Week 4 System Administration & Policy (PAM, sudoers, SELinux/AppArmor, sudo hardening) · Week 5 Security Analysis (auditd rules, osquery, MITRE mapping).
+Reference: Week 3 OS Fundamentals · Week 4 System Administration & Policy (PAM, sudoers, SELinux/AppArmor, sudo hardening) · Week 5 Security Analysis (osquery, MITRE mapping).
 
 Perform on WSL Ubuntu or an Ubuntu VM. Capture output as text files.
 
 Required:
 
 1. Applied umask, disabled services, hardened `sshd_config`, hardened `common-auth` (pam_faillock).
-2. **auditd rules** covering at minimum: SUID execution, authorized_keys modification, `/etc/passwd|shadow|sudoers` writes, kernel module loads.
-3. Trigger the rules with benign test activity and capture the resulting audit events.
+2. **osquery hunt queries** (`hunt.sql`) covering at minimum: SUID binaries (`suid_bin`), authorized_keys (`authorized_keys`), `/etc/passwd|shadow|sudoers` hashes (`hash`), loaded kernel modules (`kernel_modules`).
+3. Capture a baseline, trigger the detections with benign test activity (e.g., a test SUID binary, a test SSH key, a test user), re-run the queries, and capture the diff.
 4. **osquery** queries dumped to file for: `users`, `authorized_keys`, `suid_bin`, `listening_ports`, `logged_in_users`.
 5. **Lynis** audit report saved.
-6. Configure and enable `ufw` (Uncomplicated Firewall) with a default deny policy and allow only SSH from your specific IP. Verify with `ufw status verbose`.
 
 **Deliverables in `final/section1/`:**
 
-- `sshd_config.hardened`, `common-auth.hardened`, `audit-rules.conf`
-- `ausearch-suid.txt`, `ausearch-sshkeys.txt`, `ausearch-identity.txt`, `ausearch-modules.txt`
+- `sshd_config.hardened`, `common-auth.hardened`, `hunt.sql`
+- `osquery-baseline.txt`, `osquery-after.txt`, `osquery-diff.txt`
 - `osquery-*.txt` (per query)
 - `lynis-report.txt`
-- `ufw-rules.txt` — output of `ufw status verbose`
 - `screenshots/01-ssh-hardened.png` through `06-lynis-summary.png`
 
 ---
@@ -239,7 +237,7 @@ Write `final/FINAL.md` at the repo root with:
 Record a **single** `.wmv` video (target 20–30 minutes) demonstrating everything above. At minimum, cover:
 
 - Repo layout + branch-protection + Dependabot on
-- Linux hardening evidence + auditd + osquery + Lynis summary + UFW firewall
+- Linux hardening evidence + osquery baseline/diff + Lynis summary
 - Windows Defender/firewall/SMB1 + Sysmon + your Sigma rules + sample events + Defender exclusions
 - Multi-stage Dockerfile + digest-pinned base + `whoami/id` in the container + `docker run` hardened + cosign verify + rootless setup
 - Docker Bench + your CIS mapping + your AppLocker/WDAC + AppArmor/SELinux + network segmentation
@@ -300,7 +298,7 @@ Grading is done against the pushed contents of your repo at the Canvas due-date 
 
 | Section | Points | Excellent |
 |---|---|---|
-| 1. Linux hardening + auditd + osquery | 30 | Full evidence, all rules trigger, Lynis clean, UFW configured |
+| 1. Linux hardening + osquery | 30 | Full evidence, all detections show in the diff, Lynis clean |
 | 2. Windows hardening + Sysmon + Sigma | 30 | 2 Sigma rules, events exported, Sysmon service running, Defender exclusions |
 | 3. Docker hardened app | 40 | Multi-stage + pinned + non-root + hardened run + cosign + rootless setup |
 | 4. Enterprise policy | 30 | daemon.json + docker-bench + CIS mapping + AppLocker + AppArmor + network segmentation |
