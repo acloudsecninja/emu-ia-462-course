@@ -171,6 +171,14 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
 CMD ["python3", "-m", "http.server", "8080"]
 ```
 
+Create the `index.html` page that the `COPY` line above adds to the image. It must sit in `~/lab3/docker` next to `Dockerfile.hardened` — otherwise the build fails with `"/index.html": not found`:
+
+```bash
+cd ~/lab3/docker
+echo '<h1>IA 462 Lab 3 hardened container</h1>' > index.html
+ls index.html Dockerfile.hardened
+```
+
 Fetch the real digest, replace `REPLACE_WITH_REAL_DIGEST`, then build & re-scan:
 
 ```bash
