@@ -1,0 +1,276 @@
+       path = /bin/passwd
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/gpasswd
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/sudoedit
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/umount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/su
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/sudo
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/ssh-agent
+   username = root
+  groupname = _ssh
+permissions = G
+
+       path = /bin/sudo.ws
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/sudo-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/chsh
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/su-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/crontab
+   username = root
+  groupname = crontab
+permissions = G
+
+       path = /bin/chage
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /bin/sudoedit-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/fusermount3
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/chfn
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/mount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /bin/expiry
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /bin/fusermount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /sbin/unix_chkpwd
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /sbin/pam_extrausers_chkpwd
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /usr/bin/passwd
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/gpasswd
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/sudoedit
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/umount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/su
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/sudo
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/ssh-agent
+   username = root
+  groupname = _ssh
+permissions = G
+
+       path = /usr/bin/sudo.ws
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/sudo-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/chsh
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/su-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/crontab
+   username = root
+  groupname = crontab
+permissions = G
+
+       path = /usr/bin/chage
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /usr/bin/sudoedit-rs
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/fusermount3
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/chfn
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/mount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/bin/expiry
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /usr/bin/fusermount
+   username = root
+  groupname = root
+permissions = S
+
+       path = /usr/sbin/unix_chkpwd
+   username = root
+  groupname = shadow
+permissions = G
+
+       path = /usr/sbin/pam_extrausers_chkpwd
+   username = root
+  groupname = shadow
+permissions = G
+  path = /etc/passwd
+sha256 = b8b6031057d8bff35c4476260567674e446244f644ae8713c2cbd1cd6f305fae
+
+  path = /etc/shadow
+sha256 = 739650dcf1f7fb7fdfee7bb87a09ba8864aca4d0cc39b9ea2d4d24bb3f4e661e
+
+  path = /etc/sudoers
+sha256 = 5bac27ce5ff1a78ace8f3ef81bfd60cbd44810ac3f3d280da9d7649fe90c18f8
+ name = nf_conntrack_netlink
+
+ name = xt_conntrack
+
+ name = xt_MASQUERADE
+
+ name = xfrm_user
+
+ name = xfrm_algo
+
+ name = xt_set
+
+ name = ip_set
+
+ name = xt_addrtype
+
+ name = ip6t_REJECT
+
+ name = nf_reject_ipv6
+
+ name = ipt_REJECT
+
+ name = nf_reject_ipv4
+
+ name = sunrpc
+
+ name = nft_compat
+
+ name = isofs
+
+ name = intel_rapl_msr
+
+ name = intel_rapl_common
+
+ name = kvm_amd
+
+ name = kvm
+
+ name = battery
+
+ name = irqbypass
+
+ name = ac
+
+ name = sch_fq_codel
+
+ name = autofs4
+
+ name = br_netfilter
+
+ name = bridge
+
+ name = stp
+
+ name = llc
+
+ name = ip_tables
+
+ name = tun

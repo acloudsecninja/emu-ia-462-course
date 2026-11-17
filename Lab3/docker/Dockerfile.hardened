@@ -1,0 +1,20 @@
+# IA 462 Lab 3 - hardened rebuild (Week 5 slide guidance)
+FROM python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+
+LABEL maintainer="student@emich.edu"
+LABEL version="1.0"
+LABEL description="IA 462 Lab 3 hardened container"
+
+RUN groupadd --system appgroup && \
+    useradd  --system --gid appgroup --home /app --shell /usr/sbin/nologin appuser
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY --chown=appuser:appgroup index.html /app/index.html
+USER appuser
+EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:8080 || exit 1
+CMD ["python3", "-m", "http.server", "8080"]

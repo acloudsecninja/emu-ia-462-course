@@ -1,0 +1,108 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261116231302
+Username: KYLE-PC\umich
+RunAs User: KYLE-PC\umich
+Configuration Name: 
+Machine: KYLE-PC (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7028
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\umich\Desktop\lab3-windows-transcript.txt
+PS C:\Users\umich\Downloads\lab3-win> # Failed logon attempts (generates 4625)
+PS C:\Users\umich\Downloads\lab3-win> Start-Process -FilePath "powershell.exe" -Verb runAs -ArgumentList "-Command", "runas /user:BadUser1 cmd" -ErrorAction SilentlyContinue
+PS C:\Users\umich\Downloads\lab3-win> # Suspicious base64-encoded PowerShell (generates 4104)
+PS C:\Users\umich\Downloads\lab3-win> $cmd = 'Write-Host "Lab 3 - simulated encoded PowerShell activity"'
+PS C:\Users\umich\Downloads\lab3-win> $b64 = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($cmd))
+PS C:\Users\umich\Downloads\lab3-win> powershell.exe -EncodedCommand $b64
+Lab 3 - simulated encoded PowerShell activity
+PS C:\Users\umich\Downloads\lab3-win> # Create a local user (generates 4720)
+PS C:\Users\umich\Downloads\lab3-win> net user lab3suspect P@ssw0rd! /add
+The command completed successfully.
+PS C:\Users\umich\Downloads\lab3-win> net user lab3suspect /delete
+The command completed successfully.
+PS C:\Users\umich\Downloads\lab3-win> # Recent 4624 / 4625 / 4688 / 4720 events
+PS C:\Users\umich\Downloads\lab3-win> Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4624,4625,4688,4720} -MaxEvents 40 |
+An empty pipe element is not allowed.
+>> Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4624,4625,4688,4720} -MaxEvents 40 |
+  Select-Object TimeCreated, Id, @{n='Msg';e={ ($_.Message -split "`n")[0] }} |
+  Format-Table -Wrap
+
+TimeCreated              Id Msg
+-----------              -- ---
+11/16/2026 11:13:27 PM 4688 A new process has been created.
+11/16/2026 11:13:22 PM 4688 A new process has been created.
+11/16/2026 11:13:22 PM 4688 A new process has been created.
+11/16/2026 11:13:16 PM 4625 An account failed to log on.
+11/16/2026 11:13:16 PM 4688 A new process has been created.
+11/16/2026 11:13:16 PM 4624 An account was successfully logged on.
+11/16/2026 11:13:12 PM 4720 A user account was created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:12 PM 4688 A new process has been created.
+11/16/2026 11:13:10 PM 4688 A new process has been created.
+11/16/2026 11:13:03 PM 4688 A new process has been created.
+11/16/2026 11:12:41 PM 4688 A new process has been created.
+11/16/2026 11:12:41 PM 4688 A new process has been created.
+11/16/2026 11:12:41 PM 4688 A new process has been created.
+11/16/2026 11:12:40 PM 4688 A new process has been created.
+11/16/2026 11:12:40 PM 4624 An account was successfully logged on.
+11/16/2026 11:12:40 PM 4688 A new process has been created.
+11/16/2026 11:12:32 PM 4688 A new process has been created.
+11/16/2026 11:12:32 PM 4624 An account was successfully logged on.
+11/16/2026 11:12:32 PM 4688 A new process has been created.
+11/16/2026 11:12:32 PM 4688 A new process has been created.
+11/16/2026 11:12:29 PM 4688 A new process has been created.
+11/16/2026 11:12:28 PM 4688 A new process has been created.
+11/16/2026 11:12:28 PM 4688 A new process has been created.
+11/16/2026 11:12:25 PM 4688 A new process has been created.
+11/16/2026 11:12:25 PM 4688 A new process has been created.
+11/16/2026 11:12:25 PM 4624 An account was successfully logged on.
+11/16/2026 11:12:25 PM 4688 A new process has been created.
+11/16/2026 11:12:25 PM 4688 A new process has been created.
+11/16/2026 11:12:24 PM 4688 A new process has been created.
+11/16/2026 11:12:24 PM 4688 A new process has been created.
+11/16/2026 11:12:24 PM 4624 An account was successfully logged on.
+11/16/2026 11:12:23 PM 4688 A new process has been created.
+11/16/2026 11:12:23 PM 4688 A new process has been created.
+11/16/2026 11:12:23 PM 4688 A new process has been created.
+11/16/2026 11:12:23 PM 4688 A new process has been created.
+
+
+PS C:\Users\umich\Downloads\lab3-win> # PowerShell script block events (4104)
+PS C:\Users\umich\Downloads\lab3-win> Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational" -MaxEvents 20 |
+An empty pipe element is not allowed.
+>> Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational" -MaxEvents 20 |
+  Where-Object { $_.Id -eq 4104 } |
+  Select-Object TimeCreated, Id, @{n='Snippet';e={ ($_.Message -split "`n")[0..2] -join ' | ' }} |
+  Format-Table -Wrap
+
+TimeCreated              Id Snippet
+-----------              -- -------
+11/16/2026 11:13:16 PM 4104 Creating Scriptblock text (1 of 1): | $global:? |
+11/16/2026 11:13:12 PM 4104 Creating Scriptblock text (1 of 1): | $global:? |
+11/16/2026 11:13:12 PM 4104 Creating Scriptblock text (1 of 1): | runas /user:BadUser1 cmd |
+11/16/2026 11:13:12 PM 4104 Creating Scriptblock text (1 of 1): | Write-Host "Lab 3 - simulated
+                            encoded PowerShell activity" |
+11/16/2026 11:10:01 PM 4104 Creating Scriptblock text (1 of 1): | $sbl =
+                            "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging"
+                            |
+
+
+PS C:\Users\umich\Downloads\lab3-win> notepad $env:USERPROFILE\Desktop\lab3-suspicious-encoded-powershell.yml
+PS C:\Users\umich\Downloads\lab3-win> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261116231924
+**********************

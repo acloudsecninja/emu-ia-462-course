@@ -1,0 +1,952 @@
+NAME                   INSTALLED                  FIXED IN                 TYPE    VULNERABILITY        SEVERITY    EPSS          RISK   
+django                 2.2                        2.2.10                   python  GHSA-hmr4-m2h5-33qx  Critical    65.6% (99th)  60.8   
+django                 2.2                        2.2.9                    python  GHSA-vfq6-hq5r-27r6  Critical    53.6% (99th)  49.7   
+django                 2.2                        2.2.2                    python  GHSA-6c3j-c64m-qhgq  Medium      86.8% (99th)  48.2   
+django                 2.2                        2.2.4                    python  GHSA-6r97-cj55-9hrq  Critical    47.7% (98th)  44.2   
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-2961        Medium      88.3% (99th)  44.2   
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-2961        Medium      88.3% (99th)  44.2   
+django                 2.2                        2.2.27                   python  GHSA-6cw3-g6wv-c2xv  High        49.5% (98th)  38.6   
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2025-6965        Medium      73.5% (99th)  36.7   
+django                 2.2                        *4.2.24, 5.1.12, 5.2.6   python  CVE-2025-57833       High        28.3% (98th)  21.3   
+django                 2.2                        4.2.24                   python  GHSA-6w2r-r2m5-xq5w  High        28.3% (98th)  20.6   
+django                 2.2                        2.2.11                   python  GHSA-3gh2-xw74-jmcw  High        24.0% (97th)  19.5   
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-2511        Low         59.3% (99th)  17.8   
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-2511        Low         59.3% (99th)  17.8   
+django                 2.2                        4.2.26                   python  GHSA-frmv-pr5f-9mcr  Critical    19.3% (97th)  17.4   
+django                 2.2                        2.2.28                   python  GHSA-2gwj-7jmv-h26r  Critical    18.7% (97th)  17.3   
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2007-4559        Medium      27.1% (98th)  13.5   
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2007-4559        Medium      27.1% (98th)  13.5   
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2007-4559        Medium      27.1% (98th)  13.5   
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2007-4559        Medium      27.1% (98th)  13.5   
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2021-23336       Low         41.1% (98th)  12.3   
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2021-23336       Low         41.1% (98th)  12.3   
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2021-23336       Low         41.1% (98th)  12.3   
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2021-23336       Low         41.1% (98th)  12.3   
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    3.6.9-1~18.04ubuntu1.13  deb     CVE-2023-24329       Medium      20.5% (97th)  10.2   
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    3.6.9-1~18.04ubuntu1.13  deb     CVE-2023-24329       Medium      20.5% (97th)  10.2   
+python3.6              3.6.9-1~18.04ubuntu1.12    3.6.9-1~18.04ubuntu1.13  deb     CVE-2023-24329       Medium      20.5% (97th)  10.2   
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    3.6.9-1~18.04ubuntu1.13  deb     CVE-2023-24329       Medium      20.5% (97th)  10.2   
+pyyaml                 5.3                        5.4                      python  GHSA-8q59-q68h-6hv4  Critical    6.2% (93rd)   5.8    
+pyyaml                 5.3                        5.3.1                    python  GHSA-6757-jp84-gxfx  Critical    5.4% (92nd)   5.0    
+django                 2.2                        2.2.13                   python  GHSA-wpjr-j57x-wxfw  High        6.1% (93rd)   4.4    
+django                 2.2                        2.2.18                   python  GHSA-fvgf-6h6h-3322  Medium      7.6% (94th)   4.2    
+django                 2.2                        2.2.21                   python  GHSA-rxjp-mfm9-w4wr  High        5.3% (92nd)   4.2    
+django                 2.2                        2.2.24                   python  GHSA-p99v-5w3c-jqq9  High        5.3% (92nd)   4.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-9143        Low         12.5% (96th)  3.7    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-9143        Low         12.5% (96th)  3.7    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2019-19603       Low         11.0% (95th)  3.3    
+django                 2.2                        2.2.16                   python  GHSA-m6gj-h9gm-gw44  High        4.0% (90th)   3.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-45447       High        4.0% (90th)   3.0    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-45447       High        4.0% (90th)   3.0    
+django                 2.2                        2.2.4                    python  GHSA-c4qh-4vgv-qc6g  High        3.5% (89th)   2.8    
+django                 2.2                        2.2.28                   python  GHSA-w24h-v9qh-8gxj  Critical    2.9% (87th)   2.7    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48565       Medium      5.2% (92nd)   2.6    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48565       Medium      5.2% (92nd)   2.6    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48565       Medium      5.2% (92nd)   2.6    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48565       Medium      5.2% (92nd)   2.6    
+django                 2.2                        2.2.4                    python  GHSA-h5jv-4p7w-64jg  High        3.2% (88th)   2.5    
+sqlparse               0.4.4                      0.5.0                    python  GHSA-2m57-hf25-phgg  High        3.2% (88th)   2.4    
+django                 2.2                        2.2.4                    python  GHSA-v9qg-3j8p-r63v  High        3.1% (87th)   2.4    
+urllib3                1.24.1                     2.6.3                    python  GHSA-38jv-5279-wg99  High        2.9% (87th)   2.3    
+urllib3                1.24.1                     1.24.2                   python  GHSA-mh33-7rrq-662w  High        2.9% (87th)   2.3    
+django                 2.2                        2.2.20                   python  GHSA-xgxc-v2qg-chmh  Medium      3.8% (90th)   2.1    
+django                 2.2                        2.2.26                   python  GHSA-53qw-q765-4fww  High        2.6% (85th)   2.0    
+django                 2.2                        2.2.16                   python  GHSA-fr28-569j-53c4  Medium      3.3% (88th)   2.0    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-3446        Low         6.5% (93rd)   2.0    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-3446        Low         6.5% (93rd)   2.0    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-5535        Low         6.1% (93rd)   1.8    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-5535        Low         6.1% (93rd)   1.8    
+django                 2.2                        2.2.27                   python  GHSA-95rw-fx8r-36v6  Medium      3.4% (88th)   1.8    
+django                 2.2                        2.2.22                   python  GHSA-qm57-vhq3-3fwf  Medium      3.2% (88th)   1.7    
+django                 2.2                        2.2.13                   python  GHSA-2m34-jcjv-45xf  Medium      2.9% (87th)   1.5    
+django                 2.2                        2.2.26                   python  GHSA-8c5j-9r9f-c6w8  High        2.0% (80th)   1.5    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-5678        Low         5.1% (92nd)   1.5    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-5678        Low         5.1% (92nd)   1.5    
+django                 2.2                        2.2.24                   python  GHSA-68w8-qjq3-2gfm  Medium      2.7% (86th)   1.5    
+django                 2.2                        2.2.25                   python  GHSA-v6rh-hp5x-86rv  Medium      2.4% (84th)   1.5    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-21441       Medium      2.9% (87th)   1.5    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-21441       Medium      2.9% (87th)   1.5    
+django                 2.2                        2.2.26                   python  GHSA-jrh2-hc4r-7jwx  Medium      2.6% (85th)   1.4    
+django                 2.2                        4.2.26                   python  GHSA-qw25-v68c-qjf3  High        1.9% (80th)   1.4    
+urllib3                1.24.1                     1.25.9                   python  GHSA-wqvq-5m8c-6g24  Medium      2.3% (83rd)   1.3    
+django                 2.2                        2.2.2                    python  GHSA-7rp2-fm2h-wchj  Medium      2.4% (84th)   1.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12                             deb     CVE-2023-27043       Medium      2.5% (85th)   1.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12                             deb     CVE-2023-27043       Medium      2.5% (85th)   1.3    
+python3.6              3.6.9-1~18.04ubuntu1.12                             deb     CVE-2023-27043       Medium      2.5% (85th)   1.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12                             deb     CVE-2023-27043       Medium      2.5% (85th)   1.3    
+django                 2.2                        2.2.8                    python  GHSA-hvmf-r92r-27hr  High        1.7% (77th)   1.2    
+libncurses5            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2020-19189       Medium      2.3% (83rd)   1.1    
+libncursesw5           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2020-19189       Medium      2.3% (83rd)   1.1    
+libtinfo5              6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2020-19189       Medium      2.3% (83rd)   1.1    
+ncurses-base           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2020-19189       Medium      2.3% (83rd)   1.1    
+ncurses-bin            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2020-19189       Medium      2.3% (83rd)   1.1    
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2024-28085       Medium      2.2% (83rd)   1.1    
+urllib3                1.24.1                     1.24.3                   python  GHSA-r64q-w8jr-g9qp  Medium      2.1% (81st)   1.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6232        Medium      2.2% (82nd)   1.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6232        Medium      2.2% (82nd)   1.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6232        Medium      2.2% (82nd)   1.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6232        Medium      2.2% (82nd)   1.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2023-52425       Medium      2.1% (82nd)   1.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2021-33574       Low         3.5% (89th)   1.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2021-33574       Low         3.5% (89th)   1.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48560       Medium      2.0% (81st)   1.0    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48560       Medium      2.0% (81st)   1.0    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48560       Medium      2.0% (81st)   1.0    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48560       Medium      2.0% (81st)   1.0    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-28757       Medium      2.0% (81st)   1.0    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-4741        Low         3.3% (88th)   1.0    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-4741        Low         3.3% (88th)   1.0    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010022     Low         3.2% (88th)   1.0    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010022     Low         3.2% (88th)   1.0    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-6345        Medium      1.9% (80th)   1.0    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-6345        Medium      1.9% (80th)   1.0    
+python3-pkg-resources  39.0.1-2ubuntu0.1          (won't fix)              deb     CVE-2024-6345        Medium      1.9% (80th)   1.0    
+python3-setuptools     39.0.1-2ubuntu0.1          (won't fix)              deb     CVE-2024-6345        Medium      1.9% (80th)   1.0    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010024     Low         3.2% (88th)   1.0    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010024     Low         3.2% (88th)   1.0    
+urllib3                1.24.1                     1.26.17                  python  GHSA-v845-jxx5-vc9f  High        1.4% (72nd)   1.0    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-0727        Low         3.2% (88th)   1.0    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-0727        Low         3.2% (88th)   1.0    
+django                 2.2                        2.2.3                    python  GHSA-6c7v-2f49-8h26  Medium      1.7% (77th)   0.9    
+django                 2.2                        5.2.17                   python  GHSA-wvqv-fj8w-qmhm  High        1.1% (67th)   0.9    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010023     Low         3.1% (87th)   0.9    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-1010023     Low         3.1% (87th)   0.9    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-3817        Low         3.0% (87th)   0.9    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2023-3817        Low         3.0% (87th)   0.9    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-9230        Medium      1.8% (78th)   0.9    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-9230        Medium      1.8% (78th)   0.9    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2023-31486       Medium      1.7% (78th)   0.9    
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2021-3997        Medium      1.7% (78th)   0.9    
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2021-3997        Medium      1.7% (78th)   0.9    
+libtasn1-6             4.13-2                                              deb     CVE-2021-46848       Low         2.8% (86th)   0.9    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-45490       Medium      1.7% (77th)   0.8    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2020-35527       Medium      1.7% (77th)   0.8    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48564       Medium      1.7% (76th)   0.8    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48564       Medium      1.7% (76th)   0.8    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48564       Medium      1.7% (76th)   0.8    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48564       Medium      1.7% (76th)   0.8    
+gcc-8-base             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2018-12886       Low         2.7% (86th)   0.8    
+libgcc1                1:8.4.0-1ubuntu1~18.04     (won't fix)              deb     CVE-2018-12886       Low         2.7% (86th)   0.8    
+libstdc++6             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2018-12886       Low         2.7% (86th)   0.8    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2024-0553        Medium      1.6% (76th)   0.8    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-47273       Medium      1.6% (76th)   0.8    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-47273       Medium      1.6% (76th)   0.8    
+python3-pkg-resources  39.0.1-2ubuntu0.1          (won't fix)              deb     CVE-2025-47273       Medium      1.6% (76th)   0.8    
+python3-setuptools     39.0.1-2ubuntu0.1          (won't fix)              deb     CVE-2025-47273       Medium      1.6% (76th)   0.8    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-0938        Medium      1.5% (75th)   0.8    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-0938        Medium      1.5% (75th)   0.8    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-0938        Medium      1.5% (75th)   0.8    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-0938        Medium      1.5% (75th)   0.8    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119586      Medium      1.5% (75th)   0.8    
+django                 2.2                        3.2.15                   python  GHSA-8x94-hmjh-97hq  High        0.9% (61st)   0.8    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2025-32988       Medium      1.5% (74th)   0.7    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2025-59375       Medium      1.5% (74th)   0.7    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2023-7104        Medium      1.5% (74th)   0.7    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2023-0361        Medium      1.5% (73rd)   0.7    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-45492       Medium      1.4% (72nd)   0.7    
+apt                    1.6.17                     (won't fix)              deb     CVE-2026-109518      High        0.9% (61st)   0.7    
+libapt-pkg5.0          1.6.17                     (won't fix)              deb     CVE-2026-109518      High        0.9% (61st)   0.7    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-3651        Medium      1.4% (72nd)   0.7    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-3651        Medium      1.4% (72nd)   0.7    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-7592        Low         2.3% (83rd)   0.7    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-7592        Low         2.3% (83rd)   0.7    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-7592        Low         2.3% (83rd)   0.7    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-7592        Low         2.3% (83rd)   0.7    
+libtasn1-6             4.13-2                     (won't fix)              deb     CVE-2025-13151       Medium      1.4% (72nd)   0.7    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-43804       Medium      1.4% (72nd)   0.7    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-43804       Medium      1.4% (72nd)   0.7    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-84782       High        0.9% (60th)   0.7    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-84782       High        0.9% (60th)   0.7    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-8176        Medium      1.4% (72nd)   0.7    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-42009       Medium      1.3% (71st)   0.7    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33599       Medium      1.3% (71st)   0.7    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33599       Medium      1.3% (71st)   0.7    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48566       Medium      1.3% (70th)   0.7    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48566       Medium      1.3% (70th)   0.7    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48566       Medium      1.3% (70th)   0.7    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2022-48566       Medium      1.3% (70th)   0.7    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2024-12243       Medium      1.3% (70th)   0.6    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2023-5981        Medium      1.3% (70th)   0.6    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-33846       Medium      1.3% (70th)   0.6    
+django                 2.2                        5.2.17                   python  GHSA-q238-5cxm-5c9h  Medium      1.1% (66th)   0.6    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33600       Medium      1.2% (69th)   0.6    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33600       Medium      1.2% (69th)   0.6    
+urllib3                1.24.1                     2.6.0                    python  GHSA-gm62-xv2j-4w53  High        0.7% (54th)   0.6    
+urllib3                1.24.1                     2.6.0                    python  GHSA-2xpw-w6gg-jr37  High        0.7% (54th)   0.6    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2023-4813        Low         1.9% (80th)   0.6    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2023-4813        Low         1.9% (80th)   0.6    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-45491       Medium      1.1% (66th)   0.6    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2024-50602       Medium      1.1% (66th)   0.6    
+libtasn1-6             4.13-2                     (won't fix)              deb     CVE-2024-12133       Medium      1.1% (66th)   0.6    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6923        Medium      1.1% (66th)   0.5    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6923        Medium      1.1% (66th)   0.5    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6923        Medium      1.1% (66th)   0.5    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-6923        Medium      1.1% (66th)   0.5    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8                           deb     CVE-2021-3572        Low         1.8% (79th)   0.5    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8                           deb     CVE-2021-3572        Low         1.8% (79th)   0.5    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33601       Medium      1.1% (65th)   0.5    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33601       Medium      1.1% (65th)   0.5    
+urllib3                1.24.1                     1.26.19                  python  GHSA-34jh-p97f-mpxf  Medium      1.1% (67th)   0.5    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2023-4806        Low         1.6% (76th)   0.5    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2023-4806        Low         1.6% (76th)   0.5    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-63072       Medium      0.9% (60th)   0.5    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-63072       Medium      0.9% (60th)   0.5    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2025-32990       Medium      0.9% (60th)   0.4    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-66046       Medium      0.9% (59th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12781       Medium      0.9% (59th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12781       Medium      0.9% (59th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12781       Medium      0.9% (59th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12781       Medium      0.9% (59th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12084       Medium      0.9% (58th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12084       Medium      0.9% (58th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12084       Medium      0.9% (58th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-12084       Medium      0.9% (58th)   0.4    
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2022-4415        Medium      0.8% (57th)   0.4    
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2022-4415        Medium      0.8% (57th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0397        Medium      0.8% (57th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0397        Medium      0.8% (57th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0397        Medium      0.8% (57th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0397        Medium      0.8% (57th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2023-40217       Medium      0.8% (57th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2023-40217       Medium      0.8% (57th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2023-40217       Medium      0.8% (57th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2023-40217       Medium      0.8% (57th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2017-18207       Low         1.3% (71st)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2017-18207       Low         1.3% (71st)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2017-18207       Low         1.3% (71st)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2017-18207       Low         1.3% (71st)   0.4    
+django                 2.2                        4.2.16                   python  GHSA-rrqc-c2jx-6jgv  Medium      0.8% (56th)   0.4    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2011-10043       Medium      0.8% (56th)   0.4    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-5260        Medium      0.8% (56th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4224        Medium      0.8% (56th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4224        Medium      0.8% (56th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4224        Medium      0.8% (56th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4224        Medium      0.8% (56th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-17084       Medium      0.8% (55th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-17084       Medium      0.8% (55th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-17084       Medium      0.8% (55th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-17084       Medium      0.8% (55th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8194        Medium      0.8% (55th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8194        Medium      0.8% (55th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8194        Medium      0.8% (55th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8194        Medium      0.8% (55th)   0.4    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-4176        Medium      0.8% (55th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11940       Medium      0.8% (55th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11940       Medium      0.8% (55th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11940       Medium      0.8% (55th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11940       Medium      0.8% (55th)   0.4    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-75806       Low         1.2% (69th)   0.4    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-75806       Low         1.2% (69th)   0.4    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-66471       Medium      0.7% (54th)   0.4    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-66471       Medium      0.7% (54th)   0.4    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-42015       Medium      0.7% (54th)   0.4    
+django                 2.2                        4.2.22                   python  GHSA-7xr5-9hcq-chf9  Medium      0.8% (57th)   0.4    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11972       Medium      0.7% (54th)   0.4    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11972       Medium      0.7% (54th)   0.4    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11972       Medium      0.7% (54th)   0.4    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-11972       Medium      0.7% (54th)   0.4    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-114691      Medium      0.7% (53rd)   0.3    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-114691      Medium      0.7% (53rd)   0.3    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-114691      Medium      0.7% (53rd)   0.3    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-37891       Low         1.1% (67th)   0.3    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-37891       Low         1.1% (67th)   0.3    
+libgcrypt20            1.8.1-4ubuntu1.3                                    deb     CVE-2024-2236        Low         1.1% (67th)   0.3    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-44432       Medium      0.7% (52nd)   0.3    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-44432       Medium      0.7% (52nd)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-7210        Medium      0.7% (52nd)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-7210        Medium      0.7% (52nd)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-7210        Medium      0.7% (52nd)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-7210        Medium      0.7% (52nd)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-69534       Medium      0.7% (52nd)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-69534       Medium      0.7% (52nd)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-69534       Medium      0.7% (52nd)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-69534       Medium      0.7% (52nd)   0.3    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2025-14831       Medium      0.7% (51st)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-11168       Medium      0.7% (51st)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-11168       Medium      0.7% (51st)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-11168       Medium      0.7% (51st)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-11168       Medium      0.7% (51st)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-9287        Medium      0.6% (51st)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-9287        Medium      0.6% (51st)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-9287        Medium      0.6% (51st)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-9287        Medium      0.6% (51st)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-4032        Low         1.1% (65th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-4032        Low         1.1% (65th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-4032        Low         1.1% (65th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-4032        Low         1.1% (65th)   0.3    
+gcc-8-base             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2020-23026       Low         1.1% (65th)   0.3    
+libgcc1                1:8.4.0-1ubuntu1~18.04     (won't fix)              deb     CVE-2020-23026       Low         1.1% (65th)   0.3    
+libstdc++6             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2020-23026       Low         1.1% (65th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-8376        Medium      0.6% (51st)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2017-20230       Medium      0.6% (51st)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15308       Medium      0.6% (51st)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15308       Medium      0.6% (51st)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15308       Medium      0.6% (51st)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15308       Medium      0.6% (51st)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-42766       Low         1.1% (65th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-42766       Low         1.1% (65th)   0.3    
+libsystemd0            237-3ubuntu10.57                                    deb     CVE-2023-26604       Low         1.1% (64th)   0.3    
+libudev1               237-3ubuntu10.57                                    deb     CVE-2023-26604       Low         1.1% (64th)   0.3    
+urllib3                1.24.1                     1.24.2                   python  GHSA-gwvm-45gx-3cf8  Medium      0.6% (48th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-82560       Medium      0.6% (50th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6069        Medium      0.6% (50th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6069        Medium      0.6% (50th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6069        Medium      0.6% (50th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6069        Medium      0.6% (50th)   0.3    
+mawk                   1.3.3-17ubuntu3                                     deb     CVE-2017-20229       Medium      0.6% (50th)   0.3    
+libncurses5            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2023-50495       Low         1.0% (64th)   0.3    
+libncursesw5           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2023-50495       Low         1.0% (64th)   0.3    
+libtinfo5              6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2023-50495       Low         1.0% (64th)   0.3    
+ncurses-base           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2023-50495       Low         1.0% (64th)   0.3    
+ncurses-bin            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2023-50495       Low         1.0% (64th)   0.3    
+gcc-8-base             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2023-4039        Low         1.0% (64th)   0.3    
+libgcc1                1:8.4.0-1ubuntu1~18.04     (won't fix)              deb     CVE-2023-4039        Low         1.0% (64th)   0.3    
+libstdc++6             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2023-4039        Low         1.0% (64th)   0.3    
+gzip                   1.6-5ubuntu1.2             (won't fix)              deb     CVE-2026-41992       Medium      0.6% (50th)   0.3    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-0915        Medium      0.6% (50th)   0.3    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-0915        Medium      0.6% (50th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-11468       Medium      0.6% (50th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-11468       Medium      0.6% (50th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-11468       Medium      0.6% (50th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-11468       Medium      0.6% (50th)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-34180       Low         1.0% (64th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-34180       Low         1.0% (64th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-87910       Medium      0.6% (49th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-87910       Medium      0.6% (49th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-87910       Medium      0.6% (49th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-87910       Medium      0.6% (49th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-12087       Medium      0.6% (48th)   0.3    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-4802        Medium      0.6% (48th)   0.3    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-4802        Medium      0.6% (48th)   0.3    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-45803       Medium      0.6% (48th)   0.3    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-45803       Medium      0.6% (48th)   0.3    
+urllib3                1.24.1                     1.26.18                  python  GHSA-g4mx-q9vg-27p4  Medium      0.6% (48th)   0.3    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2018-25091       Medium      0.6% (48th)   0.3    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2018-25091       Medium      0.6% (48th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6100        Medium      0.6% (48th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6100        Medium      0.6% (48th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6100        Medium      0.6% (48th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6100        Medium      0.6% (48th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-19487       Medium      0.6% (48th)   0.3    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2018-20796       Negligible  5.8% (93rd)   0.3    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2018-20796       Negligible  5.8% (93rd)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1299        Medium      0.6% (47th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1299        Medium      0.6% (47th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1299        Medium      0.6% (47th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1299        Medium      0.6% (47th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-48959       Medium      0.6% (47th)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69421       Low         0.9% (61st)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69421       Low         0.9% (61st)   0.3    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-3833        Medium      0.6% (47th)   0.3    
+django                 2.2                        5.2.16                   python  GHSA-crhf-3pfg-w68w  Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0865        Medium      0.6% (46th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0865        Medium      0.6% (46th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0865        Medium      0.6% (46th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0865        Medium      0.6% (46th)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69420       Low         0.9% (60th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69420       Low         0.9% (60th)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28388       Low         0.9% (60th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28388       Low         0.9% (60th)   0.3    
+urllib3                1.24.1                     2.8.0                    python  GHSA-vxq7-64xx-v4gw  High        0.3% (27th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19553       Medium      0.5% (46th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19553       Medium      0.5% (46th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19553       Medium      0.5% (46th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19553       Medium      0.5% (46th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3644        Medium      0.5% (46th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3644        Medium      0.5% (46th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3644        Medium      0.5% (46th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3644        Medium      0.5% (46th)   0.3    
+sqlparse               0.4.4                      0.6.0                    python  GHSA-pwgv-4x5q-6m9f  High        0.3% (26th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15282       Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15282       Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15282       Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15282       Medium      0.5% (45th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-57433       Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1502        Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1502        Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1502        Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-1502        Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115557      Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115557      Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115557      Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115557      Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15806       Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15806       Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15806       Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15806       Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15310       Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15310       Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15310       Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-15310       Medium      0.5% (45th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-13221       Medium      0.5% (45th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19445       Medium      0.5% (45th)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19445       Medium      0.5% (45th)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19445       Medium      0.5% (45th)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19445       Medium      0.5% (45th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-9538        Medium      0.5% (44th)   0.3    
+urllib3                1.24.1                     2.5.0                    python  GHSA-pq67-6m6q-mj2v  Medium      0.5% (42nd)   0.3    
+sqlparse               0.4.4                      0.6.0                    python  GHSA-prg7-hcfm-mfcr  High        0.3% (27th)   0.3    
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2023-7008        Low         0.8% (58th)   0.3    
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2023-7008        Low         0.8% (58th)   0.3    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3276        Medium      0.5% (43rd)   0.3    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3276        Medium      0.5% (43rd)   0.3    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3276        Medium      0.5% (43rd)   0.3    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3276        Medium      0.5% (43rd)   0.3    
+gcc-8-base             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2020-13844       Medium      0.5% (43rd)   0.3    
+libgcc1                1:8.4.0-1ubuntu1~18.04     (won't fix)              deb     CVE-2020-13844       Medium      0.5% (43rd)   0.3    
+libstdc++6             8.4.0-1ubuntu1~18.04       (won't fix)              deb     CVE-2020-13844       Medium      0.5% (43rd)   0.3    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5450        Medium      0.5% (43rd)   0.3    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5450        Medium      0.5% (43rd)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-42496       Medium      0.5% (43rd)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28389       Low         0.8% (58th)   0.3    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28390       Low         0.8% (58th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28389       Low         0.8% (58th)   0.3    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28390       Low         0.8% (58th)   0.3    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2025-40909       Medium      0.5% (43rd)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-113351      Medium      0.5% (42nd)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-8869        Medium      0.5% (42nd)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2025-8869        Medium      0.5% (42nd)   0.2    
+libpam-modules         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2025-6020        Medium      0.5% (42nd)   0.2    
+libpam-modules-bin     1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2025-6020        Medium      0.5% (42nd)   0.2    
+libpam-runtime         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2025-6020        Medium      0.5% (42nd)   0.2    
+libpam0g               1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2025-6020        Medium      0.5% (42nd)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-15281       Medium      0.5% (42nd)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-15281       Medium      0.5% (42nd)   0.2    
+tar                    1.29b-2ubuntu0.4           (won't fix)              deb     CVE-2025-45582       Medium      0.5% (42nd)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-57585       Medium      0.5% (42nd)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-57585       Medium      0.5% (42nd)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-119170      Medium      0.5% (42nd)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-119170      Medium      0.5% (42nd)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-119170      Medium      0.5% (42nd)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-119170      Medium      0.5% (42nd)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-7383        Low         0.8% (57th)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-7383        Low         0.8% (57th)   0.2    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-95619       Medium      0.5% (42nd)   0.2    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-95619       Medium      0.5% (42nd)   0.2    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-95619       Medium      0.5% (42nd)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0672        Medium      0.5% (41st)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0672        Medium      0.5% (41st)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0672        Medium      0.5% (41st)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0672        Medium      0.5% (41st)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-45186       Medium      0.5% (41st)   0.2    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-42011       Medium      0.5% (41st)   0.2    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-42497       Medium      0.5% (41st)   0.2    
+tar                    1.29b-2ubuntu0.4           (won't fix)              deb     CVE-2026-5704        Medium      0.5% (41st)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19672       Medium      0.5% (41st)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19672       Medium      0.5% (41st)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19672       Medium      0.5% (41st)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19672       Medium      0.5% (41st)   0.2    
+urllib3                1.24.1                     2.7.0                    python  GHSA-qccp-gfcp-xxvc  High        0.3% (26th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8291        Medium      0.5% (40th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8291        Medium      0.5% (40th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8291        Medium      0.5% (40th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-8291        Medium      0.5% (40th)   0.2    
+libpam-modules         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-22365       Medium      0.5% (40th)   0.2    
+libpam-modules-bin     1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-22365       Medium      0.5% (40th)   0.2    
+libpam-runtime         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-22365       Medium      0.5% (40th)   0.2    
+libpam0g               1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-22365       Medium      0.5% (40th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-8328        Medium      0.5% (40th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-8328        Medium      0.5% (40th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-8328        Medium      0.5% (40th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-8328        Medium      0.5% (40th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2020-10735       Negligible  4.5% (91st)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2020-10735       Negligible  4.5% (91st)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2020-10735       Negligible  4.5% (91st)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2020-10735       Negligible  4.5% (91st)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-13176       Low         0.7% (55th)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2024-13176       Low         0.7% (55th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-115506      Medium      0.4% (39th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-122054      Medium      0.4% (39th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-122054      Medium      0.4% (39th)   0.2    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-48962       Medium      0.4% (38th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15366       Medium      0.4% (37th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15366       Medium      0.4% (37th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15366       Medium      0.4% (37th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15366       Medium      0.4% (37th)   0.2    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-102010      Medium      0.4% (37th)   0.2    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-102010      Medium      0.4% (37th)   0.2    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-102010      Medium      0.4% (37th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-9669        Medium      0.4% (37th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-9669        Medium      0.4% (37th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-9669        Medium      0.4% (37th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-9669        Medium      0.4% (37th)   0.2    
+sqlparse               0.4.4                      0.6.0                    python  GHSA-f2ff-p2ww-7p4p  High        0.3% (18th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-117610      Medium      0.4% (37th)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-9076        Low         0.7% (53rd)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-9076        Low         0.7% (53rd)   0.2    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-42013       Medium      0.4% (37th)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28387       Low         0.7% (53rd)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-28387       Low         0.7% (53rd)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-93990       Medium      0.4% (36th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-45409       Medium      0.4% (35th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-45409       Medium      0.4% (35th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-41080       Medium      0.4% (35th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33602       Medium      0.4% (35th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2024-33602       Medium      0.4% (35th)   0.2    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-115455      Medium      0.4% (34th)   0.2    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-115455      Medium      0.4% (34th)   0.2    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-115455      Medium      0.4% (34th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-102633      Medium      0.4% (34th)   0.2    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2020-13631       Low         0.7% (52nd)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-118370      Medium      0.4% (33rd)   0.2    
+libc-bin               2.27-3ubuntu1.6                                     deb     CVE-2009-5155        Negligible  3.9% (90th)   0.2    
+libc6                  2.27-3ubuntu1.6                                     deb     CVE-2009-5155        Negligible  3.9% (90th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-4046        Medium      0.4% (33rd)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-4046        Medium      0.4% (33rd)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15367       Medium      0.4% (32nd)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15367       Medium      0.4% (32nd)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15367       Medium      0.4% (32nd)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-15367       Medium      0.4% (32nd)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-1795        Low         0.6% (50th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-1795        Low         0.6% (50th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-1795        Low         0.6% (50th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-1795        Low         0.6% (50th)   0.2    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-42012       Medium      0.4% (31st)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-54874       Low         0.6% (50th)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-54874       Low         0.6% (50th)   0.2    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-115456      Medium      0.4% (31st)   0.2    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-115456      Medium      0.4% (31st)   0.2    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-115456      Medium      0.4% (31st)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5928        Medium      0.4% (31st)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5928        Medium      0.4% (31st)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69419       Low         0.6% (49th)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69419       Low         0.6% (49th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-103995      Medium      0.4% (30th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-103995      Medium      0.4% (30th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-103995      Medium      0.4% (30th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-103995      Medium      0.4% (30th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-77117       Medium      0.4% (30th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-80489       Medium      0.4% (30th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-77117       Medium      0.4% (30th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-80489       Medium      0.4% (30th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6238        Medium      0.4% (30th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6238        Medium      0.4% (30th)   0.2    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-7017        Medium      0.4% (29th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-0395        Medium      0.4% (29th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-0395        Medium      0.4% (29th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6879        Medium      0.4% (29th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6879        Medium      0.4% (29th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6879        Medium      0.4% (29th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6879        Medium      0.4% (29th)   0.2    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-22796       Low         0.6% (48th)   0.2    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-22796       Low         0.6% (48th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-76641       Medium      0.4% (29th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4519        Medium      0.4% (29th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4519        Medium      0.4% (29th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4519        Medium      0.4% (29th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4519        Medium      0.4% (29th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-24049       Medium      0.4% (29th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-24049       Medium      0.4% (29th)   0.2    
+django                 2.2                        5.2.16                   python  GHSA-8qcx-xf44-272x  Medium      0.3% (26th)   0.2    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2018-16868       Low         0.6% (48th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-12345       Medium      0.3% (28th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-12345       Medium      0.3% (28th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-12345       Medium      0.3% (28th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-12345       Medium      0.3% (28th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-35195       Medium      0.3% (27th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2024-35195       Medium      0.3% (27th)   0.2    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2019-19645       Low         0.6% (47th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-100290      Medium      0.3% (27th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-100290      Medium      0.3% (27th)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0450        Medium      0.3% (27th)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0450        Medium      0.3% (27th)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0450        Medium      0.3% (27th)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2024-0450        Medium      0.3% (27th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97689       Medium      0.3% (27th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97689       Medium      0.3% (27th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-44431       Medium      0.3% (26th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-44431       Medium      0.3% (26th)   0.2    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-77214       Medium      0.3% (26th)   0.2    
+liblzma5               5.2.2-1.3ubuntu0.1         (won't fix)              deb     CVE-2026-34743       Low         0.5% (45th)   0.2    
+libpam-modules         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2026-54411       Medium      0.3% (25th)   0.2    
+libpam-modules-bin     1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2026-54411       Medium      0.3% (25th)   0.2    
+libpam-runtime         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2026-54411       Medium      0.3% (25th)   0.2    
+libpam0g               1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2026-54411       Medium      0.3% (25th)   0.2    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-8643        Medium      0.3% (25th)   0.2    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-8643        Medium      0.3% (25th)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-8674        Medium      0.3% (24th)   0.2    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-8674        Medium      0.3% (24th)   0.2    
+libncurses5            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-69720       Low         0.5% (44th)   0.2    
+libncursesw5           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-69720       Low         0.5% (44th)   0.2    
+libtinfo5              6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-69720       Low         0.5% (44th)   0.2    
+ncurses-base           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-69720       Low         0.5% (44th)   0.2    
+ncurses-bin            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-69720       Low         0.5% (44th)   0.2    
+libpcre3               2:8.39-9ubuntu0.1          (won't fix)              deb     CVE-2017-11164       Negligible  3.1% (87th)   0.2    
+dash                   0.5.8-2.10                                          deb     CVE-2026-91187       Medium      0.3% (23rd)   0.2    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19552       Medium      0.3% (23rd)   0.2    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19552       Medium      0.3% (23rd)   0.2    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19552       Medium      0.3% (23rd)   0.2    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-19552       Medium      0.3% (23rd)   0.2    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-84243       Medium      0.3% (22nd)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-84243       Medium      0.3% (22nd)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4786        Medium      0.3% (22nd)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4786        Medium      0.3% (22nd)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4786        Medium      0.3% (22nd)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-4786        Medium      0.3% (22nd)   0.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-54872       Low         0.5% (42nd)   0.1    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-54872       Low         0.5% (42nd)   0.1    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-13346       Medium      0.3% (22nd)   0.1    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-13346       Medium      0.3% (22nd)   0.1    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97688       Medium      0.3% (22nd)   0.1    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97688       Medium      0.3% (22nd)   0.1    
+diffutils              1:3.6-1                    (won't fix)              deb     CVE-2026-53910       Medium      0.3% (21st)   0.1    
+libc-bin               2.27-3ubuntu1.6                                     deb     CVE-2015-8985        Negligible  2.9% (87th)   0.1    
+libc6                  2.27-3ubuntu1.6                                     deb     CVE-2015-8985        Negligible  2.9% (87th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2016-10739       Low         0.5% (41st)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2016-10739       Low         0.5% (41st)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115559      Medium      0.3% (21st)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115559      Medium      0.3% (21st)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115559      Medium      0.3% (21st)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115559      Medium      0.3% (21st)   0.1    
+dpkg                   1.19.0.5ubuntu2.4                                   deb     CVE-2025-6297        Low         0.5% (41st)   0.1    
+tar                    1.29b-2ubuntu0.4           (won't fix)              deb     CVE-2023-39804       Medium      0.3% (21st)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-97399       Medium      0.3% (20th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-97399       Medium      0.3% (20th)   0.1    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119379      Medium      0.3% (20th)   0.1    
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2020-13776       Low         0.5% (40th)   0.1    
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2020-13776       Low         0.5% (40th)   0.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-77696       Low         0.5% (39th)   0.1    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-77696       Low         0.5% (39th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-124249      Medium      0.3% (19th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-124249      Medium      0.3% (19th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-124249      Medium      0.3% (19th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-124249      Medium      0.3% (19th)   0.1    
+libpam-modules         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-10041       Medium      0.3% (18th)   0.1    
+libpam-modules-bin     1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-10041       Medium      0.3% (18th)   0.1    
+libpam-runtime         1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-10041       Medium      0.3% (18th)   0.1    
+libpam0g               1.1.8-3.6ubuntu2.18.04.6   (won't fix)              deb     CVE-2024-10041       Medium      0.3% (18th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-115819      Medium      0.3% (18th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-115819      Medium      0.3% (18th)   0.1    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-48961       Medium      0.3% (18th)   0.1    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-1703        Low         0.4% (38th)   0.1    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-1703        Low         0.4% (38th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-114583      Medium      0.3% (18th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-114583      Medium      0.3% (18th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-114583      Medium      0.3% (18th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-114583      Medium      0.3% (18th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-116566      Medium      0.3% (17th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-116566      Medium      0.3% (17th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-116566      Medium      0.3% (17th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-116566      Medium      0.3% (17th)   0.1    
+coreutils              8.28-1ubuntu1              (won't fix)              deb     CVE-2016-2781        Low         0.4% (37th)   0.1    
+login                  1:4.5-1ubuntu2.5           (won't fix)              deb     CVE-2024-56433       Low         0.4% (37th)   0.1    
+passwd                 1:4.5-1ubuntu2.5           (won't fix)              deb     CVE-2024-56433       Low         0.4% (37th)   0.1    
+login                  1:4.5-1ubuntu2.5                                    deb     CVE-2023-29383       Low         0.4% (37th)   0.1    
+passwd                 1:4.5-1ubuntu2.5                                    deb     CVE-2023-29383       Low         0.4% (37th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-84366       Medium      0.3% (17th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-84366       Medium      0.3% (17th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-84366       Medium      0.3% (17th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-84366       Medium      0.3% (17th)   0.1    
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-125709      Medium      0.3% (16th)   0.1    
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-125709      Medium      0.3% (16th)   0.1    
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-125709      Medium      0.3% (16th)   0.1    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119378      Medium      0.3% (16th)   0.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-124317      Medium      0.2% (16th)   0.1    
+django                 2.2                        5.2.16                   python  GHSA-3h9f-r86x-qvjx  Low         0.4% (37th)   0.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-32777       Medium      0.2% (15th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-89092       Medium      0.2% (15th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-89092       Medium      0.2% (15th)   0.1    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-88647       Medium      0.2% (15th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13837       Medium      0.2% (15th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13837       Medium      0.2% (15th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13837       Medium      0.2% (15th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13837       Medium      0.2% (15th)   0.1    
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78408       Medium      0.2% (14th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5435        Medium      0.2% (14th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-5435        Medium      0.2% (14th)   0.1    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119374      Medium      0.2% (13th)   0.1    
+gpgv                   2.2.4-1ubuntu1.6           (won't fix)              deb     CVE-2025-68973       High        0.2% (4th)    0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57175       Medium      0.2% (13th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57175       Medium      0.2% (13th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57175       Medium      0.2% (13th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57175       Medium      0.2% (13th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-19542       Medium      0.2% (13th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-19542       Medium      0.2% (13th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-4516        Medium      0.2% (13th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-4516        Medium      0.2% (13th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-4516        Medium      0.2% (13th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-4516        Medium      0.2% (13th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-8058        Medium      0.2% (13th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2025-8058        Medium      0.2% (13th)   0.1    
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2025-29088       Medium      0.2% (12th)   0.1    
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6791        Medium      0.2% (12th)   0.1    
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6791        Medium      0.2% (12th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57176       Medium      0.2% (12th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57176       Medium      0.2% (12th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57176       Medium      0.2% (12th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57176       Medium      0.2% (12th)   0.1    
+libc-bin               2.27-3ubuntu1.6                                     deb     CVE-2016-20013       Negligible  2.2% (82nd)   0.1    
+libc6                  2.27-3ubuntu1.6                                     deb     CVE-2016-20013       Negligible  2.2% (82nd)   0.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2025-66382       Medium      0.2% (12th)   0.1    
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-76642       Medium      0.2% (12th)   0.1    
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2025-14104       Medium      0.2% (11th)   0.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-25210       Medium      0.2% (11th)   0.1    
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-57432       Medium      0.2% (11th)   0.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-35189       Low         0.4% (29th)   0.1    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-35189       Low         0.4% (29th)   0.1    
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6019        Medium      0.2% (11th)   0.1    
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6019        Medium      0.2% (11th)   0.1    
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6019        Medium      0.2% (11th)   0.1    
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-6019        Medium      0.2% (11th)   0.1    
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-95692       Medium      0.2% (11th)   0.1    
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-95692       Medium      0.2% (11th)   0.1    
+django                 2.2                        5.2.15                   python  GHSA-923m-gv2p-w5qp  Low         0.4% (30th)   0.1    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-95184       Medium      0.2% (10th)   0.1    
+coreutils              8.28-1ubuntu1              (won't fix)              deb     CVE-2017-18018       Low         0.3% (28th)   0.1    
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97687       Medium      0.2% (10th)   0.1    
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-97687       Medium      0.2% (10th)   0.1    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-88648       Medium      0.2% (10th)   0.1    
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-24515       Medium      0.2% (10th)   0.1    
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-95210       Medium      0.2% (9th)    0.1    
+libtasn1-6             4.13-2                                              deb     CVE-2018-1000654     Negligible  2.0% (80th)   < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78410       Medium      0.2% (9th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-11822       Medium      0.2% (9th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119375      Medium      0.2% (9th)    < 0.1  
+gpgv                   2.2.4-1ubuntu1.6           (won't fix)              deb     CVE-2025-30258       Medium      0.2% (9th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56412       Medium      0.2% (9th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-72522       Medium      0.2% (9th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-32778       Medium      0.2% (8th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-39113       Medium      0.2% (8th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119371      Medium      0.2% (8th)    < 0.1  
+sqlparse               0.4.4                      0.6.0                    python  GHSA-cfqr-cjx5-5jcm  Medium      0.2% (8th)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-88822       Medium      0.2% (8th)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-95691       Medium      0.2% (8th)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-88822       Medium      0.2% (8th)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-95691       Medium      0.2% (8th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-32776       Medium      0.2% (8th)    < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-78409       Medium      0.2% (8th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-50219       Medium      0.2% (8th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56406       Medium      0.2% (8th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56407       Medium      0.2% (8th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-82049       Medium      0.2% (8th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-82049       Medium      0.2% (8th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-82049       Medium      0.2% (8th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-82049       Medium      0.2% (8th)    < 0.1  
+coreutils              8.28-1ubuntu1                                       deb     CVE-2026-56392       Medium      0.2% (8th)    < 0.1  
+coreutils              8.28-1ubuntu1                                       deb     CVE-2025-5278        Low         0.3% (24th)   < 0.1  
+login                  1:4.5-1ubuntu2.5                                    deb     CVE-2013-4235        Low         0.3% (23rd)   < 0.1  
+passwd                 1:4.5-1ubuntu2.5                                    deb     CVE-2013-4235        Low         0.3% (23rd)   < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56131       Medium      0.2% (7th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119376      Medium      0.2% (7th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13462       Medium      0.2% (7th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13462       Medium      0.2% (7th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13462       Medium      0.2% (7th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-13462       Medium      0.2% (7th)    < 0.1  
+libgcrypt20            1.8.1-4ubuntu1.3                                    deb     CVE-2026-41989       Medium      0.2% (7th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56403       Medium      0.2% (7th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-11824       Medium      0.2% (7th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3446        Medium      0.2% (7th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3446        Medium      0.2% (7th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3446        Medium      0.2% (7th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-3446        Medium      0.2% (7th)    < 0.1  
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2018-20225       Negligible  1.8% (78th)   < 0.1  
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2018-20225       Negligible  1.8% (78th)   < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53615       Medium      0.2% (7th)    < 0.1  
+libprocps6             2:3.3.12-3ubuntu1.2        (won't fix)              deb     CVE-2023-4016        Low         0.3% (22nd)   < 0.1  
+procps                 2:3.3.12-3ubuntu1.2        (won't fix)              deb     CVE-2023-4016        Low         0.3% (22nd)   < 0.1  
+gpgv                   2.2.4-1ubuntu1.6                                    deb     CVE-2022-3219        Low         0.3% (22nd)   < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119591      Medium      0.2% (6th)    < 0.1  
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2026-67693       Medium      0.2% (5th)    < 0.1  
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2026-15534       Medium      0.2% (5th)    < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-53613       Medium      0.2% (5th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119373      Medium      0.2% (5th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115791      Medium      0.2% (5th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115791      Medium      0.2% (5th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115791      Medium      0.2% (5th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-115791      Medium      0.2% (5th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57178       Medium      0.2% (5th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57178       Medium      0.2% (5th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57178       Medium      0.2% (5th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57178       Medium      0.2% (5th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-50812       Medium      0.2% (5th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56132       Medium      0.2% (5th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-50813       Medium      0.2% (5th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57179       Medium      0.2% (4th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57179       Medium      0.2% (4th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57179       Medium      0.2% (4th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57179       Medium      0.2% (4th)    < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-27456       Medium      0.2% (4th)    < 0.1  
+django                 2.2                        5.2.15                   python  GHSA-8cjm-8mp7-r2xf  Low         0.3% (20th)   < 0.1  
+libp11-kit0            0.23.9-2ubuntu0.1          (won't fix)              deb     CVE-2026-13757       Medium      0.2% (4th)    < 0.1  
+login                  1:4.5-1ubuntu2.5           (won't fix)              deb     CVE-2023-4641        Low         0.3% (17th)   < 0.1  
+passwd                 1:4.5-1ubuntu2.5           (won't fix)              deb     CVE-2023-4641        Low         0.3% (17th)   < 0.1  
+libacl1                2.2.52-3build1                                      deb     CVE-2026-54369       Medium      0.2% (4th)    < 0.1  
+bsdutils               1:2.31.1-0.4ubuntu3.7                               deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+fdisk                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libblkid1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libfdisk1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libmount1              2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libsmartcols1          2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libuuid1               2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+mount                  2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+util-linux             2.31.1-0.4ubuntu3.7                                 deb     CVE-2026-13595       Medium      0.2% (4th)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6075        Medium      0.1% (4th)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6075        Medium      0.1% (4th)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6075        Medium      0.1% (4th)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2025-6075        Medium      0.1% (4th)    < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119372      Medium      0.1% (4th)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56404       Medium      0.1% (3rd)    < 0.1  
+libattr1               1:2.4.47-2build1           (won't fix)              deb     CVE-2026-54371       Medium      0.1% (3rd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56410       Medium      0.1% (3rd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56411       Medium      0.1% (3rd)    < 0.1  
+sqlparse               0.4.4                      0.6.0                    python  GHSA-3496-9g83-7v6x  Medium      0.1% (2nd)    < 0.1  
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-3219        Medium      0.1% (3rd)    < 0.1  
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-3219        Medium      0.1% (3rd)    < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-18374       Medium      0.1% (3rd)    < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-18374       Medium      0.1% (3rd)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-88823       Medium      0.1% (3rd)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-88823       Medium      0.1% (3rd)    < 0.1  
+sed                    4.4-2                      (won't fix)              deb     CVE-2026-5958        Medium      0.1% (3rd)    < 0.1  
+tar                    1.29b-2ubuntu0.4           (won't fix)              deb     CVE-2026-18508       Medium      0.1% (3rd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56405       Medium      0.1% (3rd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56408       Medium      0.1% (3rd)    < 0.1  
+django                 2.2                        5.2.15                   python  GHSA-h7pc-vwp9-298g  Low         0.2% (15th)   < 0.1  
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-6357        Medium      0.1% (3rd)    < 0.1  
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-6357        Medium      0.1% (3rd)    < 0.1  
+gcc-8-base             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-114690      Medium      0.1% (3rd)    < 0.1  
+libgcc1                1:8.4.0-1ubuntu1~18.04                              deb     CVE-2026-114690      Medium      0.1% (3rd)    < 0.1  
+libstdc++6             8.4.0-1ubuntu1~18.04                                deb     CVE-2026-114690      Medium      0.1% (3rd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-56409       Medium      0.1% (3rd)    < 0.1  
+libgnutls30            3.5.18-1ubuntu1.6          (won't fix)              deb     CVE-2025-9820        Low         0.2% (12th)   < 0.1  
+libsqlite3-0           3.22.0-1ubuntu0.7          (won't fix)              deb     CVE-2026-119377      Medium      0.1% (2nd)    < 0.1  
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2025-15649       Medium      0.1% (2nd)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-107496      Medium      0.1% (2nd)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-107496      Medium      0.1% (2nd)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0864        Medium      0.1% (2nd)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0864        Medium      0.1% (2nd)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0864        Medium      0.1% (2nd)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-0864        Medium      0.1% (2nd)    < 0.1  
+libncurses5            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-6141        Low         0.2% (11th)   < 0.1  
+libncursesw5           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-6141        Low         0.2% (11th)   < 0.1  
+libtinfo5              6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-6141        Low         0.2% (11th)   < 0.1  
+ncurses-base           6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-6141        Low         0.2% (11th)   < 0.1  
+ncurses-bin            6.1-1ubuntu1.18.04.1       (won't fix)              deb     CVE-2025-6141        Low         0.2% (11th)   < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-18503       Medium      0.1% (2nd)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-18503       Medium      0.1% (2nd)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-18503       Medium      0.1% (2nd)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-18503       Medium      0.1% (2nd)    < 0.1  
+libexpat1              2.2.5-3ubuntu0.9           (won't fix)              deb     CVE-2026-76957       Medium      0.1% (1st)    < 0.1  
+gzip                   1.6-5ubuntu1.2             (won't fix)              deb     CVE-2026-41991       Medium      0.1% (1st)    < 0.1  
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-25645       Low         0.2% (9th)    < 0.1  
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2026-25645       Low         0.2% (9th)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-68160       Low         0.2% (8th)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-68160       Low         0.2% (8th)    < 0.1  
+dash                   0.5.8-2.10                                          deb     CVE-2026-102474      Medium      0.1% (1st)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57177       Medium      0.1% (1st)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57177       Medium      0.1% (1st)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57177       Medium      0.1% (1st)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-57177       Medium      0.1% (1st)    < 0.1  
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2026-40228       Low         0.2% (7th)    < 0.1  
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2026-40228       Low         0.2% (7th)    < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-22795       Low         0.2% (7th)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2026-22795       Low         0.2% (7th)    < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6368        Medium      0.1% (1st)    < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-6368        Medium      0.1% (1st)    < 0.1  
+libp11-kit0            0.23.9-2ubuntu0.1          (won't fix)              deb     CVE-2026-18938       Medium      0.1% (1st)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118444      Medium      0.1% (1st)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118447      Medium      0.1% (1st)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118444      Medium      0.1% (1st)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118447      Medium      0.1% (1st)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118444      Medium      0.1% (1st)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118447      Medium      0.1% (1st)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118444      Medium      0.1% (1st)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118447      Medium      0.1% (1st)    < 0.1  
+libpython3.6-minimal   3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118448      Medium      0.1% (1st)    < 0.1  
+libpython3.6-stdlib    3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118448      Medium      0.1% (1st)    < 0.1  
+python3.6              3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118448      Medium      0.1% (1st)    < 0.1  
+python3.6-minimal      3.6.9-1~18.04ubuntu1.12    (won't fix)              deb     CVE-2026-118448      Medium      0.1% (1st)    < 0.1  
+tar                    1.29b-2ubuntu0.4           (won't fix)              deb     CVE-2026-18477       Medium      0.1% (1st)    < 0.1  
+dash                   0.5.8-2.10                                          deb     CVE-2026-102473      Medium      0.1% (0th)    < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-95818       Medium      0.1% (0th)    < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-95818       Medium      0.1% (0th)    < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-86805       Medium      < 0.1% (0th)  < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2026-86805       Medium      < 0.1% (0th)  < 0.1  
+libacl1                2.2.52-3build1                                      deb     CVE-2026-54370       Medium      < 0.1% (0th)  < 0.1  
+libssl1.1              1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69418       Low         0.1% (2nd)    < 0.1  
+openssl                1.1.1-1ubuntu2.1~18.04.23  (won't fix)              deb     CVE-2025-69418       Low         0.1% (2nd)    < 0.1  
+gpgv                   2.2.4-1ubuntu1.6           (won't fix)              deb     CVE-2026-105712      Low         0.1% (2nd)    < 0.1  
+bzip2                  1.0.6-8.1ubuntu0.2         (won't fix)              deb     CVE-2026-42250       Low         0.1% (2nd)    < 0.1  
+libbz2-1.0             1.0.6-8.1ubuntu0.2         (won't fix)              deb     CVE-2026-42250       Low         0.1% (2nd)    < 0.1  
+libsystemd0            237-3ubuntu10.57           (won't fix)              deb     CVE-2026-40226       Medium      < 0.1% (0th)  < 0.1  
+libudev1               237-3ubuntu10.57           (won't fix)              deb     CVE-2026-40226       Medium      < 0.1% (0th)  < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-7309        Negligible  0.6% (49th)   < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-7309        Negligible  0.6% (49th)   < 0.1  
+python-pip-whl         9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-37920       Negligible  0.6% (47th)   < 0.1  
+python3-pip            9.0.1-2.3~ubuntu1.18.04.8  (won't fix)              deb     CVE-2023-37920       Negligible  0.6% (47th)   < 0.1  
+libc-bin               2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-6488        Negligible  0.4% (39th)   < 0.1  
+libc6                  2.27-3ubuntu1.6            (won't fix)              deb     CVE-2019-6488        Negligible  0.4% (39th)   < 0.1  
+perl-base              5.26.1-6ubuntu0.7          (won't fix)              deb     CVE-2023-47039       Negligible  0.4% (36th)   < 0.1  
+sqlparse               0.4.4                      0.5.4                    python  GHSA-27jp-wm6q-gp25  Medium      N/A           N/A
+116 packages from EOL distro "ubuntu 18.04" - vulnerability data may be incomplete or outdated; consider upgrading to a supported version

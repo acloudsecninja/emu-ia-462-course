@@ -1,0 +1,46 @@
++---------------------------------+----------+-----------+-------------+
+| path                            | username | groupname | permissions |
++---------------------------------+----------+-----------+-------------+
+| /bin/passwd                     | root     | root      | S           |
+| /bin/gpasswd                    | root     | root      | S           |
+| /bin/sudoedit                   | root     | root      | S           |
+| /bin/umount                     | root     | root      | S           |
+| /bin/su                         | root     | root      | S           |
+| /bin/sudo                       | root     | root      | S           |
+| /bin/ssh-agent                  | root     | _ssh      | G           |
+| /bin/sudo.ws                    | root     | root      | S           |
+| /bin/sudo-rs                    | root     | root      | S           |
+| /bin/chsh                       | root     | root      | S           |
+| /bin/su-rs                      | root     | root      | S           |
+| /bin/crontab                    | root     | crontab   | G           |
+| /bin/chage                      | root     | shadow    | G           |
+| /bin/sudoedit-rs                | root     | root      | S           |
+| /bin/fusermount3                | root     | root      | S           |
+| /bin/chfn                       | root     | root      | S           |
+| /bin/mount                      | root     | root      | S           |
+| /bin/expiry                     | root     | shadow    | G           |
+| /bin/fusermount                 | root     | root      | S           |
+| /sbin/unix_chkpwd               | root     | shadow    | G           |
+| /sbin/pam_extrausers_chkpwd     | root     | shadow    | G           |
+| /usr/bin/passwd                 | root     | root      | S           |
+| /usr/bin/gpasswd                | root     | root      | S           |
+| /usr/bin/sudoedit               | root     | root      | S           |
+| /usr/bin/umount                 | root     | root      | S           |
+| /usr/bin/su                     | root     | root      | S           |
+| /usr/bin/sudo                   | root     | root      | S           |
+| /usr/bin/ssh-agent              | root     | _ssh      | G           |
+| /usr/bin/sudo.ws                | root     | root      | S           |
+| /usr/bin/sudo-rs                | root     | root      | S           |
+| /usr/bin/chsh                   | root     | root      | S           |
+| /usr/bin/su-rs                  | root     | root      | S           |
+| /usr/bin/crontab                | root     | crontab   | G           |
+| /usr/bin/chage                  | root     | shadow    | G           |
+| /usr/bin/sudoedit-rs            | root     | root      | S           |
+| /usr/bin/fusermount3            | root     | root      | S           |
+| /usr/bin/chfn                   | root     | root      | S           |
+| /usr/bin/mount                  | root     | root      | S           |
+| /usr/bin/expiry                 | root     | shadow    | G           |
+| /usr/bin/fusermount             | root     | root      | S           |
+| /usr/sbin/unix_chkpwd           | root     | shadow    | G           |
+| /usr/sbin/pam_extrausers_chkpwd | root     | shadow    | G           |
++---------------------------------+----------+-----------+-------------+

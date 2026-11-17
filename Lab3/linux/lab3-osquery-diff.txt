@@ -1,0 +1,18 @@
+209a210,218
+> 
+>        path = /usr/local/bin/lab3-suid-test
+>    username = root
+>   groupname = root
+> permissions = S
+>  username = umich33
+>  key_file = /home/umich33/.ssh/authorized_keys
+> algorithm = ssh-ed25519
+>   comment = ia462-lab3-test
+211c220
+< sha256 = b8b6031057d8bff35c4476260567674e446244f644ae8713c2cbd1cd6f305fae
+---
+> sha256 = 299bb53efea70ac1ca54beb05c5f574c84a8f99d925f4586a981191f94548075
+214c223
+< sha256 = 739650dcf1f7fb7fdfee7bb87a09ba8864aca4d0cc39b9ea2d4d24bb3f4e661e
+---
+> sha256 = 7844cabfa7af6842dc73420769bc007a8c26b7fed4f227974df5b7e93a424108

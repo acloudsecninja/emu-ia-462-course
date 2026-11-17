@@ -1,0 +1,17 @@
+# IA 462 Lab 3 - INTENTIONALLY VULNERABLE image (scan only - never deploy)
+FROM ubuntu:18.04
+
+LABEL description="IA 462 Lab 3 intentionally vulnerable container"
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python3 python3-pip python3-setuptools && \
+    rm -rf /var/lib/apt/lists/*
+
+# Pinned, known-vulnerable Python libraries (CRITICAL CVEs)
+RUN pip3 install --no-cache-dir \
+    PyYAML==5.3 \
+    Django==2.2 \
+    urllib3==1.24.1
+
+WORKDIR /app
+CMD ["python3", "-m", "http.server", "8080"]
